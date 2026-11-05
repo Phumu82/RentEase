@@ -10,6 +10,6 @@ Last updated: 5 November 2026
 
 **Sharing.** Landlords see a student's booking details and documents only for bookings that student makes with them. We do not sell personal information.
 
-**Your choices.** You can edit your profile, change notification settings, and ask us to delete your account and data by emailing YOUR EMAIL.
+**Your choices.** You can edit your profile, change notification settings, and ask us to delete your account and data by emailing p.munyai82@gmail.com.
 
-**Contact.** Phumudzo Munyai, YOUR EMAIL.
+**Contact.** Phumudzo Munyai,p.munyai82@gmail.com.
