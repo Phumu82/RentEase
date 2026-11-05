@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RentEase</string>
+
+    <!-- Role select / register entry -->
+    <string name="role_student">I\'m a Student</string>
+    <string name="role_landlord">I\'m a Landlord</string>
+    <string name="already_have_account">I already have an account</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome back</string>
+    <string name="email_label">Email address</string>
+    <string name="password_label">Password</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="no_account_register">Don\'t have an account? Register</string>
+    <string name="admin_sign_in_link">Admin sign in</string>
+
+    <!-- Student registration -->
+    <string name="student_register_title">Create your student account</string>
+    <string name="full_name_label">Full name</string>
+    <string name="phone_label">Phone number</string>
+    <string name="student_number_label">Student number</string>
+    <string name="university_label">University</string>
+    <string name="create_account_button">Create account</string>
+
+    <!-- Landlord registration -->
+    <string name="landlord_register_title">Create your landlord account</string>
+    <string name="verification_documents_heading">Verification documents</string>
+    <string name="upload_id_document">Upload ID document</string>
+    <string name="id_document_selected">ID document selected ✓</string>
+    <string name="upload_proof_of_ownership">Upload proof of property ownership</string>
+    <string name="proof_of_ownership_selected">Proof of ownership selected ✓</string>
+
+    <!-- Generic / shared -->
+    <string name="offline_banner">Offline — showing last saved data</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="retry_button">Retry</string>
+    <string name="logout_button">Log out</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="save_button">Save</string>
+    <string name="delete_button">Delete</string>
+    <string name="edit_button">Edit</string>
+    <string name="back_button">Back</string>
+    <string name="loading">Loading…</string>
+    <string name="syncing">Syncing…</string>
+    <string name="changes_waiting_to_sync">%1$d change(s) waiting to sync</string>
+    <string name="no_results_generic">Nothing to show here yet.</string>
+
+    <!-- Booking statuses (booking_status enum: pending, approved, rejected, cancelled, active, completed) -->
+    <string name="booking_status_pending">Pending</string>
+    <string name="booking_status_approved">Approved</string>
+    <string name="booking_status_rejected">Rejected</string>
+    <string name="booking_status_cancelled">Cancelled</string>
+    <string name="booking_status_active">Active</string>
+    <string name="booking_status_completed">Completed</string>
+
+    <!-- Maintenance statuses -->
+    <string name="maintenance_status_open">Open</string>
+    <string name="maintenance_status_in_progress">In Progress</string>
+    <string name="maintenance_status_resolved">Resolved</string>
+    <string name="maintenance_status_closed">Closed</string>
+
+    <!-- Room statuses -->
+    <string name="room_status_available">Available</string>
+    <string name="room_status_reserved">Reserved</string>
+    <string name="room_status_occupied">Occupied</string>
+    <string name="room_status_maintenance">Under maintenance</string>
+
+    <!-- Property statuses -->
+    <string name="property_status_draft">Draft</string>
+    <string name="property_status_pending">Pending review</string>
+    <string name="property_status_published">Live</string>
+    <string name="property_status_rejected">Rejected</string>
+    <string name="property_status_archived">Archived</string>
+
+    <!-- Verification statuses -->
+    <string name="verification_status_pending">Verification pending</string>
+    <string name="verification_status_submitted">Documents under review</string>
+    <string name="verification_status_verified">Verified</string>
+    <string name="verification_status_rejected">Verification rejected</string>
+    <string name="verification_status_documents_required">Additional documents required</string>
+
+    <!-- Landlord dashboard verification banner (longer prose versions) -->
+    <string name="verification_banner_verified">You\'re verified as a trusted host.</string>
+    <string name="verification_banner_submitted">Your documents are under review by our team.</string>
+    <string name="verification_banner_documents_required">Additional documents are required — check your email.</string>
+    <string name="verification_banner_rejected">Your verification was rejected. Contact support for details.</string>
+    <string name="verification_banner_pending">Verification pending — submit your documents to start listing.</string>
+
+    <!-- Student: Search / Listings -->
+    <string name="find_accommodation_title">Find accommodation</string>
+    <string name="saved_nav_label">Saved</string>
+
+    <!-- Student: Dashboard (mirrors web student.index) -->
+    <string name="student_dashboard_greeting">Hi %1$s</string>
+    <string name="student_dashboard_greeting_fallback">Hi there</string>
+    <string name="student_dashboard_subtitle">Your bookings, saved rooms and messages in one place.</string>
+    <string name="student_dashboard_stat_bookings">Bookings</string>
+    <string name="student_dashboard_stat_saved">Saved</string>
+    <string name="student_dashboard_stat_unread">Unread</string>
+    <string name="nav_browse_properties">Browse properties</string>
+    <string name="search_hint">Search by title, area, university…</string>
+    <string name="filters_button_label">Filters</string>
+    <string name="filter_any_university">Any university</string>
+    <string name="filter_any_province">Any province</string>
+    <string name="filter_max_rent_label">Maximum rent: R%1$d</string>
+    <string name="filter_furnished_only">Furnished only</string>
+    <string name="filter_amenities_label">Amenities</string>
+    <string name="filter_clear_all">Clear all filters</string>
+    <string name="sort_newest">Newest</string>
+    <string name="sort_price_asc">Price: low to high</string>
+    <string name="sort_price_desc">Price: high to low</string>
+    <string name="sort_rating">Top rated</string>
+    <string name="sort_distance">Nearest to campus</string>
+    <string name="no_listings_match">No listings match your search yet.</string>
+    <string name="load_more_button">Load more</string>
+    <string name="km_from_campus">%1$s km from campus</string>
+    <string name="price_per_month">R%1$d/month</string>
+    <string name="save_listing_action">Save listing</string>
+
+    <!-- Student: Listing Detail -->
+    <string name="about_this_place">About this place</string>
+    <string name="amenities_heading">Amenities</string>
+    <string name="reviews_heading">Reviews (%1$d)</string>
+    <string name="request_booking_button">Request booking</string>
+    <string name="booking_submitted_message">Booking request submitted! Reference: %1$s. You will not be charged until the landlord approves.</string>
+    <string name="deposit_label">Deposit R%1$d</string>
+    <string name="booking_dialog_title">Request booking</string>
+    <string name="booking_dialog_disclaimer">You will not be charged until the landlord approves this request.</string>
+    <string name="move_in_date_label">Move-in date</string>
+    <string name="lease_period_label">Lease period (months)</string>
+    <string name="message_to_landlord_label">Message to landlord (optional)</string>
+    <string name="upload_student_id">Upload student ID</string>
+    <string name="student_id_selected">Student ID selected ✓</string>
+    <string name="upload_proof_of_registration">Upload proof of registration</string>
+    <string name="proof_of_registration_selected">Proof of registration selected ✓</string>
+    <string name="submit_request_button">Submit request</string>
+
+    <!-- Student: Saved Listings -->
+    <string name="saved_listings_title">Saved listings</string>
+    <string name="no_saved_listings">No saved listings yet.</string>
+    <string name="remove_from_saved">Remove from saved</string>
+
+    <!-- Student: My Bookings -->
+    <string name="my_bookings_title">My bookings</string>
+    <string name="no_bookings_yet">You haven\'t requested any bookings yet.</string>
+
+    <!-- Student: Payments (Part 1 \u00a73.11 \u2014 a self-reported ledger, not a gateway) -->
+    <string name="payments_title">Payments</string>
+    <string name="payments_description">Deposits, rent and fees for your bookings.</string>
+    <string name="no_payments_yet">No payments yet.</string>
+    <string name="payments_stat_paid">Paid</string>
+    <string name="payments_stat_outstanding">Outstanding</string>
+    <string name="pay_now_button">Pay now</string>
+    <string name="paying_button">Marking as paid\u2026</string>
+    <string name="payment_paid_on_label">Paid %1$s</string>
+    <string name="payment_due_label">Due %1$s</string>
+    <string name="nav_payments">Payments</string>
+    <string name="payment_kind_deposit">Deposit</string>
+    <string name="payment_kind_rent">Rent</string>
+    <string name="payment_kind_fee">Fee</string>
+    <string name="payment_status_pending">Pending</string>
+    <string name="payment_status_paid">Paid</string>
+    <string name="payment_status_failed">Failed</string>
+    <string name="payment_status_refunded">Refunded</string>
+    <string name="booking_reference_label">Ref: %1$s</string>
+    <string name="lease_summary_label">Move-in: %1$s · %2$d months · R%3$d/month</string>
+    <string name="bookings_nav_label">Bookings</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="language_heading">Language</string>
+    <string name="appearance_heading">Appearance</string>
+    <string name="theme_system">Match system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="language_english">English</string>
+    <string name="language_zulu">isiZulu</string>
+    <string name="language_venda">Tshivenda</string>
+    <string name="notification_preferences_heading">Notification preferences</string>
+    <string name="notify_booking_updates">Booking updates</string>
+    <string name="notify_new_messages">New messages</string>
+    <string name="notify_maintenance_updates">Maintenance updates</string>
+    <string name="profile_heading">Profile</string>
+
+    <!-- Landlord: Dashboard -->
+    <string name="landlord_dashboard_title">Landlord dashboard</string>
+    <string name="overview_heading">Overview</string>
+    <string name="stat_properties">Properties</string>
+    <string name="stat_occupancy">Occupancy</string>
+    <string name="stat_pending_requests">Pending requests</string>
+    <string name="manage_heading">Manage</string>
+    <string name="nav_properties_rooms">Properties &amp; rooms</string>
+    <string name="nav_booking_requests">Booking requests</string>
+    <string name="nav_tenants">Tenants</string>
+    <string name="nav_maintenance">Maintenance</string>
+    <string name="nav_messages">Messages</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_analytics">Analytics</string>
+
+    <!-- Landlord: Properties -->
+    <string name="my_properties_title">My properties</string>
+    <string name="no_properties_yet">You haven\'t listed any properties yet. Tap + to add one.</string>
+    <string name="add_property_title">Add property</string>
+    <string name="edit_property_title">Edit property</string>
+    <string name="published_label">Published</string>
+    <string name="rooms_link">Rooms</string>
+    <string name="title_label">Title</string>
+    <string name="description_label">Description</string>
+    <string name="address_label">Address</string>
+    <string name="city_label">City</string>
+    <string name="province_label">Province</string>
+    <string name="price_month_label">Price/month (R)</string>
+    <string name="deposit_field_label">Deposit (R)</string>
+    <string name="bedrooms_label">Bedrooms</string>
+    <string name="bathrooms_label">Bathrooms</string>
+    <string name="furnished_label">Furnished</string>
+    <string name="save_property_button">Save property</string>
+
+    <!-- Landlord: Rooms -->
+    <string name="rooms_title">Rooms</string>
+    <string name="no_rooms_yet">No rooms yet. Tap + to add one.</string>
+    <string name="add_room_title">Add room</string>
+    <string name="room_name_label">Room name</string>
+    <string name="room_type_label">Room type</string>
+    <string name="capacity_label">Capacity</string>
+    <string name="status_label">Status: %1$s</string>
+    <string name="add_button">Add</string>
+
+    <!-- Landlord: Bookings -->
+    <string name="booking_requests_title">Booking requests</string>
+    <string name="filter_all">All</string>
+    <string name="no_booking_requests">No booking requests here.</string>
+    <string name="assign_room_action">Assign room</string>
+    <string name="room_assigned_label">Room: %1$s</string>
+    <string name="reject_button">Reject</string>
+    <string name="approve_button">Approve</string>
+
+    <!-- Landlord: Tenants -->
+    <string name="tenants_title">Tenants</string>
+    <string name="no_tenants_yet">No active tenants yet — approved bookings will appear here.</string>
+
+    <!-- Landlord: Maintenance -->
+    <string name="maintenance_title">Maintenance</string>
+    <string name="no_maintenance_tickets">No maintenance tickets.</string>
+
+    <!-- Student: Maintenance (Part 1 \u00a73.9, student/maintenance) -->
+    <string name="student_maintenance_title">Maintenance</string>
+    <string name="student_maintenance_description">Report an issue at your accommodation and follow the landlord\'s progress.</string>
+    <string name="maintenance_new_request_heading">Log a new issue</string>
+    <string name="maintenance_select_booking_label">Which booking is this about?</string>
+    <string name="maintenance_no_eligible_bookings">Maintenance requests can only be logged against an approved, active or completed booking.</string>
+    <string name="maintenance_issue_title_label">Title</string>
+    <string name="maintenance_issue_description_label">Description</string>
+    <string name="maintenance_category_label">Category</string>
+    <string name="maintenance_priority_label">Priority</string>
+    <string name="maintenance_attach_photo_button">Attach photo (optional)</string>
+    <string name="maintenance_photo_attached">Photo attached</string>
+    <string name="maintenance_submit_button">Submit request</string>
+    <string name="maintenance_submitting_button">Submitting\u2026</string>
+    <string name="maintenance_request_submitted">Maintenance request logged</string>
+    <string name="maintenance_validation_title_short">Give the issue a short title</string>
+    <string name="maintenance_validation_description_short">Describe the issue in a little more detail</string>
+    <string name="maintenance_your_requests_heading">Your requests</string>
+    <string name="error_maintenance_submit_failed">Could not submit maintenance request</string>
+    <string name="error_could_not_load_my_maintenance_requests">Could not load your maintenance requests</string>
+    <string name="maintenance_category_plumbing">Plumbing</string>
+    <string name="maintenance_category_electrical">Electrical</string>
+    <string name="maintenance_category_appliance">Appliance</string>
+    <string name="maintenance_category_internet">Internet</string>
+    <string name="maintenance_category_security">Security</string>
+    <string name="maintenance_category_structural">Structural</string>
+    <string name="maintenance_category_other">Other</string>
+
+    <!-- Messaging -->
+    <string name="messages_title">Messages</string>
+    <string name="no_conversations_yet">No conversations yet.</string>
+    <string name="conversation_title">Conversation</string>
+    <string name="message_input_label">Message</string>
+    <string name="send_action">Send</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="no_notifications_yet">No notifications yet.</string>
+
+    <!-- Analytics -->
+    <string name="analytics_title">Analytics</string>
+    <string name="analytics_disclaimer">Income figures come from your bookings and payments. Contracted monthly income is the monthly rent of approved and active bookings; collected is money recorded as paid. RentEase does not process payments itself yet.</string>
+    <string name="stat_total_rooms">Total rooms</string>
+    <string name="stat_occupied_rooms">Occupied rooms</string>
+    <string name="stat_occupancy_rate">Occupancy rate</string>
+    <string name="stat_open_maintenance">Open maintenance tickets</string>
+
+    <!-- Admin: Dashboard -->
+    <string name="admin_dashboard_title">Admin dashboard</string>
+    <string name="platform_overview_heading">Platform overview</string>
+    <string name="stat_pending_verifications">Pending verifications</string>
+    <string name="stat_pending_listings">Pending listings</string>
+    <string name="stat_students">Students</string>
+    <string name="stat_landlords">Landlords</string>
+    <string name="stat_suspended_users">Suspended users</string>
+    <string name="nav_landlord_verification">Landlord verification</string>
+    <string name="nav_property_moderation">Property moderation</string>
+    <string name="nav_user_management">User management</string>
+    <string name="nav_booking_oversight">Booking oversight</string>
+    <string name="nav_audit_log">Audit log</string>
+
+    <!-- Admin: Verification -->
+    <string name="landlord_verification_title">Landlord verification</string>
+    <string name="verify_button">Verify</string>
+
+    <!-- Admin: Moderation -->
+    <string name="property_moderation_title">Property moderation</string>
+    <string name="no_listings_pending">No listings pending review.</string>
+    <string name="listed_by_label">By %1$s · %2$s, %3$s</string>
+
+    <!-- Admin: Users -->
+    <string name="user_management_title">User management</string>
+    <string name="no_users_found">No users found.</string>
+    <string name="active_label">Active</string>
+    <string name="suspended_label">Suspended</string>
+
+    <!-- Admin: Bookings -->
+    <string name="booking_oversight_title">Booking oversight</string>
+    <string name="no_bookings_platform">No bookings on the platform yet.</string>
+
+    <!-- Admin: Audit log -->
+    <string name="audit_log_title">Audit log</string>
+    <string name="no_audit_events">No audit events yet.</string>
+
+    <!-- Admin access -->
+    <string name="admin_access_title">Administrator sign-in</string>
+    <string name="admin_access_signin_prompt">Sign in with your account first, then enter the administrator access code.</string>
+    <string name="admin_access_code_prompt">Enter the administrator access code. This grants the admin role to your currently signed-in account and is verified entirely on the server.</string>
+    <string name="access_code_label">Access code</string>
+    <string name="verify_code_button">Verify</string>
+
+    <!-- Placeholder / not-yet-built -->
+    <string name="signed_in_as">You\'re signed in as %1$s</string>
+
+    <!-- Data-layer error messages. These are surfaced from repositories, not
+         directly from Compose, so the Kotlin code resolves them via
+         Context.getString() rather than stringResource() — see
+         RepositoryError.kt. HTTP status codes are appended by the calling
+         code as "(HTTP %d)" and are deliberately left untranslated (a
+         numeric diagnostic code, not prose), so these strings hold only the
+         translatable portion of the message. -->
+    <string name="error_not_signed_in">Not signed in</string>
+    <string name="error_could_not_load_my_payments">Could not load your payments</string>
+    <string name="error_mark_payment_paid_failed">Could not mark this payment as paid</string>
+    <string name="error_no_stored_session">No stored session</string>
+    <string name="error_could_not_resolve_role_server">Could not resolve your role from the server</string>
+    <string name="error_could_not_resolve_role">Could not resolve your role</string>
+    <string name="error_could_not_save_language">Could not save language preference</string>
+    <string name="error_could_not_save_notification_preferences">Could not save notification preferences</string>
+    <string name="error_could_not_load_profile_after_signin">Could not load profile after sign-in.</string>
+    <string name="error_signed_in_no_role">Signed in, but no role is assigned to this account. Contact support.</string>
+    <string name="error_request_failed">Request failed</string>
+    <string name="error_could_not_load_universities">Could not load universities</string>
+    <string name="error_search_failed">Search failed</string>
+    <string name="error_listing_not_found">Listing not found</string>
+    <string name="error_signin_required_save_listings">You need to be signed in to save listings.</string>
+    <string name="error_could_not_update_favourites">Could not update favourites</string>
+    <string name="error_signin_required_booking">You need to be signed in to request a booking.</string>
+    <string name="error_booking_request_failed">Booking request failed</string>
+    <string name="error_booking_deposit_failed">Your booking was sent, but we couldn\'t set up the deposit payment record \u2014 please check Payments or contact the landlord</string>
+    <string name="error_signin_required_view_bookings">You need to be signed in to view your bookings.</string>
+    <string name="error_could_not_load_my_bookings">Could not load your bookings</string>
+    <string name="error_cancel_booking_failed">Could not cancel this booking</string>
+    <string name="cancel_booking_button">Cancel request</string>
+    <string name="booking_cancelled_confirmation">Booking request cancelled</string>
+    <!-- Student: reviews (one review per booking) -->
+    <string name="write_review_button">Write a review</string>
+    <string name="review_rating_star_description">Rate %1$d out of 5</string>
+    <string name="review_title_label">Title (optional)</string>
+    <string name="review_body_label">Your review (at least 10 characters)</string>
+    <string name="review_submit_button">Submit review</string>
+    <string name="review_submitted_confirmation">Thanks — your review was posted</string>
+    <string name="error_review_submit_failed">Could not submit your review</string>
+    <string name="error_review_already_submitted">You have already reviewed this booking</string>
+    <string name="error_could_not_load_notifications">Could not load notifications</string>
+    <string name="error_could_not_update_notification">Could not update notification</string>
+    <string name="error_could_not_register_device">Could not register device for notifications</string>
+    <string name="error_landlord_profile_not_found">Landlord profile not found</string>
+    <string name="error_could_not_load_properties">Could not load properties</string>
+    <string name="error_property_not_found">Property not found</string>
+    <string name="error_could_not_resolve_properties_maintenance">Could not resolve your properties for maintenance lookup</string>
+    <string name="error_could_not_compute_analytics">Could not compute analytics</string>
+    <string name="error_could_not_approve_booking">Could not approve booking</string>
+    <string name="error_could_not_assign_room">Could not assign room</string>
+    <string name="error_could_not_attach_image">Could not attach image</string>
+    <string name="error_could_not_create_property">Could not create property</string>
+    <string name="error_could_not_create_room">Could not create room</string>
+    <string name="error_could_not_delete_property">Could not delete property</string>
+    <string name="error_could_not_delete_room">Could not delete room</string>
+    <string name="error_could_not_load_bookings">Could not load bookings</string>
+    <string name="error_could_not_load_conversations">Could not load conversations</string>
+    <string name="error_could_not_load_maintenance_tickets">Could not load maintenance tickets</string>
+    <string name="error_could_not_load_messages">Could not load messages</string>
+    <string name="error_could_not_load_rooms">Could not load rooms</string>
+    <string name="error_could_not_mark_conversation_read">Could not mark conversation read</string>
+    <string name="error_could_not_reject_booking">Could not reject booking</string>
+    <string name="error_could_not_send_message">Could not send message</string>
+    <string name="error_could_not_update_availability">Could not update availability</string>
+    <string name="error_could_not_update_property">Could not update property</string>
+    <string name="error_could_not_update_room">Could not update room</string>
+    <string name="error_could_not_update_ticket_status">Could not update ticket status</string>
+    <string name="error_could_not_reach_server">Could not reach the server. Check your connection and try again.</string>
+    <string name="error_access_denied">Access denied</string>
+    <string name="error_could_not_load_audit_log">Could not load audit log</string>
+
+    <!-- Support / complaints (Part 1 §3.10, shared by students and landlords) -->
+    <string name="support_title">Support &amp; complaints</string>
+    <string name="support_description">Raise an issue with the RentEase team and follow its resolution.</string>
+    <string name="new_complaint_heading">New complaint</string>
+    <string name="complaint_subject_label">Subject</string>
+    <string name="complaint_category_label">Category</string>
+    <string name="complaint_description_label">What happened?</string>
+    <string name="submit_complaint_button">Submit complaint</string>
+    <string name="submitting_complaint_button">Submitting…</string>
+    <string name="complaint_submitted_confirmation">Complaint submitted — an administrator will respond</string>
+    <string name="no_complaints_logged">No complaints logged</string>
+    <string name="no_complaints_logged_subtitle">We hope it stays that way — but we’re here if needed.</string>
+    <string name="complaint_validation_subject_short">Add a short subject</string>
+    <string name="complaint_validation_description_short">Tell us a bit more so we can help</string>
+    <string name="admin_response_label">RentEase:</string>
+    <string name="error_could_not_load_my_complaints">Could not load your complaints</string>
+    <string name="error_complaint_submit_failed">Could not submit your complaint</string>
+
+    <!-- Admin: complaints queue -->
+    <string name="admin_complaints_title">Complaints</string>
+    <string name="admin_complaints_description">Every complaint raised by students and landlords.</string>
+    <string name="no_complaints_queue">The queue is clear.</string>
+    <string name="admin_response_field_label">Response to reporter</string>
+    <string name="mark_in_progress_button">Mark in progress</string>
+    <string name="resolve_button">Resolve</string>
+    <string name="close_button">Close</string>
+    <string name="error_could_not_load_complaints">Could not load complaints</string>
+    <string name="error_could_not_update_complaint">Could not update this complaint</string>
+    <string name="error_could_not_load_moderation_queue">Could not load property moderation queue</string>
+    <string name="error_could_not_load_users">Could not load users</string>
+    <string name="error_could_not_load_verification_queue">Could not load verification queue</string>
+    <string name="error_could_not_update_property_status">Could not update property status</string>
+    <string name="error_could_not_update_user_status">Could not update user status</string>
+    <string name="error_could_not_update_verification_status">Could not update verification status</string>
+
+    <!-- ===== Added in the Part 2 audit. NOTE: isiZulu/Tshivenda text below is a
+         best-effort draft and MUST be reviewed by a native speaker. ===== -->
+    <string name="error_enter_email_password">Please enter your email and password.</string>
+    <string name="error_fill_required_fields">Please fill in all required fields.</string>
+    <string name="error_upload_verification_documents">Could not upload verification documents. Please check your connection and try again.</string>
+    <string name="error_upload_documents">Could not upload your documents. Please check your connection and try again.</string>
+    <string name="error_image_upload_failed">Image upload failed. Please try again.</string>
+    <string name="error_enter_admin_code">Enter the admin access code.</string>
+    <string name="error_admin_session_refresh_failed">Access granted, but the app couldn\'t refresh your session automatically. Please log out and back in.</string>
+    <string name="google_sign_in_failed">Google sign-in was cancelled or is not available on this device.</string>
+    <string name="error_name_required">Please enter your name.</string>
+    <string name="error_could_not_save_profile">Could not save your profile</string>
+    <string name="profile_saved_message">Profile saved.</string>
+    <string name="fallback_property_name">Property</string>
+    <string name="fallback_student_name">Student</string>
+    <string name="fallback_landlord_name">Landlord</string>
+    <string name="fallback_unknown_actor">Unknown actor</string>
+    <string name="listing_title_fallback">Listing</string>
+    <string name="business_label">Business: %1$s</string>
+    <string name="booking_summary_line">Ref: %1$s · R%2$d/month · %3$s</string>
+    <string name="booking_request_summary">Ref: %1$s · Move-in: %2$s · %3$d months</string>
+    <string name="maintenance_priority_category">Priority: %1$s · Category: %2$s</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="priority_urgent">Urgent</string>
+    <string name="channel_system_name">Announcements</string>
+    <string name="channel_bookings_desc">Booking accepted, rejected, or status changes</string>
+    <string name="channel_messages_desc">New messages from students and landlords</string>
+    <string name="channel_maintenance_desc">Maintenance ticket status changes</string>
+    <string name="channel_system_desc">Important administrative and system announcements</string>
+    <string name="compare_action">Compare</string>
+    <string name="compare_selected_count">Compare (%1$d)</string>
+    <string name="compare_title">Compare listings</string>
+    <string name="compare_hint">Tick 2–3 listings, then tap Compare.</string>
+    <string name="compare_max_reached">You can compare up to 3 listings at a time.</string>
+    <string name="compare_need_two">Select at least 2 listings to compare.</string>
+    <string name="compare_clear">Clear</string>
+    <string name="compare_select_desc">Select for comparison</string>
+    <string name="compare_row_rent">Rent per month</string>
+    <string name="compare_row_deposit">Deposit</string>
+    <string name="compare_row_distance">Distance from campus</string>
+    <string name="compare_row_rooms_available">Rooms available</string>
+    <string name="compare_row_rating">Rating</string>
+    <string name="compare_yes">Yes</string>
+    <string name="compare_no">No</string>
+    <string name="compare_best_badge">Best</string>
+    <string name="compare_lowest_rent">Lowest rent: %1$s</string>
+    <string name="compare_closest">Closest to campus: %1$s</string>
+    <string name="compare_top_rated">Top rated: %1$s</string>
+    <string name="progress_title">Verification progress</string>
+    <string name="progress_steps_complete">%1$d of %2$d steps complete</string>
+    <string name="progress_next_step">Next: %1$s</string>
+    <string name="progress_all_done">All steps complete — great work!</string>
+    <string name="progress_badge_label">Badge: %1$s</string>
+    <string name="progress_step_account">Create your account</string>
+    <string name="progress_step_documents">Submit ID and ownership documents</string>
+    <string name="progress_step_verified">Get verified by RentEase</string>
+    <string name="progress_step_first_property">Add your first property</string>
+    <string name="progress_step_published">Get a listing published</string>
+    <string name="progress_badge_newcomer">Newcomer</string>
+    <string name="progress_badge_documents_in">Documents In</string>
+    <string name="progress_badge_verified_host">Verified Host</string>
+    <string name="progress_badge_listing_creator">Listing Creator</string>
+    <string name="progress_badge_fully_live">Fully Live</string>
+    <string name="role_label_student">Student</string>
+    <string name="role_label_landlord">Landlord</string>
+    <string name="role_label_admin">Admin</string>
+    <string name="room_type_capacity">%1$s (capacity %2$d)</string>
+    <string name="ok_button">OK</string>
+    <string name="pick_date_description">Pick a date</string>
+    <string name="course_label">Course / qualification</string>
+    <string name="year_of_study_label">Year of study</string>
+    <string name="year_of_study_value">Year %1$d</string>
+    <string name="budget_max_label">Monthly budget (R)</string>
+    <string name="preferred_room_type_label">Preferred room type</string>
+    <string name="earliest_move_in_label">Earliest move-in date</string>
+    <string name="needs_furnished_label">I need a furnished room</string>
+    <string name="student_dashboard_stat_total_paid">Total paid</string>
+    <string name="onboarding_banner_title">Finish your student profile</string>
+    <string name="onboarding_banner_body">Landlords approve applications faster when your details and proof of registration are on file.</string>
+    <string name="onboarding_banner_action">Complete profile</string>
+    <string name="onboarding_student_title">Student profile</string>
+    <string name="onboarding_student_subtitle">These details power your accommodation matches and speed up booking applications.</string>
+    <string name="onboarding_section_contact">Contact</string>
+    <string name="onboarding_section_academic">Academic information</string>
+    <string name="onboarding_section_preferences">Accommodation preferences</string>
+    <string name="onboarding_proof_title">Proof of registration</string>
+    <string name="onboarding_proof_body">Optional, but landlords approve applications faster when it is on file. Stored privately — only you and RentEase administrators can open it.</string>
+    <string name="onboarding_upload_document">Upload PDF or image</string>
+    <string name="onboarding_replace_document">Replace file</string>
+    <string name="onboarding_view_document">View uploaded document</string>
+    <string name="document_hint">PDF, JPG, PNG or WEBP — max 5 MB.</string>
+    <string name="document_error_empty">The selected file is empty.</string>
+    <string name="document_error_type">Use a PDF, JPG, PNG or WEBP file.</string>
+    <string name="document_error_too_large">The file must be 5 MB or smaller.</string>
+    <string name="onboarding_field_required">This field is required.</string>
+    <string name="onboarding_save_continue">Save and continue</string>
+    <string name="onboarding_error_load">Could not load your profile.</string>
+    <string name="onboarding_error_save">Could not save your profile.</string>
+    <string name="onboarding_error_upload">The upload failed. Please try again.</string>
+    <string name="onboarding_error_open_document">Could not open the document.</string>
+    <string name="onboarding_landlord_title">Landlord verification</string>
+    <string name="onboarding_verification_status_title">Verification status</string>
+    <string name="onboarding_required_docs_progress">%1$d of %2$d required documents uploaded</string>
+    <string name="onboarding_admin_notes_label">Notes from the administrator</string>
+    <string name="onboarding_display_name_label">Display name</string>
+    <string name="onboarding_contact_phone_label">Contact number</string>
+    <string name="onboarding_section_identity">Identity</string>
+    <string name="onboarding_identity_hint">Must match your ID or passport document.</string>
+    <string name="onboarding_legal_name_label">Full name as per ID</string>
+    <string name="onboarding_id_number_label">ID or passport number</string>
+    <string name="onboarding_section_business">Property business</string>
+    <string name="onboarding_company_name_label">Company / trading name (optional)</string>
+    <string name="onboarding_registration_number_label">Company registration number (optional)</string>
+    <string name="onboarding_address_label">Business or postal address</string>
+    <string name="onboarding_city_label">City</string>
+    <string name="onboarding_province_label">Province</string>
+    <string name="onboarding_postal_code_label">Postal code (optional)</string>
+    <string name="onboarding_documents_title">Verification documents</string>
+    <string name="onboarding_documents_hint">Upload the required documents. An administrator reviews them and verifies your account. Files are stored privately.</string>
+    <string name="doc_id_document">ID or passport</string>
+    <string name="doc_proof_of_ownership">Proof of ownership / mandate</string>
+    <string name="doc_proof_of_address">Proof of address</string>
+    <string name="doc_business_registration">Company registration document</string>
+    <string name="doc_required_suffix">%1$s (required)</string>
+    <string name="doc_optional_suffix">%1$s (optional)</string>
+    <string name="landlord_open_onboarding">Complete verification</string>
+    <string name="landlord_register_documents_later">After you sign in, your dashboard will guide you through your business details and the ID and proof of ownership we need to verify you.</string>
+    <string name="error_booking_duplicate">You already have an open request for this property. Check My bookings.</string>
+    <string name="booking_sent_title">Request sent to the landlord</string>
+    <string name="booking_view_my_bookings">View my bookings</string>
+    <string name="booking_room_label">Room</string>
+    <string name="booking_room_any">Any available room</string>
+    <string name="booking_room_option">%1$s · %2$s · R%3$d</string>
+    <string name="booking_lease_option">%1$d months</string>
+    <string name="booking_monthly_rent">Monthly rent</string>
+    <string name="booking_deposit_due">Deposit due on approval</string>
+    <string name="booking_documents_heading">Verification documents</string>
+    <string name="booking_proof_on_file">Your proof of registration from your profile will be used.</string>
+    <string name="maintenance_view_photo">View photo</string>
+    <string name="pub_about_us">About us</string>
+    <string name="pub_how_it_works">How it works</string>
+    <string name="pub_services">Services</string>
+    <string name="pub_pricing">Pricing</string>
+    <string name="pub_faq">FAQ</string>
+    <string name="pub_contact">Contact us</string>
+    <string name="pub_privacy">Privacy Policy</string>
+    <string name="pub_terms">Terms of Service</string>
+    <string name="pub_more_about">More about RentEase</string>
+    <string name="pub_last_updated">Last updated 1 March 2026.</string>
+    <string name="about_title">Finding student housing should take days, not months.</string>
+    <string name="about_intro">RentEase was built to bring the whole student accommodation process online, for students and landlords.</string>
+    <string name="about_story_title">Our story</string>
+    <string name="about_story_1">Every February, thousands of students arrive in unfamiliar cities with an acceptance letter and nowhere to sleep. Listings were scattered across noticeboards, WhatsApp groups and classified sites with no verification, no reviews and no recourse.</string>
+    <string name="about_story_2">We built RentEase to bring that entire process online: verified landlords, honest photographs, transparent pricing, digital applications with supporting documents, and a proper record of every payment and maintenance request.</string>
+    <string name="about_story_3">Landlords gained just as much. Instead of chasing paperwork, they now manage rooms, approvals, tenants and revenue in one dashboard.</string>
+    <string name="about_values_title">What guides every decision</string>
+    <string name="about_value_safety_title">Safety first</string>
+    <string name="about_value_safety_body">Every landlord is vetted and every property is inspected against a student safety checklist before publication.</string>
+    <string name="about_value_transparency_title">Radical transparency</string>
+    <string name="about_value_transparency_body">Real photos, real prices, real reviews. No hidden fees, no bait listings, no surprises on move-in day.</string>
+    <string name="about_value_fair_title">Fair for both sides</string>
+    <string name="about_value_fair_body">Students never pay platform fees. Landlords get tooling that makes compliance and occupancy easy.</string>
+    <string name="about_value_students_title">Built with students</string>
+    <string name="about_value_students_body">Student representatives review every major release so the app keeps working for the people who use it.</string>
+    <string name="how_student_tab">For students</string>
+    <string name="how_landlord_tab">For landlords</string>
+    <string name="how_title">A clear path from first search to signed lease.</string>
+    <string name="how_intro">RentEase handles discovery, documents, approvals, payments and maintenance so nothing gets lost in a WhatsApp thread.</string>
+    <string name="how_student_heading">Find and secure your room</string>
+    <string name="how_student_s1_title">Create your student profile</string>
+    <string name="how_student_s1_body">Verify your student number, university, faculty and year of study once, then apply anywhere in seconds.</string>
+    <string name="how_student_s2_title">Search and compare</string>
+    <string name="how_student_s2_body">Filter by price, distance from campus, amenities and availability. Save favourites and compare side by side.</string>
+    <string name="how_student_s3_title">Book with documents attached</string>
+    <string name="how_student_s3_body">Choose a room, pick your move-in date and lease period, then upload your ID and proof of registration.</string>
+    <string name="how_student_s4_title">Move in and manage</string>
+    <string name="how_student_s4_body">Pay your deposit and monthly rent, download receipts, chat with your landlord and log maintenance requests.</string>
+    <string name="how_landlord_heading">List, approve and get paid</string>
+    <string name="how_landlord_s1_title">Get verified</string>
+    <string name="how_landlord_s1_body">Submit your business details and proof of ownership. Our compliance team reviews genuine landlords.</string>
+    <string name="how_landlord_s2_title">List your property</string>
+    <string name="how_landlord_s2_body">Add photos, amenities, rooms and pricing for each property.</string>
+    <string name="how_landlord_s3_title">Approve bookings</string>
+    <string name="how_landlord_s3_body">Review student applications with attached documents, approve or decline, and assign the right room.</string>
+    <string name="how_landlord_s4_title">Track your revenue</string>
+    <string name="how_landlord_s4_body">See income, occupancy and tenant records in your dashboard.</string>
+    <string name="how_cta_student">Create a free student account</string>
+    <string name="how_cta_landlord">Compare landlord plans</string>
+    <string name="services_title">One platform for the entire accommodation lifecycle.</string>
+    <string name="services_intro">From the first search to the final month\'s rent, RentEase replaces spreadsheets, printed forms and scattered chats.</string>
+    <string name="services_s1_title">Verified accommodation search</string>
+    <string name="services_s1_body">Every listing is checked before it goes live, with a verified badge on approved properties.</string>
+    <string name="services_s2_title">Digital lease and booking</string>
+    <string name="services_s2_body">Applications, supporting documents, lease periods and approvals handled end to end without paperwork.</string>
+    <string name="services_s3_title">Rent and deposit records</string>
+    <string name="services_s3_body">Deposits and monthly rent are recorded with a payment history you can review at any time.</string>
+    <string name="services_s4_title">Maintenance management</string>
+    <string name="services_s4_body">Students log issues with photos, landlords assign and resolve, everyone tracks progress.</string>
+    <string name="services_s5_title">Direct messaging</string>
+    <string name="services_s5_body">Chat between students and landlords with full conversation history.</string>
+    <string name="services_s6_title">Reporting and analytics</string>
+    <string name="services_s6_body">Occupancy, revenue, booking and maintenance reports for landlords and platform administrators.</string>
+    <string name="services_included_title">Included for everyone</string>
+    <string name="services_included_1">Identity and document verification</string>
+    <string name="services_included_2">Availability status per room</string>
+    <string name="services_included_3">Payment history and references</string>
+    <string name="services_included_4">Photo-based maintenance tickets</string>
+    <string name="services_included_5">Review moderation and dispute handling</string>
+    <string name="services_cta_title">Not sure which plan fits?</string>
+    <string name="services_cta_body">Tell us how many rooms you manage and we will recommend the right setup.</string>
+    <string name="pricing_title">Free for students. Fair for landlords.</string>
+    <string name="pricing_intro">No commission on rent, no hidden listing fees. Choose the plan that matches the size of your portfolio.</string>
+    <string name="pricing_popular">Most popular</string>
+    <string name="pricing_cta_student">Create student account</string>
+    <string name="pricing_cta_growth">Start 30-day trial</string>
+    <string name="pricing_cta_portfolio">Talk to sales</string>
+    <string name="pricing_student_name">Student</string>
+    <string name="pricing_student_price">Free</string>
+    <string name="pricing_student_cadence">forever</string>
+    <string name="pricing_student_desc">Everything a student needs to find, book and manage accommodation.</string>
+    <string name="pricing_student_f1">Unlimited search and filters</string>
+    <string name="pricing_student_f2">Save and compare properties</string>
+    <string name="pricing_student_f3">Digital booking with documents</string>
+    <string name="pricing_student_f4">Rent payments and receipts</string>
+    <string name="pricing_student_f5">Maintenance requests</string>
+    <string name="pricing_student_f6">Direct messaging</string>
+    <string name="pricing_growth_name">Landlord Growth</string>
+    <string name="pricing_growth_price">R499</string>
+    <string name="pricing_growth_cadence">per month</string>
+    <string name="pricing_growth_desc">For landlords managing up to 25 rooms across multiple properties.</string>
+    <string name="pricing_growth_f1">Up to 25 listed rooms</string>
+    <string name="pricing_growth_f2">Booking approvals and room assignment</string>
+    <string name="pricing_growth_f3">Tenant and lease management</string>
+    <string name="pricing_growth_f4">Monthly income reports</string>
+    <string name="pricing_growth_f5">Maintenance ticket queue</string>
+    <string name="pricing_growth_f6">Priority placement in search</string>
+    <string name="pricing_portfolio_name">Portfolio</string>
+    <string name="pricing_portfolio_price">R1 899</string>
+    <string name="pricing_portfolio_cadence">per month</string>
+    <string name="pricing_portfolio_desc">For residence operators and property groups with large portfolios.</string>
+    <string name="pricing_portfolio_f1">Unlimited rooms and properties</string>
+    <string name="pricing_portfolio_f2">Team accounts and permissions</string>
+    <string name="pricing_portfolio_f3">Annual revenue and occupancy analytics</string>
+    <string name="pricing_portfolio_f4">Bulk import and export</string>
+    <string name="pricing_portfolio_f5">Dedicated account manager</string>
+    <string name="pricing_portfolio_f6">API access for integrations</string>
+    <string name="faq_title">Questions, answered</string>
+    <string name="faq_intro">Still stuck? Our support team replies to every message within one business day.</string>
+    <string name="faq_q1">Is RentEase free for students?</string>
+    <string name="faq_a1">Yes. Students never pay a platform fee. Searching, comparing, booking, messaging and managing your lease is free; you only pay your landlord\'s rent and deposit.</string>
+    <string name="faq_q2">How are landlords and properties verified?</string>
+    <string name="faq_a2">Landlords submit identity and proof of ownership documents. Our team checks them before the property is published with a verified badge.</string>
+    <string name="faq_q3">What documents do I need to book?</string>
+    <string name="faq_a3">A copy of your ID or passport and proof of registration from your university.</string>
+    <string name="faq_q4">Can I cancel a booking?</string>
+    <string name="faq_a4">You can cancel a pending booking before the landlord approves it. After approval, cancellation follows the landlord\'s policy.</string>
+    <string name="faq_q5">How are payments handled?</string>
+    <string name="faq_a5">Deposits and monthly rent are recorded in the app. Every payment appears in your payment history with a reference.</string>
+    <string name="faq_q6">What happens if something breaks?</string>
+    <string name="faq_a6">Log a maintenance request with photos from your dashboard. Your landlord is notified and you can track the status until it is resolved.</string>
+    <string name="faq_q7">Can landlords list more than one property?</string>
+    <string name="faq_a7">Yes. Each property has its own rooms, pricing, availability and tenants.</string>
+    <string name="faq_not_found">Didn\'t find your answer?</string>
+    <string name="faq_contact_support">Contact support</string>
+    <string name="contact_title">Talk to the RentEase team</string>
+    <string name="contact_intro">Whether you\'re a student with a booking question or a landlord ready to list, we\'re here.</string>
+    <string name="contact_head_office">Head office</string>
+    <string name="contact_address">42 Loop Street, Cape Town</string>
+    <string name="contact_phone">+27 21 555 0142</string>
+    <string name="contact_email">support@rentease.co.za</string>
+    <string name="contact_hours_title">Support hours</string>
+    <string name="contact_hours_body">Monday to Friday, 08:00 - 17:00 SAST. Urgent maintenance escalations are monitored seven days a week.</string>
+    <string name="contact_form_name">Full name</string>
+    <string name="contact_form_email">Email address</string>
+    <string name="contact_form_subject">Subject</string>
+    <string name="contact_form_message">Message</string>
+    <string name="contact_form_send">Send message</string>
+    <string name="contact_error_name">Enter your full name</string>
+    <string name="contact_error_email">Enter a valid email address</string>
+    <string name="contact_error_subject">Add a short subject</string>
+    <string name="contact_error_message">Tell us a bit more (at least 20 characters)</string>
+    <string name="contact_no_email_app">No email app found. Write to support@rentease.co.za instead.</string>
+    <string name="contact_open_email_hint">Sending opens your email app with the message ready to send.</string>
+    <string name="privacy_s1_title">Information we collect</string>
+    <string name="privacy_s1_body">Account details, student verification documents, listing information, booking records and messages exchanged on the platform.</string>
+    <string name="privacy_s2_title">How we use it</string>
+    <string name="privacy_s2_body">To verify identities, match students with suitable accommodation, process bookings and prevent fraud on the platform.</string>
+    <string name="privacy_s3_title">Sharing</string>
+    <string name="privacy_s3_body">Landlords only see the details needed to assess an application. We never sell personal information to third parties.</string>
+    <string name="privacy_s4_title">Your rights</string>
+    <string name="privacy_s4_body">You may request access to, correction of, or deletion of your personal information at any time via support@rentease.co.za.</string>
+    <string name="terms_s1_title">Using RentEase</string>
+    <string name="terms_s1_body">You must be at least 18 and provide accurate information. Accounts found misrepresenting listings or student status are suspended.</string>
+    <string name="terms_s2_title">Bookings</string>
+    <string name="terms_s2_body">A booking request is only binding once the landlord approves it and the deposit is confirmed through the platform.</string>
+    <string name="terms_s3_title">Payments and cancellations</string>
+    <string name="terms_s3_body">Deposits are refundable up to 14 days before move-in unless the lease agreement states otherwise.</string>
+    <string name="terms_s4_title">Liability</string>
+    <string name="terms_s4_body">RentEase facilitates connections between students and landlords; the lease agreement remains between those two parties.</string>
+    <string name="guest_browse_button">Browse listings without an account</string>
+    <string name="guest_banner">You are browsing as a guest. Sign in to save listings and request bookings.</string>
+    <string name="guest_signin_to_book">Sign in to request a booking</string>
+    <string name="pub_universities">Universities</string>
+    <string name="uni_title">Popular campuses on RentEase</string>
+    <string name="uni_intro">Pick a campus to see typical rent and the listings linked to it.</string>
+    <string name="uni_search_hint">Search by name, city or province</string>
+    <string name="uni_none_found">No universities match your search.</string>
+    <string name="uni_not_found">We don\'t cover that campus yet</string>
+    <string name="uni_place">%1$s, %2$s</string>
+    <string name="uni_students_count">%1$d students</string>
+    <string name="uni_average_rent">Average rent R%1$d/month</string>
+    <string name="uni_accommodation_near">Accommodation near %1$s</string>
+    <string name="uni_browse_near">Browse listings near %1$s</string>
+    <string name="uni_available_now">Available now</string>
+    <string name="uni_no_listings">No listings linked to this campus yet.</string>
+    <string name="photo_sample_label">Sample photo</string>
+    <string name="photo_of_property">%1$s, photo %2$d of %3$d</string>
+    <string name="photo_counter">%1$d / %2$d</string>
+    <string name="featured_title">Featured places</string>
+    <string name="featured_failed">Could not load featured places.</string>
+    <string name="featured_empty">No published places yet. Check back soon.</string>
+    <string name="property_rating_value">%1$s (%2$d)</string>
+    <string name="property_beds_baths_rooms">%1$d bed · %2$d bath · %3$d rooms open</string>
+    <string name="view_details_button">View details</string>
+    <string name="verification_filter_awaiting">Awaiting review</string>
+    <string name="verification_filter_documents_required">Documents required</string>
+    <string name="verification_filter_rejected">Rejected</string>
+    <string name="verification_filter_verified">Verified</string>
+    <string name="verification_filter_all">All</string>
+    <string name="no_landlords_in_filter">No landlords in this view.</string>
+    <string name="admin_registration_number">Registration no. %1$s</string>
+    <string name="admin_no_documents">No documents uploaded yet.</string>
+    <string name="admin_view_document">View: %1$s</string>
+    <string name="admin_required_documents_missing">ID and proof of ownership are both needed before verifying.</string>
+    <string name="admin_previous_notes">Earlier notes: %1$s</string>
+    <string name="admin_notes_label">Notes for the landlord (shown on their onboarding page)</string>
+    <string name="admin_request_documents_button">Request documents</string>
+    <string name="error_verification_notes_required">Add a note explaining what is needed or why.</string>
+    <string name="error_verification_notes_too_long">Notes are too long (600 characters maximum).</string>
+    <string name="error_verification_missing_documents">Cannot verify: ID and proof of ownership must both be uploaded.</string>
+    <string name="error_document_open_failed">Could not open the document. Check your connection and try again.</string>
+    <string name="home_hero_title">Find your student home</string>
+    <string name="home_hero_subtitle">Verified rooms near your campus, booked in minutes.</string>
+    <string name="home_search_button">Search</string>
+    <string name="home_featured_title">Handpicked accommodation near campus</string>
+    <string name="home_featured_subtitle">Top-rated places from verified landlords.</string>
+    <string name="home_see_all">See all listings</string>
+    <string name="home_universities_title">Browse by university</string>
+    <string name="home_see_all_universities">All universities</string>
+    <string name="photos_heading">Property photos</string>
+    <string name="photos_hint">Add up to %1$d photos. The first photo is the cover students see in search.</string>
+    <string name="photos_empty_title">Add photos of your place</string>
+    <string name="photos_empty_body">Listings with clear photos get more booking requests. Tap to choose from your gallery.</string>
+    <string name="photos_add_button">Add photos (%1$d/%2$d)</string>
+    <string name="photos_uploading">Uploading…</string>
+    <string name="photos_cover_badge">Cover</string>
+    <string name="photos_make_cover">Make cover</string>
+    <string name="photos_remove">Remove photo</string>
+    <string name="photos_item_description">Property photo %1$d</string>
+    <string name="photos_limit_reached">You can add up to %1$d photos per property.</string>
+    <string name="photos_saved_partial">Property saved, but the photos could not be saved: %1$s. Tap Save again to retry.</string>
+    <string name="no_properties_photos_hint">Add your first property with photos so students can find and book it.</string>
+    <string name="add_first_property_button">Add property and photos</string>
+    <string name="filter_available_only">Available now</string>
+    <string name="similar_heading">Similar properties</string>
+    <string name="room_type_single">Single room</string>
+    <string name="room_type_shared">Shared room</string>
+    <string name="room_type_ensuite">En-suite</string>
+    <string name="room_type_studio">Studio / bachelor flat</string>
+    <string name="room_price_typical">Typical for this room type: R%1$d–R%2$d per month</string>
+    <string name="room_price_unusual">Unusual for this room type (typical R%1$d–R%2$d per month). Please check the amount.</string>
+    <string name="property_university_label">Nearest university</string>
+    <string name="property_distance_label">Distance to campus (km)</string>
+    <string name="property_distance_hint">Shown to students as "x km from campus".</string>
+    <string name="forgot_password_link">Forgot password?</string>
+    <string name="forgot_title">Reset your password</string>
+    <string name="forgot_intro">Enter your account email and we will send you a link to choose a new password.</string>
+    <string name="forgot_send_button">Send reset link</string>
+    <string name="forgot_sent_message">If an account exists for that email, a reset link is on its way. Open it on this phone.</string>
+    <string name="forgot_invalid_email">Enter a valid email address.</string>
+    <string name="reset_request_failed">Could not send the reset link. Check your connection and try again in a minute.</string>
+    <string name="reset_title">Choose a new password</string>
+    <string name="reset_intro">Use at least %1$d characters.</string>
+    <string name="new_password_label">New password</string>
+    <string name="confirm_password_label">Confirm new password</string>
+    <string name="reset_button">Save new password</string>
+    <string name="reset_too_short">Password must be at least %1$d characters.</string>
+    <string name="reset_mismatch">The two passwords do not match.</string>
+    <string name="reset_failed">Could not change the password. The link may have expired. Request a new one.</string>
+    <string name="reset_success">Your password has been changed. You can sign in now.</string>
+    <string name="reset_invalid_link">This reset link is not valid. Request a new one from the sign-in screen.</string>
+    <string name="back_to_login">Back to sign in</string>
+    <string name="landlord_heading">Landlord</string>
+    <string name="landlord_unnamed">Landlord</string>
+    <string name="landlord_booking_note">You won\'t be charged until the landlord approves your booking.</string>
+    <string name="nearby_heading">What\'s nearby</string>
+    <string name="nearby_intro">Opens your maps app around this property.</string>
+    <string name="nearby_transport">Transport</string>
+    <string name="nearby_shops">Shops</string>
+    <string name="nearby_food">Food &amp; cafés</string>
+    <string name="nearby_health">Clinics &amp; hospitals</string>
+    <string name="nearby_show_map">Show on map</string>
+    <string name="stat_contracted_income">Contracted monthly income</string>
+    <string name="stat_collected">Collected to date</string>
+    <string name="income_by_property_heading">Income by property</string>
+    <string name="income_tenants">%1$d tenant(s)</string>
+    <string name="property_rooms_available_label">Rooms available</string>
+    <string name="property_rooms_available_hint">Updated automatically from your rooms once you add them.</string>
+    <string name="password_rules_hint">At least 8 characters, with a letter and a number.</string>
+    <string name="password_show">Show password</string>
+    <string name="password_hide">Hide password</string>
+    <string name="confirm_email_title">Confirm your email</string>
+    <string name="confirm_email_body">Your account is created. We sent a confirmation link to %1$s. Open it, then sign in.</string>
+    <string name="confirm_email_go_to_signin">Go to sign in</string>
+    <string name="error_email_taken">An account with this email already exists. Try signing in instead.</string>
+    <string name="error_password_rules">Use a password of at least 8 characters with a letter and a number.</string>
+    <string name="error_rate_limited">Too many attempts. Please wait a few minutes and try again.</string>
+    <string name="error_email_invalid">Enter a valid email address.</string>
+    <string name="error_phone_invalid">Enter a valid phone number, for example 0821234567.</string>
+    <string name="error_no_connection">No internet connection. Check your network and try again.</string>
+    <string name="error_invalid_credentials">Incorrect email or password.</string>
+    <string name="error_email_not_confirmed">Please confirm your email first using the link we sent you.</string>
+    <string name="student_register_subtitle">Create your account in a minute. You can add the rest later.</string>
+    <string name="student_register_later_note">Course, budget and preferences are optional. You will be asked for them from your dashboard.</string>
+    <string name="landlord_register_subtitle">Just your contact details now. Business details and documents come after you sign in.</string>
+    <string name="more_options">More options</string>
+    <string name="error_not_configured">Supabase is not set up in this build. Add SUPABASE_URL and SUPABASE_ANON_KEY to local.properties and rebuild.</string>
+    <string name="config_banner_title">Not connected to Supabase</string>
+</resources>

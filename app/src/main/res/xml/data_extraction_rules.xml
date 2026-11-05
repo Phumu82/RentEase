@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Never back up encrypted auth tokens -->
+        <exclude domain="sharedpref" path="rentease_secure_prefs.xml"/>
+    </cloud-backup>
+</data-extraction-rules>

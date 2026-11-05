@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ISIZULU TRANSLATION — REVIEW REQUIRED BEFORE SUBMISSION.
+  This covers all 205 string keys used across Student, Landlord, and Admin
+  screens, navigation, forms, validation, dialogs, buttons, statuses,
+  notifications, errors, empty states, and settings — not just
+  authentication. It is a best-effort translation, not verified by a
+  native/fluent isiZulu speaker or professional translator. Accuracy, tone,
+  register, and terminology consistency are NOT guaranteed, particularly for
+  newer technical/property-management vocabulary that doesn't have settled
+  everyday isiZulu equivalents (e.g. "occupancy rate", "audit log",
+  "moderation queue" are rendered as descriptive phrases, not fixed terms).
+  Please have a native speaker review every string below before this ships.
+-->
+<resources>
+    <string name="app_name">RentEase</string>
+
+    <!-- Role select / register entry -->
+    <string name="role_student">Ngingumfundi</string>
+    <string name="role_landlord">Ngingumnikazi wendlu</string>
+    <string name="already_have_account">Sengivele nginayo i-akhawunti</string>
+
+    <!-- Login -->
+    <string name="login_title">Siyakwamukela futhi</string>
+    <string name="email_label">Ikheli le-imeyili</string>
+    <string name="password_label">Iphasiwedi</string>
+    <string name="sign_in_button">Ngena ngemvume</string>
+    <string name="sign_in_with_google">Ngena nge-Google</string>
+    <string name="no_account_register">Awunayo i-akhawunti? Bhalisa</string>
+    <string name="admin_sign_in_link">Ukungena kwe-admin</string>
+
+    <!-- Student registration -->
+    <string name="student_register_title">Dala i-akhawunti yakho yomfundi</string>
+    <string name="full_name_label">Igama eliphelele</string>
+    <string name="phone_label">Inombolo yocingo</string>
+    <string name="student_number_label">Inombolo yomfundi</string>
+    <string name="university_label">Inyuvesi</string>
+    <string name="create_account_button">Dala i-akhawunti</string>
+
+    <!-- Landlord registration -->
+    <string name="landlord_register_title">Dala i-akhawunti yakho yomnikazi wendlu</string>
+    <string name="verification_documents_heading">Amadokhumenti okuqinisekisa</string>
+    <string name="upload_id_document">Layisha idokhumenti ka-ID</string>
+    <string name="id_document_selected">Idokhumenti ka-ID ikhethiwe ✓</string>
+    <string name="upload_proof_of_ownership">Layisha ubufakazi bobunikazi bepropathi</string>
+    <string name="proof_of_ownership_selected">Ubufakazi bobunikazi bukhethiwe ✓</string>
+
+    <!-- Generic / shared -->
+    <string name="offline_banner">Awuxhunyiwe ku-inthanethi — kubonisa idatha yokugcina esindiswe</string>
+    <string name="error_generic">Kukhona okungahambanga kahle. Sicela uzame futhi.</string>
+    <string name="retry_button">Zama futhi</string>
+    <string name="logout_button">Phuma</string>
+    <string name="cancel_button">Khansela</string>
+    <string name="save_button">Londoloza</string>
+    <string name="delete_button">Susa</string>
+    <string name="edit_button">Hlela</string>
+    <string name="back_button">Emuva</string>
+    <string name="loading">Kuyalayishwa…</string>
+    <string name="syncing">Kuyavumelaniswa…</string>
+    <string name="changes_waiting_to_sync">Izinguquko ezingu-%1$d ezilinde ukuvumelaniswa</string>
+    <string name="no_results_generic">Akukho lutho okungabonwa lapha okwamanje.</string>
+
+    <!-- Booking statuses -->
+    <string name="booking_status_pending">Kusalindile</string>
+    <string name="booking_status_approved">Kuvunyiwe</string>
+    <string name="booking_status_rejected">Kwenqatshiwe</string>
+    <string name="booking_status_cancelled">Kukhanselwe</string>
+    <string name="booking_status_active">Kuyasebenza</string>
+    <string name="booking_status_completed">Kuqediwe</string>
+
+    <!-- Maintenance statuses -->
+    <string name="maintenance_status_open">Kuvuliwe</string>
+    <string name="maintenance_status_in_progress">Kuyaqhutshekwa</string>
+    <string name="maintenance_status_resolved">Kuxazululiwe</string>
+    <string name="maintenance_status_closed">Kuvaliwe</string>
+
+    <!-- Room statuses -->
+    <string name="room_status_available">Iyatholakala</string>
+    <string name="room_status_reserved">Ibekelwe</string>
+    <string name="room_status_occupied">Igcwele</string>
+    <string name="room_status_maintenance">Ilungiswa</string>
+
+    <!-- Property statuses -->
+    <string name="property_status_draft">Uhlaka</string>
+    <string name="property_status_pending">Ilinde ukubuyekezwa</string>
+    <string name="property_status_published">Iyabonakala</string>
+    <string name="property_status_rejected">Yenqatshiwe</string>
+    <string name="property_status_archived">Ifakwe emlandweni</string>
+
+    <!-- Verification statuses -->
+    <string name="verification_status_pending">Ukuqinisekiswa kusalindile</string>
+    <string name="verification_status_submitted">Amadokhumenti ayabuyekezwa</string>
+    <string name="verification_status_verified">Kuqinisekisiwe</string>
+    <string name="verification_status_rejected">Ukuqinisekiswa kwenqatshiwe</string>
+    <string name="verification_status_documents_required">Kudingeka amanye amadokhumenti</string>
+
+    <!-- Landlord dashboard verification banner (longer prose versions) -->
+    <string name="verification_banner_verified">Uqinisekisiwe njengomsingathi othenjiwe.</string>
+    <string name="verification_banner_submitted">Amadokhumenti akho ayabuyekezwa yithimba lethu.</string>
+    <string name="verification_banner_documents_required">Kudingeka amanye amadokhumenti — hlola i-imeyili yakho.</string>
+    <string name="verification_banner_rejected">Ukuqinisekiswa kwakho kwenqatshiwe. Xhumana nosizo ukuze uthole imininingwane.</string>
+    <string name="verification_banner_pending">Ukuqinisekiswa kusalindile — thumela amadokhumenti akho ukuze uqale ukubhalisa izindlu.</string>
+
+    <!-- Student: Search / Listings -->
+    <string name="find_accommodation_title">Thola indawo yokuhlala</string>
+    <string name="saved_nav_label">Okulondoloziwe</string>
+    <string name="search_hint">Sesha ngesihloko, indawo, inyuvesi…</string>
+    <string name="no_listings_match">Akukho okuhambisana nokushiwo ngokusesha kwakho okwamanje.</string>
+    <string name="load_more_button">Layisha okwengeziwe</string>
+    <string name="km_from_campus">%1$s km ukusuka enyuvesi</string>
+    <string name="price_per_month">R%1$d/ngenyanga</string>
+    <string name="save_listing_action">Londoloza uhlu</string>
+
+    <!-- Student: Listing Detail -->
+    <string name="about_this_place">Mayelana nale ndawo</string>
+    <string name="amenities_heading">Izinsiza</string>
+    <string name="reviews_heading">Ukubuyekezwa (%1$d)</string>
+    <string name="request_booking_button">Cela ukubhukha</string>
+    <string name="booking_submitted_message">Isicelo sokubhukha sithunyelwe! Inombolo yereferensi: %1$s. Ngeke ukhokhiswe kuze kube yilapho umnikazi wendlu evumela.</string>
+    <string name="deposit_label">Idiphozithi R%1$d</string>
+    <string name="booking_dialog_title">Cela ukubhukha</string>
+    <string name="booking_dialog_disclaimer">Ngeke ukhokhiswe kuze kube yilapho umnikazi wendlu evumela lesi sicelo.</string>
+    <string name="move_in_date_label">Usuku lokungena</string>
+    <string name="lease_period_label">Isikhathi sokuqasha (izinyanga)</string>
+    <string name="message_to_landlord_label">Umlayezo omnikazi wendlu (akudingekile)</string>
+    <string name="upload_student_id">Layisha i-ID yomfundi</string>
+    <string name="student_id_selected">I-ID yomfundi ikhethiwe ✓</string>
+    <string name="upload_proof_of_registration">Layisha ubufakazi bokubhalisa</string>
+    <string name="proof_of_registration_selected">Ubufakazi bokubhalisa bukhethiwe ✓</string>
+    <string name="submit_request_button">Thumela isicelo</string>
+
+    <!-- Student: Saved Listings -->
+    <string name="saved_listings_title">Izindawo ezilondoloziwe</string>
+    <string name="no_saved_listings">Awukalondolozi noma iyiphi indawo okwamanje.</string>
+    <string name="remove_from_saved">Susa kokulondoloziwe</string>
+
+    <!-- Student: My Bookings -->
+    <string name="my_bookings_title">Okubhukhiwe kwami</string>
+    <string name="no_bookings_yet">Awukaceli lutho lokubhukha okwamanje.</string>
+    <string name="booking_reference_label">Inombolo yereferensi: %1$s</string>
+    <string name="lease_summary_label">Ukungena: %1$s · izinyanga ezingu-%2$d · R%3$d/ngenyanga</string>
+    <string name="bookings_nav_label">Okubhukhiwe</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Izilungiselelo</string>
+    <string name="language_heading">Ulimi</string>
+    <string name="language_english">IsiNgisi</string>
+    <string name="language_zulu">IsiZulu</string>
+    <string name="language_venda">Tshivenda</string>
+    <string name="notification_preferences_heading">Okuthandwayo kwezaziso</string>
+    <string name="notify_booking_updates">Izibuyekezo zokubhukha</string>
+    <string name="notify_new_messages">Imilayezo emisha</string>
+    <string name="notify_maintenance_updates">Izibuyekezo zokulungiswa</string>
+    <string name="profile_heading">Iphrofayela</string>
+
+    <!-- Landlord: Dashboard -->
+    <string name="landlord_dashboard_title">Ideshibhodi yomnikazi wendlu</string>
+    <string name="overview_heading">Uhlolojikelele</string>
+    <string name="stat_properties">Izindlu</string>
+    <string name="stat_occupancy">Ukugcwala</string>
+    <string name="stat_pending_requests">Izicelo ezilindile</string>
+    <string name="manage_heading">Phatha</string>
+    <string name="nav_properties_rooms">Izindlu namagumbi</string>
+    <string name="nav_booking_requests">Izicelo zokubhukha</string>
+    <string name="nav_tenants">Abaqashi</string>
+    <string name="nav_maintenance">Ukulungiswa</string>
+    <string name="nav_messages">Imilayezo</string>
+    <string name="nav_notifications">Izaziso</string>
+    <string name="nav_analytics">Ukuhlaziywa kwedatha</string>
+
+    <!-- Landlord: Properties -->
+    <string name="my_properties_title">Izindlu zami</string>
+    <string name="no_properties_yet">Awukabhalisi lutho olulodlu. Cindezela u-+ ukuze wengeze eyodwa.</string>
+    <string name="add_property_title">Engeza indlu</string>
+    <string name="edit_property_title">Hlela indlu</string>
+    <string name="published_label">Iyabonakala</string>
+    <string name="rooms_link">Amagumbi</string>
+    <string name="title_label">Isihloko</string>
+    <string name="description_label">Incazelo</string>
+    <string name="address_label">Ikheli</string>
+    <string name="city_label">Idolobha</string>
+    <string name="province_label">Isifundazwe</string>
+    <string name="price_month_label">Intengo/ngenyanga (R)</string>
+    <string name="deposit_field_label">Idiphozithi (R)</string>
+    <string name="bedrooms_label">Amagumbi okulala</string>
+    <string name="bathrooms_label">Amagumbi okugeza</string>
+    <string name="furnished_label">Igcwaliswe ngefanitshala</string>
+    <string name="save_property_button">Londoloza indlu</string>
+
+    <!-- Landlord: Rooms -->
+    <string name="rooms_title">Amagumbi</string>
+    <string name="no_rooms_yet">Awukabi namagumbi. Cindezela u-+ ukuze wengeze elilodwa.</string>
+    <string name="add_room_title">Engeza igumbi</string>
+    <string name="room_name_label">Igama legumbi</string>
+    <string name="room_type_label">Uhlobo lwekamelo</string>
+    <string name="capacity_label">Umthamo</string>
+    <string name="status_label">Isimo: %1$s</string>
+    <string name="add_button">Engeza</string>
+
+    <!-- Landlord: Bookings -->
+    <string name="booking_requests_title">Izicelo zokubhukha</string>
+    <string name="filter_all">Konke</string>
+    <string name="no_booking_requests">Azikho izicelo zokubhukha lapha.</string>
+    <string name="assign_room_action">Nikeza igumbi</string>
+    <string name="room_assigned_label">Igumbi: %1$s</string>
+    <string name="reject_button">Yenqaba</string>
+    <string name="approve_button">Vumela</string>
+
+    <!-- Landlord: Tenants -->
+    <string name="tenants_title">Abaqashi</string>
+    <string name="no_tenants_yet">Awukabi nabaqashi abasebenzayo — izicelo ezivunyelwe zizovela lapha.</string>
+
+    <!-- Landlord: Maintenance -->
+    <string name="maintenance_title">Ukulungiswa</string>
+    <string name="no_maintenance_tickets">Azikho izicelo zokulungiswa.</string>
+
+    <!-- Messaging -->
+    <string name="messages_title">Imilayezo</string>
+    <string name="no_conversations_yet">Azikho izingxoxo okwamanje.</string>
+    <string name="conversation_title">Ingxoxo</string>
+    <string name="message_input_label">Umlayezo</string>
+    <string name="send_action">Thumela</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Izaziso</string>
+    <string name="no_notifications_yet">Azikho izaziso okwamanje.</string>
+
+    <!-- Analytics -->
+    <string name="analytics_title">Ukuhlaziywa kwedatha</string>
+    <string name="analytics_disclaimer">Izibalo zemali zivela ekubhukweni nasekukhokhweni kwakho. Imali enovelwano ngenyanga yilokho okukhokhwa ngenyanga kokubhukha okuvunyiwe nokusebenzayo; okuqoqiwe yimali ebhalwe njengekhokhelwe. I-RentEase ayikaqhubeli inkokhelo ngokwayo.</string>
+    <string name="stat_total_rooms">Amagumbi wonke</string>
+    <string name="stat_occupied_rooms">Amagumbi agcwele</string>
+    <string name="stat_occupancy_rate">Izinga lokugcwala</string>
+    <string name="stat_open_maintenance">Izicelo zokulungiswa ezisavuliwe</string>
+
+    <!-- Admin: Dashboard -->
+    <string name="admin_dashboard_title">Ideshibhodi ye-admin</string>
+    <string name="platform_overview_heading">Uhlolojikelele lwepulatifomu</string>
+    <string name="stat_pending_verifications">Ukuqinisekiswa okulindile</string>
+    <string name="stat_pending_listings">Izindawo ezilindile</string>
+    <string name="stat_students">Abafundi</string>
+    <string name="stat_landlords">Abanikazi bezindlu</string>
+    <string name="stat_suspended_users">Abasebenzisi abamisiwe</string>
+    <string name="nav_landlord_verification">Ukuqinisekiswa komnikazi wendlu</string>
+    <string name="nav_property_moderation">Ukubuyekezwa kwezindlu</string>
+    <string name="nav_user_management">Ukuphathwa kwabasebenzisi</string>
+    <string name="nav_booking_oversight">Ukubhekwa kwezokubhukha</string>
+    <string name="nav_audit_log">Irekhodi lokuhlolwa</string>
+
+    <!-- Admin: Verification -->
+    <string name="landlord_verification_title">Ukuqinisekiswa komnikazi wendlu</string>
+    <string name="verify_button">Qinisekisa</string>
+
+    <!-- Admin: Moderation -->
+    <string name="property_moderation_title">Ukubuyekezwa kwezindlu</string>
+    <string name="no_listings_pending">Azikho izindawo ezilinde ukubuyekezwa.</string>
+    <string name="listed_by_label">Ngu-%1$s · %2$s, %3$s</string>
+
+    <!-- Admin: Users -->
+    <string name="user_management_title">Ukuphathwa kwabasebenzisi</string>
+    <string name="no_users_found">Abekho abasebenzisi abatholakele.</string>
+    <string name="active_label">Uyasebenza</string>
+    <string name="suspended_label">Umisiwe</string>
+
+    <!-- Admin: Bookings -->
+    <string name="booking_oversight_title">Ukubhekwa kwezokubhukha</string>
+    <string name="no_bookings_platform">Azikho izicelo zokubhukha kule pulatifomu okwamanje.</string>
+
+    <!-- Admin: Audit log -->
+    <string name="audit_log_title">Irekhodi lokuhlolwa</string>
+    <string name="no_audit_events">Azikho izehlakalo zokuhlolwa okwamanje.</string>
+
+    <!-- Admin access -->
+    <string name="admin_access_title">Ukungena kwe-admin</string>
+    <string name="admin_access_signin_prompt">Ngena nge-akhawunti yakho kuqala, bese ufaka ikhodi yokufinyelela ye-admin.</string>
+    <string name="admin_access_code_prompt">Faka ikhodi yokufinyelela ye-admin. Lokhu kunikeza indima ye-admin ku-akhawunti yakho engenile okwamanje futhi kuqinisekiswa ngokuphelele ohlelweni lwesizinda.</string>
+    <string name="access_code_label">Ikhodi yokufinyelela</string>
+    <string name="verify_code_button">Qinisekisa</string>
+
+    <!-- Placeholder / not-yet-built -->
+    <string name="signed_in_as">Ungene njenge-%1$s</string>
+
+    <!-- Data-layer error messages — see values/strings.xml for context. -->
+    <string name="error_not_signed_in">Awungenile</string>
+    <string name="error_no_stored_session">Asikho isikhathi sokungena esilondoloziwe</string>
+    <string name="error_could_not_resolve_role_server">Ayikwazanga ukuthola indima yakho eseva</string>
+    <string name="error_could_not_resolve_role">Ayikwazanga ukuthola indima yakho</string>
+    <string name="error_could_not_save_language">Ayikwazanga ukulondoloza intando yolimi</string>
+    <string name="error_could_not_save_notification_preferences">Ayikwazanga ukulondoloza okuthandwayo kwezaziso</string>
+    <string name="error_could_not_load_profile_after_signin">Ayikwazanga ukulayisha iphrofayela ngemva kokungena.</string>
+    <string name="error_signed_in_no_role">Ungenile, kodwa alikho indima enikezwe le akhawunti. Xhumana nosizo.</string>
+    <string name="error_request_failed">Isicelo sihlulekile</string>
+    <string name="error_could_not_load_universities">Ayikwazanga ukulayisha izinyuvesi</string>
+    <string name="error_search_failed">Ukusesha kuhlulekile</string>
+    <string name="error_listing_not_found">Uhlu alutholakalanga</string>
+    <string name="error_signin_required_save_listings">Kudingeka ungene ukuze ulondoloze izindawo.</string>
+    <string name="error_could_not_update_favourites">Ayikwazanga ukubuyekeza okuthandwayo</string>
+    <string name="error_signin_required_booking">Kudingeka ungene ukuze ucele ukubhukha.</string>
+    <string name="error_booking_request_failed">Isicelo sokubhukha sihlulekile</string>
+    <string name="error_signin_required_view_bookings">Kudingeka ungene ukuze ubone okubhukhiwe kwakho.</string>
+    <string name="error_could_not_load_my_bookings">Ayikwazanga ukulayisha okubhukhiwe kwakho</string>
+    <string name="error_could_not_load_notifications">Ayikwazanga ukulayisha izaziso</string>
+    <string name="error_could_not_update_notification">Ayikwazanga ukubuyekeza isaziso</string>
+    <string name="error_could_not_register_device">Ayikwazanga ukubhalisa idivayisi yezaziso</string>
+    <string name="error_landlord_profile_not_found">Iphrofayela yomnikazi wendlu ayitholakalanga</string>
+    <string name="error_could_not_load_properties">Ayikwazanga ukulayisha izindlu</string>
+    <string name="error_property_not_found">Indlu ayitholakalanga</string>
+    <string name="error_could_not_resolve_properties_maintenance">Ayikwazanga ukuthola izindlu zakho zokulungiswa</string>
+    <string name="error_could_not_compute_analytics">Ayikwazanga ukubala ukuhlaziywa kwedatha</string>
+    <string name="error_could_not_approve_booking">Ayikwazanga ukuvumela ukubhukha</string>
+    <string name="error_could_not_assign_room">Ayikwazanga ukunikeza igumbi</string>
+    <string name="error_could_not_attach_image">Ayikwazanga ukufaka isithombe</string>
+    <string name="error_could_not_create_property">Ayikwazanga ukudala indlu</string>
+    <string name="error_could_not_create_room">Ayikwazanga ukudala igumbi</string>
+    <string name="error_could_not_delete_property">Ayikwazanga ukususa indlu</string>
+    <string name="error_could_not_delete_room">Ayikwazanga ukususa igumbi</string>
+    <string name="error_could_not_load_bookings">Ayikwazanga ukulayisha okubhukhiwe</string>
+    <string name="error_could_not_load_conversations">Ayikwazanga ukulayisha izingxoxo</string>
+    <string name="error_could_not_load_maintenance_tickets">Ayikwazanga ukulayisha izicelo zokulungiswa</string>
+    <string name="error_could_not_load_messages">Ayikwazanga ukulayisha imilayezo</string>
+    <string name="error_could_not_load_rooms">Ayikwazanga ukulayisha amagumbi</string>
+    <string name="error_could_not_mark_conversation_read">Ayikwazanga ukumaka ingxoxo njengefundiwe</string>
+    <string name="error_could_not_reject_booking">Ayikwazanga ukwenqaba ukubhukha</string>
+    <string name="error_could_not_send_message">Ayikwazanga ukuthumela umlayezo</string>
+    <string name="error_could_not_update_availability">Ayikwazanga ukubuyekeza ukutholakala</string>
+    <string name="error_could_not_update_property">Ayikwazanga ukubuyekeza indlu</string>
+    <string name="error_could_not_update_room">Ayikwazanga ukubuyekeza igumbi</string>
+    <string name="error_could_not_update_ticket_status">Ayikwazanga ukubuyekeza isimo sesicelo</string>
+    <string name="error_could_not_reach_server">Ayikwazanga ukufinyelela iseva. Hlola uxhumo lwakho bese uzama futhi.</string>
+    <string name="error_access_denied">Ukufinyelela kwenqatshiwe</string>
+    <string name="error_could_not_load_audit_log">Ayikwazanga ukulayisha irekhodi lokuhlolwa</string>
+
+    <!-- TODO(translation-review): support/complaints block, not yet checked by a native isiZulu speaker. -->
+    <string name="support_title">Usizo nezikhalazo</string>
+    <string name="support_description">Phakamisa inkinga kuthimba le-RentEase bese ulandelela ukuxazululwa kwayo.</string>
+    <string name="new_complaint_heading">Isikhalazo esisha</string>
+    <string name="complaint_subject_label">Isihloko</string>
+    <string name="complaint_category_label">Isigaba</string>
+    <string name="complaint_description_label">Kwenzekeni?</string>
+    <string name="submit_complaint_button">Thumela isikhalazo</string>
+    <string name="submitting_complaint_button">Iyathumela…</string>
+    <string name="complaint_submitted_confirmation">Isikhalazo sithunyelwe — umlawuli uzophendula</string>
+    <string name="no_complaints_logged">Azikho izikhalazo ezibhaliswe</string>
+    <string name="no_complaints_logged_subtitle">Sithemba ukuthi kuzohlala kunjalo — kepha sikhona uma kudingeka.</string>
+    <string name="complaint_validation_subject_short">Faka isihloko esifushane</string>
+    <string name="complaint_validation_description_short">Sichazele kancane ukuze sikwazi ukusiza</string>
+    <string name="admin_response_label">I-RentEase:</string>
+    <string name="error_could_not_load_my_complaints">Ayikwazanga ukulayisha izikhalazo zakho</string>
+    <string name="error_complaint_submit_failed">Ayikwazanga ukuthumela isikhalazo sakho</string>
+
+    <string name="admin_complaints_title">Izikhalazo</string>
+    <string name="admin_complaints_description">Zonke izikhalazo eziphakanyiswe ngabafundi nabanikazi bezindlu.</string>
+    <string name="no_complaints_queue">Uhlu alunalutho.</string>
+    <string name="admin_response_field_label">Impendulo kumbiki</string>
+    <string name="mark_in_progress_button">Phawula njengokuqhubekayo</string>
+    <string name="resolve_button">Xazulula</string>
+    <string name="close_button">Vala</string>
+    <string name="error_could_not_load_complaints">Ayikwazanga ukulayisha izikhalazo</string>
+    <string name="error_could_not_update_complaint">Ayikwazanga ukubuyekeza lesi sikhalazo</string>
+
+    <!-- TODO(translation-review): payments block, not yet checked by a native isiZulu speaker. -->
+    <string name="error_booking_deposit_failed">Ukubhukha kwakho kuthunyelwe, kepha asikwazanga ukusetha irekhodi lokukhokha ledipozithi — sicela uhlole Izinkokhelo noma uxhumane nomninindlu</string>
+    <string name="error_could_not_load_my_payments">Ayikwazanga ukulayisha izinkokhelo zakho</string>
+    <string name="error_mark_payment_paid_failed">Ayikwazanga ukumaka le nkokhelo njengekhokhiwe</string>
+    <string name="nav_payments">Izinkokhelo</string>
+    <string name="no_payments_yet">Azikho izinkokhelo okwamanje.</string>
+    <string name="pay_now_button">Khokha manje</string>
+    <string name="paying_button">Iyamaka njengekhokhiwe…</string>
+    <string name="payment_due_label">Kufanele ikhokhwe %1$s</string>
+    <string name="payment_kind_deposit">Idipozithi</string>
+    <string name="payment_kind_fee">Imali yesevisi</string>
+    <string name="payment_kind_rent">Irenti</string>
+    <string name="payment_paid_on_label">Ikhokhwe %1$s</string>
+    <string name="payment_status_failed">Yehlulekile</string>
+    <string name="payment_status_paid">Ikhokhiwe</string>
+    <string name="payment_status_pending">Isalindile</string>
+    <string name="payment_status_refunded">Ibuyiselwe</string>
+    <string name="payments_description">Idipozithi, irenti nezimali zesevisi zokubhukha kwakho.</string>
+    <string name="payments_stat_outstanding">Okusalele</string>
+    <string name="payments_stat_paid">Okukhokhiwe</string>
+    <string name="payments_title">Izinkokhelo</string>
+    <string name="error_could_not_load_moderation_queue">Ayikwazanga ukulayisha uhlu lokubuyekezwa kwezindlu</string>
+    <string name="error_could_not_load_users">Ayikwazanga ukulayisha abasebenzisi</string>
+    <string name="error_could_not_load_verification_queue">Ayikwazanga ukulayisha uhlu lokuqinisekiswa</string>
+    <string name="error_could_not_update_property_status">Ayikwazanga ukubuyekeza isimo sendlu</string>
+    <string name="error_could_not_update_user_status">Ayikwazanga ukubuyekeza isimo somsebenzisi</string>
+    <string name="error_could_not_update_verification_status">Ayikwazanga ukubuyekeza isimo sokuqinisekiswa</string>
+
+    <!-- ===== Added in the Part 2 audit. NOTE: isiZulu/Tshivenda text below is a
+         best-effort draft and MUST be reviewed by a native speaker. ===== -->
+    <string name="error_enter_email_password">Sicela ufake i-imeyili nephasiwedi yakho.</string>
+    <string name="error_fill_required_fields">Sicela ugcwalise zonke izinkambu ezidingekayo.</string>
+    <string name="error_upload_verification_documents">Ayikwazanga ukulayisha amadokhumenti okuqinisekisa. Sicela uhlole uxhumo lwakho uzame futhi.</string>
+    <string name="error_upload_documents">Ayikwazanga ukulayisha amadokhumenti akho. Sicela uhlole uxhumo lwakho uzame futhi.</string>
+    <string name="error_image_upload_failed">Ukulayisha isithombe kuhlulekile. Sicela uzame futhi.</string>
+    <string name="error_enter_admin_code">Faka ikhodi yokufinyelela ye-admin.</string>
+    <string name="error_admin_session_refresh_failed">Ukufinyelela kunikeziwe, kodwa uhlelo alukwazanga ukuvuselela iseshini yakho ngokuzenzakalelayo. Sicela uphume bese ungena futhi.</string>
+    <string name="google_sign_in_failed">Ukungena nge-Google kukhanselwe noma akutholakali kule divayisi.</string>
+    <string name="error_name_required">Sicela ufake igama lakho.</string>
+    <string name="error_could_not_save_profile">Ayikwazanga ukulondoloza iphrofayela yakho</string>
+    <string name="profile_saved_message">Iphrofayela ilondoloziwe.</string>
+    <string name="fallback_property_name">Indlu</string>
+    <string name="fallback_student_name">Umfundi</string>
+    <string name="fallback_landlord_name">Umnikazi wendlu</string>
+    <string name="fallback_unknown_actor">Umenzi ongaziwa</string>
+    <string name="listing_title_fallback">Uhlu</string>
+    <string name="business_label">Ibhizinisi: %1$s</string>
+    <string name="booking_summary_line">Inombolo: %1$s · R%2$d/ngenyanga · %3$s</string>
+    <string name="booking_request_summary">Inombolo: %1$s · Ukungena: %2$s · izinyanga ezingu-%3$d</string>
+    <string name="maintenance_priority_category">Ukubaluleka: %1$s · Isigaba: %2$s</string>
+    <string name="priority_low">Okuphansi</string>
+    <string name="priority_medium">Okuphakathi</string>
+    <string name="priority_high">Okuphezulu</string>
+    <string name="priority_urgent">Okuphuthumayo</string>
+    <string name="channel_system_name">Izimemezelo</string>
+    <string name="channel_bookings_desc">Ukubhukha kwamukelwe, kwenqatshwe, noma izinguquko zesimo</string>
+    <string name="channel_messages_desc">Imilayezo emisha evela kubafundi nabanikazi bezindlu</string>
+    <string name="channel_maintenance_desc">Izinguquko zesimo sezicelo zokulungiswa</string>
+    <string name="channel_system_desc">Izimemezelo ezibalulekile zokuphatha nesistimu</string>
+    <string name="compare_action">Qhathanisa</string>
+    <string name="compare_selected_count">Qhathanisa (%1$d)</string>
+    <string name="compare_title">Qhathanisa izindlu</string>
+    <string name="compare_hint">Khetha izindlu ezi-2 kuya kwezi-3, bese uthinta okuthi Qhathanisa.</string>
+    <string name="compare_max_reached">Ungaqhathanisa izindlu ezingafika ku-3 ngesikhathi esisodwa.</string>
+    <string name="compare_need_two">Khetha okungenani izindlu ezi-2 ukuze uqhathanise.</string>
+    <string name="compare_clear">Sula</string>
+    <string name="compare_select_desc">Khetha ukuqhathanisa</string>
+    <string name="compare_row_rent">Irenti ngenyanga</string>
+    <string name="compare_row_deposit">Idiphozithi</string>
+    <string name="compare_row_distance">Ibanga ukusuka enyuvesi</string>
+    <string name="compare_row_rooms_available">Amagumbi atholakalayo</string>
+    <string name="compare_row_rating">Isilinganiso</string>
+    <string name="compare_yes">Yebo</string>
+    <string name="compare_no">Cha</string>
+    <string name="compare_best_badge">Okuhle kakhulu</string>
+    <string name="compare_lowest_rent">Irenti ephansi kakhulu: %1$s</string>
+    <string name="compare_closest">Eseduze kakhulu nenyuvesi: %1$s</string>
+    <string name="compare_top_rated">Elinganiswe kakhulu: %1$s</string>
+    <string name="progress_title">Inqubekela phambili yokuqinisekiswa</string>
+    <string name="progress_steps_complete">Izinyathelo eziqediwe: %1$d kwezingu-%2$d</string>
+    <string name="progress_next_step">Okulandelayo: %1$s</string>
+    <string name="progress_all_done">Zonke izinyathelo ziqediwe — umsebenzi omuhle!</string>
+    <string name="progress_badge_label">Ibheji: %1$s</string>
+    <string name="progress_step_account">Dala i-akhawunti yakho</string>
+    <string name="progress_step_documents">Thumela isazisi namadokhumenti obunikazi</string>
+    <string name="progress_step_verified">Qinisekiswa yi-RentEase</string>
+    <string name="progress_step_first_property">Engeza indlu yakho yokuqala</string>
+    <string name="progress_step_published">Shicilela uhlu lwakho</string>
+    <string name="progress_badge_newcomer">Omusha</string>
+    <string name="progress_badge_documents_in">Amadokhumenti Angenile</string>
+    <string name="progress_badge_verified_host">Umsingathi Oqinisekisiwe</string>
+    <string name="progress_badge_listing_creator">Umdali Wohlu</string>
+    <string name="progress_badge_fully_live">Ukhona Ngokuphelele</string>
+    <string name="role_label_student">Umfundi</string>
+    <string name="role_label_landlord">Umnikazi wendlu</string>
+    <string name="role_label_admin">Umlawuli</string>
+    <string name="room_type_capacity">%1$s (umthamo: %2$d)</string>
+
+    <!-- TODO(translation-review): added programmatically, not yet checked by a
+         native isiZulu speaker — please review before shipping. -->
+    <string name="student_maintenance_title">Ukulungiswa</string>
+    <string name="student_maintenance_description">Bika inkinga endaweni yakho yokuhlala bese ulandelela inqubekelaphambili yomniniwe.</string>
+    <string name="maintenance_new_request_heading">Bhalisa inkinga entsha</string>
+    <string name="maintenance_select_booking_label">Lokhu kuphathelene nabuphi ubhukingi?</string>
+    <string name="maintenance_no_eligible_bookings">Izicelo zokulungiswa zingabhaliswa kuphela kubhukingi elivunyiwe, elisebenzayo noma eliqediwe.</string>
+    <string name="maintenance_issue_title_label">Isihloko</string>
+    <string name="maintenance_issue_description_label">Incazelo</string>
+    <string name="maintenance_category_label">Isigaba</string>
+    <string name="maintenance_priority_label">Ukubaluleka</string>
+    <string name="maintenance_attach_photo_button">Faka isithombe (akudingekile)</string>
+    <string name="maintenance_photo_attached">Isithombe sifakiwe</string>
+    <string name="maintenance_submit_button">Thumela isicelo</string>
+    <string name="maintenance_submitting_button">Iyathumela…</string>
+    <string name="maintenance_request_submitted">Isicelo sokulungiswa sibhaliswe</string>
+    <string name="maintenance_validation_title_short">Nika inkinga isihloko esifushane</string>
+    <string name="maintenance_validation_description_short">Chaza inkinga ngokuningiliziwe kancane</string>
+    <string name="maintenance_your_requests_heading">Izicelo zakho</string>
+    <string name="error_maintenance_submit_failed">Ayikwazanga ukuthumela isicelo sokulungiswa</string>
+    <string name="error_could_not_load_my_maintenance_requests">Ayikwazanga ukulayisha izicelo zakho zokulungiswa</string>
+    <string name="maintenance_category_plumbing">Amapayipi</string>
+    <string name="maintenance_category_electrical">Ugesi</string>
+    <string name="maintenance_category_appliance">Impahla yasekhaya</string>
+    <string name="maintenance_category_internet">Iyinthanethi</string>
+    <string name="maintenance_category_security">Ukuphepha</string>
+    <string name="maintenance_category_structural">Isakhiwo</string>
+    <string name="maintenance_category_other">Okunye</string>
+
+    <string name="student_dashboard_greeting">Sawubona %1$s</string>
+    <string name="student_dashboard_greeting_fallback">Sawubona</string>
+    <string name="student_dashboard_subtitle">Okubhukhiwe kwakho, amagumbi alondoloziwe nemilayezo ndaweni eyodwa.</string>
+    <string name="student_dashboard_stat_bookings">Okubhukhiwe</string>
+    <string name="student_dashboard_stat_saved">Okulondoloziwe</string>
+    <string name="student_dashboard_stat_unread">Okungakafundwa</string>
+    <string name="nav_browse_properties">Bheka izindawo zokuhlala</string>
+
+    <string name="filters_button_label">Izihlungi</string>
+    <string name="filter_any_university">Noma iyiphi inyuvesi</string>
+    <string name="filter_any_province">Noma iyiphi iphrovinsi</string>
+    <string name="filter_max_rent_label">Ukukhokha okuphezulu: R%1$d</string>
+    <string name="filter_furnished_only">Okunefenisha kuphela</string>
+    <string name="filter_amenities_label">Izinsizakalo</string>
+    <string name="filter_clear_all">Susa zonke izihlungi</string>
+
+    <string name="sort_newest">Okusha</string>
+    <string name="sort_price_asc">Intengo: ephansi kuya ephezulu</string>
+    <string name="sort_price_desc">Intengo: ephezulu kuya ephansi</string>
+    <string name="sort_rating">Elinamavoti aphezulu</string>
+    <string name="sort_distance">Eduze nekhempasi</string>
+
+    <string name="appearance_heading">Ukubukeka</string>
+    <string name="theme_system">Vumelanisa nesistimu</string>
+    <string name="theme_light">Okukhanyayo</string>
+    <string name="theme_dark">Okumnyama</string>
+
+    <string name="cancel_booking_button">Khansela isicelo</string>
+    <string name="booking_cancelled_confirmation">Isicelo sokubhukha sikhanselwe</string>
+    <string name="error_cancel_booking_failed">Ayikwazanga ukukhansela lokhu kubhukha</string>
+
+    <!-- TODO(translation-review): reviews block, not yet checked by a native isiZulu speaker. -->
+    <string name="write_review_button">Bhala ukubuyekeza</string>
+    <string name="review_rating_star_description">Linganisa: %1$d/5</string>
+    <string name="review_title_label">Isihloko (akudingekile)</string>
+    <string name="review_body_label">Ukubuyekeza kwakho (okungenani izinhlamvu eziyi-10)</string>
+    <string name="review_submit_button">Thumela ukubuyekeza</string>
+    <string name="review_submitted_confirmation">Siyabonga — ukubuyekeza kwakho kuthunyelwe</string>
+    <string name="error_review_submit_failed">Ayikwazanga ukuthumela ukubuyekeza kwakho</string>
+    <string name="error_review_already_submitted">Usuvele wabuyekeza lokhu kubhukha</string>
+    <!-- TODO(translation-review): onboarding/document block, not yet checked by a native isiZulu speaker. -->
+    <string name="ok_button">Kulungile</string>
+    <string name="pick_date_description">Khetha usuku</string>
+    <string name="course_label">Inkambo / iziqu</string>
+    <string name="year_of_study_label">Unyaka wokufunda</string>
+    <string name="year_of_study_value">Unyaka we-%1$d</string>
+    <string name="budget_max_label">Isabelomali senyanga (R)</string>
+    <string name="preferred_room_type_label">Uhlobo lwegumbi olufunayo</string>
+    <string name="earliest_move_in_label">Usuku lokuqala lokungena</string>
+    <string name="needs_furnished_label">Ngidinga igumbi elinefenisha</string>
+    <string name="student_dashboard_stat_total_paid">Isamba esikhokhiwe</string>
+    <string name="onboarding_banner_title">Qedela iphrofayela yakho yomfundi</string>
+    <string name="onboarding_banner_body">Abanikazi bezindlu bavuma izicelo ngokushesha uma imininingwane yakho nobufakazi bokubhalisa kuvele.</string>
+    <string name="onboarding_banner_action">Qedela iphrofayela</string>
+    <string name="onboarding_student_title">Iphrofayela yomfundi</string>
+    <string name="onboarding_student_subtitle">Le mininingwane isiza ekufumaneni indawo yokuhlala futhi ishesisa izicelo zokubhukha.</string>
+    <string name="onboarding_section_contact">Ukuxhumana</string>
+    <string name="onboarding_section_academic">Ulwazi lwezemfundo</string>
+    <string name="onboarding_section_preferences">Okuncamelayo ekuhlaleni</string>
+    <string name="onboarding_proof_title">Ubufakazi bokubhalisa</string>
+    <string name="onboarding_proof_body">Akudingekile, kodwa abanikazi bezindlu bavuma izicelo ngokushesha uma kukhona. Igcinwa ngasese — nguwe kuphela nabaphathi be-RentEase abanga/yivula.</string>
+    <string name="onboarding_upload_document">Layisha i-PDF noma isithombe</string>
+    <string name="onboarding_replace_document">Shintsha ifayela</string>
+    <string name="onboarding_view_document">Buka idokhumenti elayishiwe</string>
+    <string name="document_hint">I-PDF, i-JPG, i-PNG noma i-WEBP — ubukhulu obungu-5 MB.</string>
+    <string name="document_error_empty">Ifayela elikhethiwe alinalutho.</string>
+    <string name="document_error_type">Sebenzisa ifayela le-PDF, JPG, PNG noma WEBP.</string>
+    <string name="document_error_too_large">Ifayela kufanele libe ngu-5 MB noma ngaphansi.</string>
+    <string name="onboarding_field_required">Leli gama liyadingeka.</string>
+    <string name="onboarding_save_continue">Gcina uqhubeke</string>
+    <string name="onboarding_error_load">Ayikwazanga ukulayisha iphrofayela yakho.</string>
+    <string name="onboarding_error_save">Ayikwazanga ukulondoloza iphrofayela yakho.</string>
+    <string name="onboarding_error_upload">Ukulayisha kwehlulekile. Sicela uzame futhi.</string>
+    <string name="onboarding_error_open_document">Ayikwazanga ukuvula idokhumenti.</string>
+    <string name="onboarding_landlord_title">Ukuqinisekiswa komnikazi wendlu</string>
+    <string name="onboarding_verification_status_title">Isimo sokuqinisekisa</string>
+    <string name="onboarding_required_docs_progress">%1$d kwama-%2$d amadokhumenti adingekayo alayishiwe</string>
+    <string name="onboarding_admin_notes_label">Amanothi avela kumphathi</string>
+    <string name="onboarding_display_name_label">Igama elibonakalayo</string>
+    <string name="onboarding_contact_phone_label">Inombolo yokuxhumana</string>
+    <string name="onboarding_section_identity">Ubuwena</string>
+    <string name="onboarding_identity_hint">Kumele ifane nedokhumenti yakho ye-ID noma yepasipoti.</string>
+    <string name="onboarding_legal_name_label">Igama eliphelele njengokuka-ID</string>
+    <string name="onboarding_id_number_label">Inombolo ye-ID noma yepasipoti</string>
+    <string name="onboarding_section_business">Ibhizinisi lezindlu</string>
+    <string name="onboarding_company_name_label">Igama lenkampani / lokuhweba (akudingekile)</string>
+    <string name="onboarding_registration_number_label">Inombolo yokubhalisa inkampani (akudingekile)</string>
+    <string name="onboarding_address_label">Likheli lebhizinisi noma leposi</string>
+    <string name="onboarding_city_label">Idolobha</string>
+    <string name="onboarding_province_label">Isifundazwe</string>
+    <string name="onboarding_postal_code_label">Ikhodi yeposi (akudingekile)</string>
+    <string name="onboarding_documents_title">Amadokhumenti okuqinisekisa</string>
+    <string name="onboarding_documents_hint">Layisha amadokhumenti adingekayo. Umphathi uwabuyekeza aqinisekise i-akhawunti yakho. Amafayela agcinwa ngasese.</string>
+    <string name="doc_id_document">I-ID noma ipasipoti</string>
+    <string name="doc_proof_of_ownership">Ubufakazi bobunikazi / imvume</string>
+    <string name="doc_proof_of_address">Ubufakazi bekheli</string>
+    <string name="doc_business_registration">Idokhumenti yokubhalisa inkampani</string>
+    <string name="doc_required_suffix">%1$s (kuyadingeka)</string>
+    <string name="doc_optional_suffix">%1$s (akudingekile)</string>
+    <string name="landlord_open_onboarding">Qedela ukuqinisekisa</string>
+    <string name="landlord_register_documents_later">Ngemva kokungena, i-dashboard yakho izokuqondisa ngemininingwane yebhizinisi ne-ID nobufakazi bobunikazi esiyidingayo ukukuqinisekisa.</string>
+    <!-- TODO(translation-review): booking sheet block, not yet checked by a native isiZulu speaker. -->
+    <string name="error_booking_duplicate">Usunesicelo esivulekile saleli khaya. Hlola Ukubhukha kwami.</string>
+    <string name="booking_sent_title">Isicelo sithunyelwe kumnikazi wendlu</string>
+    <string name="booking_view_my_bookings">Buka ukubhukha kwami</string>
+    <string name="booking_room_label">Igumbi</string>
+    <string name="booking_room_any">Noma yiliphi igumbi elikhona</string>
+    <string name="booking_room_option">%1$s · %2$s · R%3$d</string>
+    <string name="booking_lease_option">Izinyanga eziyi-%1$d</string>
+    <string name="booking_monthly_rent">Irenti yenyanga</string>
+    <string name="booking_deposit_due">Idiphozithi ekhokhwa uma kuvunyiwe</string>
+    <string name="booking_documents_heading">Amadokhumenti okuqinisekisa</string>
+    <string name="booking_proof_on_file">Ubufakazi bakho bokubhalisa evela kuphrofayela yakho buzosetshenziswa.</string>
+    <!-- TODO(translation-review): maintenance photo. -->
+    <string name="maintenance_view_photo">Buka isithombe</string>
+    <!-- Public info pages: ZU draft translation — TODO(translation-review) native speaker -->
+    <string name="pub_about_us">Mayelana nathi</string>
+    <string name="pub_how_it_works">Isebenza kanjani</string>
+    <string name="pub_services">Amasevisi</string>
+    <string name="pub_pricing">Amanani</string>
+    <string name="pub_faq">Imibuzo evame ukubuzwa</string>
+    <string name="pub_contact">Xhumana nathi</string>
+    <string name="pub_privacy">Inqubomgomo Yobumfihlo</string>
+    <string name="pub_terms">Imigomo Yesevisi</string>
+    <string name="pub_more_about">Okwengeziwe ngeRentEase</string>
+    <string name="pub_last_updated">Kubuyekezwe ngo-1 Mashi 2026.</string>
+    <string name="about_title">Ukuthola indawo yokuhlala yabafundi kufanele kuthathe izinsuku, hhayi izinyanga.</string>
+    <string name="about_intro">I-RentEase yakhelwe ukulethe yonke inqubo yezindawo zokuhlala zabafundi ku-inthanethi, kubafundi nabanikazi bezindlu.</string>
+    <string name="about_story_title">Indaba yethu</string>
+    <string name="about_story_1">NgoFebhuwari wonke, izinkulungwane zabafundi ziyafika emadolobheni angaziwa zinencwadi yokwamukelwa kodwa zingenandawo yokulala. Uhlu lwezindlu lwalusakazeke emabhodini ezaziso, emaqenjini e-WhatsApp nasezizindeni zezikhangiso ngaphandle kokuqinisekiswa, ukuhlolwa noma ukunxephezelwa.</string>
+    <string name="about_story_2">Sakhe i-RentEase ukuze lonke leli nqubo lifike ku-inthanethi: abanikazi bezindlu abaqinisekisiwe, izithombe eziqotho, amanani abonakalayo, izicelo zedijithali ezinamadokhumenti asekelayo, kanye nerekhodi eliphelele lenkokhelo ngayinye nesicelo sokulungiswa.</string>
+    <string name="about_story_3">Abanikazi bezindlu bazuze okufanayo. Esikhundleni sokuxosha amaphepha, manje silawula amakamelo, ukugunyazwa, abaqashi nemali engenayo ekhasini elilodwa.</string>
+    <string name="about_values_title">Okuhola isinqumo ngasinye</string>
+    <string name="about_value_safety_title">Ukuphepha kuqala</string>
+    <string name="about_value_safety_body">Umnikazi wendlu ngamunye uyahlolwa futhi indlu ngayinye iyahlolwa ngohlu lokuphepha kwabafundi ngaphambi kokushicilelwa.</string>
+    <string name="about_value_transparency_title">Ukubonakala ngokuphelele</string>
+    <string name="about_value_transparency_body">Izithombe zangempela, amanani angempela, ukuhlolwa kwangempela. Azikho izindleko ezifihliwe, azikho izikhangiso zokuyenga, azikho izimanga ngosuku lokuhlala.</string>
+    <string name="about_value_fair_title">Ukulunga kuzo zombili izinhlangothi</string>
+    <string name="about_value_fair_body">Abafundi abakaze bakhokhe izindleko zeplathifomu. Abanikazi bezindlu bathola amathuluzi alula ukuthobela imithetho nokugcwalisa amakamelo.</string>
+    <string name="about_value_students_title">Kwakhiwe nabafundi</string>
+    <string name="about_value_students_body">Abameleli babafundi bahlola isikhishwa ngasinye esikhulu ukuze uhlelo luqhubeke lusebenzele abalusebenzisayo.</string>
+    <string name="how_student_tab">Kubafundi</string>
+    <string name="how_landlord_tab">Kubanikazi bezindlu</string>
+    <string name="how_title">Indlela ecacile kusukela ekusesheni kokuqala kuze kube yisivumelwano esisayiniwe.</string>
+    <string name="how_intro">I-RentEase isingatha ukuthola, amadokhumenti, ukugunyazwa, izinkokhelo nokulungiswa ukuze lutho lungalahleki engxoxweni ye-WhatsApp.</string>
+    <string name="how_student_heading">Thola futhi uqinisekise ikamelo lakho</string>
+    <string name="how_student_s1_title">Dala iphrofayili yakho yomfundi</string>
+    <string name="how_student_s1_body">Qinisekisa inombolo yakho yomfundi, inyuvesi, ubuchwepheshe nonyaka wokufunda kanye, bese uyafaka izicelo noma kuphi ngemizuzwana.</string>
+    <string name="how_student_s2_title">Sesha uqhathanise</string>
+    <string name="how_student_s2_body">Hlunga ngentengo, ibanga ukusuka e-campus, izinsiza nokuba khona. Londoloza izintandokazi uqhathanise eceleni komunye.</string>
+    <string name="how_student_s3_title">Bhukha namadokhumenti anamathiselwe</string>
+    <string name="how_student_s3_body">Khetha ikamelo, ukhethe usuku lokuhlala nesikhathi sesivumelwano, bese ulayisha i-ID yakho nobufakazi bokubhalisa.</string>
+    <string name="how_student_s4_title">Hlala futhi uphathe</string>
+    <string name="how_student_s4_body">Khokha idiphozithi nerenti yenyanga, landa izikhumbuzo zokukhokha, xoxa nomnikazi wendlu futhi ubhale izicelo zokulungiswa.</string>
+    <string name="how_landlord_heading">Bhala uhlu, vuma futhi ukhokhelwe</string>
+    <string name="how_landlord_s1_title">Qinisekiswa</string>
+    <string name="how_landlord_s1_body">Hambisa imininingwane yebhizinisi lakho nobufakazi bobunikazi. Ithimba lethu lokuthobela imithetho lihlola abanikazi bezindlu bangempela.</string>
+    <string name="how_landlord_s2_title">Bhala indlu yakho</string>
+    <string name="how_landlord_s2_body">Engeza izithombe, izinsiza, amakamelo namanani endlu ngayinye.</string>
+    <string name="how_landlord_s3_title">Vuma ukubhukha</string>
+    <string name="how_landlord_s3_body">Hlola izicelo zabafundi namadokhumenti anamathiselwe, vuma noma ulahle, futhi unikeze ikamelo elifanele.</string>
+    <string name="how_landlord_s4_title">Landelela imali engenayo</string>
+    <string name="how_landlord_s4_body">Buka imali engenayo, ukugcwala namarekhodi abaqashi ekhasini lakho.</string>
+    <string name="how_cta_student">Dala i-akhawunti yomfundi mahhala</string>
+    <string name="how_cta_landlord">Qhathanisa amaphakheji abanikazi bezindlu</string>
+    <string name="services_title">Iplathifomu eyodwa yawo wonke umjikelezo wezindawo zokuhlala.</string>
+    <string name="services_intro">Kusukela ekusesheni kokuqala kuze kube yirenti yenyanga yokugcina, i-RentEase ithatha indawo yamashidi, amafomu aphrintiwe nezingxoxo ezihlakazekile.</string>
+    <string name="services_s1_title">Ukusesha izindawo zokuhlala eziqinisekisiwe</string>
+    <string name="services_s1_body">Uhlu ngalunye luyahlolwa ngaphambi kokuba lubonakale, kunebheji eliqinisekisiwe ezindlini ezigunyaziwe.</string>
+    <string name="services_s2_title">Isivumelwano nokubhukha kwedijithali</string>
+    <string name="services_s2_body">Izicelo, amadokhumenti asekelayo, izikhathi zesivumelwano nokugunyazwa kuphethwe kuze kuphele ngaphandle kwamaphepha.</string>
+    <string name="services_s3_title">Amarekhodi erenti nedeposit</string>
+    <string name="services_s3_body">Idiphozithi nerenti yenyanga kuyarekhodwa kunomlando wezinkokhelo ongawubuyekeza noma inini.</string>
+    <string name="services_s4_title">Ukuphathwa kokulungiswa</string>
+    <string name="services_s4_body">Abafundi babhala izinkinga ngezithombe, abanikazi bezindlu banikeza futhi baxazulule, wonke umuntu ulandelela inqubekela phambili.</string>
+    <string name="services_s5_title">Imilayezo eqondile</string>
+    <string name="services_s5_body">Xoxa phakathi kwabafundi nabanikazi bezindlu unomlando ophelele wezingxoxo.</string>
+    <string name="services_s6_title">Imibiko nokuhlaziya</string>
+    <string name="services_s6_body">Imibiko yokugcwala, imali engenayo, ukubhukha nokulungiswa yabanikazi bezindlu nabaphathi beplathifomu.</string>
+    <string name="services_included_title">Kufakiwe wonke umuntu</string>
+    <string name="services_included_1">Ukuqinisekiswa kobuwena namadokhumenti</string>
+    <string name="services_included_2">Isimo sokuba khona ngekamelo ngalinye</string>
+    <string name="services_included_3">Umlando wezinkokhelo nezinkomba</string>
+    <string name="services_included_4">Amathikithi okulungiswa anezithombe</string>
+    <string name="services_included_5">Ukulawulwa kokubuyekezwa nokuxazululwa kwezingxabano</string>
+    <string name="services_cta_title">Awuqinisekile ukuthi iliphi iphakheji elifanele?</string>
+    <string name="services_cta_body">Sitshele ukuthi ulawula amakamelo amangaki sizokunikeza iseluleko.</string>
+    <string name="pricing_title">Mahhala kubafundi. Kunengqondo kubanikazi bezindlu.</string>
+    <string name="pricing_intro">Akukho ikhomishini kurenti, azikho izindleko zokubhala uhlu ezifihliwe. Khetha iphakheji elilingana nosayizi wamaphothifoliyo akho.</string>
+    <string name="pricing_popular">Idume kakhulu</string>
+    <string name="pricing_cta_student">Dala i-akhawunti yomfundi</string>
+    <string name="pricing_cta_growth">Qala ukuzama izinsuku ezingu-30</string>
+    <string name="pricing_cta_portfolio">Khuluma nabathengisi</string>
+    <string name="pricing_student_name">Umfundi</string>
+    <string name="pricing_student_price">Mahhala</string>
+    <string name="pricing_student_cadence">njalo</string>
+    <string name="pricing_student_desc">Konke umfundi akudingayo ukuthola, ukubhukha nokuphatha indawo yokuhlala.</string>
+    <string name="pricing_student_f1">Ukusesha nokuhlunga okungenamkhawulo</string>
+    <string name="pricing_student_f2">Londoloza uqhathanise izindlu</string>
+    <string name="pricing_student_f3">Ukubhukha kwedijithali namadokhumenti</string>
+    <string name="pricing_student_f4">Izinkokhelo zerenti nezikhumbuzo</string>
+    <string name="pricing_student_f5">Izicelo zokulungiswa</string>
+    <string name="pricing_student_f6">Imilayezo eqondile</string>
+    <string name="pricing_growth_name">Ukukhula Komnikazi Wendlu</string>
+    <string name="pricing_growth_price">R499</string>
+    <string name="pricing_growth_cadence">ngenyanga</string>
+    <string name="pricing_growth_desc">Kubanikazi bezindlu abaphatha amakamelo afika ku-25 ezindlini eziningi.</string>
+    <string name="pricing_growth_f1">Amakamelo afika ku-25 abhaliwe</string>
+    <string name="pricing_growth_f2">Ukugunyazwa kokubhukha nokunikezwa kwamakamelo</string>
+    <string name="pricing_growth_f3">Ukuphathwa kwabaqashi nezivumelwano</string>
+    <string name="pricing_growth_f4">Imibiko yemali engenayo yenyanga</string>
+    <string name="pricing_growth_f5">Ulayini wamathikithi okulungiswa</string>
+    <string name="pricing_growth_f6">Ukubekwa kuqala ekusesheni</string>
+    <string name="pricing_portfolio_name">Iphothifoliyo</string>
+    <string name="pricing_portfolio_price">R1 899</string>
+    <string name="pricing_portfolio_cadence">ngenyanga</string>
+    <string name="pricing_portfolio_desc">Kubaphathi bezindawo zokuhlala namaqembu ezindlu anamaphothifoliyo amakhulu.</string>
+    <string name="pricing_portfolio_f1">Amakamelo nezindlu ezingenamkhawulo</string>
+    <string name="pricing_portfolio_f2">Ama-akhawunti ethimba nemvume</string>
+    <string name="pricing_portfolio_f3">Ukuhlaziya imali engenayo nokugcwala konyaka</string>
+    <string name="pricing_portfolio_f4">Ukungenisa nokuthumela ngobuningi</string>
+    <string name="pricing_portfolio_f5">Umphathi we-akhawunti ozinikele</string>
+    <string name="pricing_portfolio_f6">Ukufinyelela kwe-API ekuhlanganiseni</string>
+    <string name="faq_title">Imibuzo, iphendulwe</string>
+    <string name="faq_intro">Usahlala? Ithimba lethu losizo liphendula yonke imiyalezo ngosuku olulodwa lomsebenzi.</string>
+    <string name="faq_q1">Ingabe i-RentEase mahhala kubafundi?</string>
+    <string name="faq_a1">Yebo. Abafundi abakaze bakhokhe izindleko zeplathifomu. Ukusesha, ukuqhathanisa, ukubhukha, ukuthumela imilayezo nokuphatha isivumelwano sakho kumahhala; ukhokha kuphela irenti nedeposit yomnikazi wendlu.</string>
+    <string name="faq_q2">Abanikazi bezindlu nezindlu baqinisekiswa kanjani?</string>
+    <string name="faq_a2">Abanikazi bezindlu bathumela amadokhumenti obuwena nobufakazi bobunikazi. Ithimba lethu liwahlola ngaphambi kokuba indlu ishicilelwe ngebheji eliqinisekisiwe.</string>
+    <string name="faq_q3">Yimaphi amadokhumenti engiwadingayo ukuze ngibhukhe?</string>
+    <string name="faq_a3">Ikhophi ye-ID noma yephasiphothi yakho nobufakazi bokubhalisa evela enyuvesi yakho.</string>
+    <string name="faq_q4">Ngingakwazi ukukhansela ukubhukha?</string>
+    <string name="faq_a4">Ungakhansela ukubhukha okusalindile ngaphambi kokuba umnikazi wendlu akuvume. Ngemva kokugunyazwa, ukukhanselwa kulandela inqubomgomo yomnikazi wendlu.</string>
+    <string name="faq_q5">Izinkokhelo ziphathwa kanjani?</string>
+    <string name="faq_a5">Idiphozithi nerenti yenyanga kuyarekhodwa kuhlelo. Inkokhelo ngayinye ivela emlandweni wezinkokhelo ngenkomba.</string>
+    <string name="faq_q6">Kwenzekani uma okuthile kuphuka?</string>
+    <string name="faq_a6">Bhala isicelo sokulungiswa ngezithombe ekhasini lakho. Umnikazi wendlu uyaziswa futhi ungalandelela isimo size sixazululwe.</string>
+    <string name="faq_q7">Abanikazi bezindlu bangabhala indlu ezingaphezu kweyodwa?</string>
+    <string name="faq_a7">Yebo. Indlu ngayinye inamakamelo ayo, amanani, ukuba khona nabaqashi.</string>
+    <string name="faq_not_found">Awuyitholanga impendulo yakho?</string>
+    <string name="faq_contact_support">Xhumana nosizo</string>
+    <string name="contact_title">Khuluma neqembu le-RentEase</string>
+    <string name="contact_intro">Noma ungumfundi onombuzo wokubhukha noma umnikazi wendlu ongakulungele ukubhala uhlu, silapha.</string>
+    <string name="contact_head_office">Ihhovisi eliyinhloko</string>
+    <string name="contact_address">42 Loop Street, eKapa</string>
+    <string name="contact_phone">+27 21 555 0142</string>
+    <string name="contact_email">support@rentease.co.za</string>
+    <string name="contact_hours_title">Amahora osizo</string>
+    <string name="contact_hours_body">NgoMsombuluko kuya kuLwesihlanu, 08:00 - 17:00 SAST. Izicelo ezisheshayo zokulungiswa ziqashwa izinsuku eziyisikhombisa ngesonto.</string>
+    <string name="contact_form_name">Igama eliphelele</string>
+    <string name="contact_form_email">Ikheli le-imeyili</string>
+    <string name="contact_form_subject">Isihloko</string>
+    <string name="contact_form_message">Umyalezo</string>
+    <string name="contact_form_send">Thumela umyalezo</string>
+    <string name="contact_error_name">Faka igama lakho eliphelele</string>
+    <string name="contact_error_email">Faka ikheli le-imeyili elivumelekile</string>
+    <string name="contact_error_subject">Engeza isihloko esifushane</string>
+    <string name="contact_error_message">Sitshele okwengeziwe (okungenani izinhlamvu eziyi-20)</string>
+    <string name="contact_no_email_app">Ayikho i-app ye-imeyili. Bhalela support@rentease.co.za esikhundleni.</string>
+    <string name="contact_open_email_hint">Ukuthumela kuvula i-app yakho ye-imeyili umyalezo usulungile.</string>
+    <string name="privacy_s1_title">Ulwazi esiluqoqayo</string>
+    <string name="privacy_s1_body">Imininingwane ye-akhawunti, amadokhumenti okuqinisekisa umfundi, ulwazi lwezindlu, amarekhodi okubhukha nemilayezo eshintshiswana kuplathifomu.</string>
+    <string name="privacy_s2_title">Sikusebenzisa kanjani</string>
+    <string name="privacy_s2_body">Ukuqinisekisa ubuwena, ukuhlanganisa abafundi nezindawo zokuhlala ezifanele, ukucubungula ukubhukha nokuvimbela ukukhwabanisa kuplathifomu.</string>
+    <string name="privacy_s3_title">Ukwabelana</string>
+    <string name="privacy_s3_body">Abanikazi bezindlu babona kuphela imininingwane edingekayo ukuhlola isicelo. Asikaze sidayise ulwazi lomuntu kwabantu besithathu.</string>
+    <string name="privacy_s4_title">Amalungelo akho</string>
+    <string name="privacy_s4_body">Ungacela ukufinyelela, ukulungiswa noma ukususwa kolwazi lwakho noma inini ngokubhalela support@rentease.co.za.</string>
+    <string name="terms_s1_title">Ukusebenzisa i-RentEase</string>
+    <string name="terms_s1_body">Kumele ube okungenani neminyaka eyi-18 futhi unikeze ulwazi oluqondile. Ama-akhawunti atholwe ethatha indawo yezindlu noma isimo somfundi ayamiswa.</string>
+    <string name="terms_s2_title">Ukubhukha</string>
+    <string name="terms_s2_body">Isicelo sokubhukha siyabophezela kuphela uma umnikazi wendlu esivuma futhi idiphozithi iqinisekiswa nge-plathifomu.</string>
+    <string name="terms_s3_title">Izinkokhelo nokukhanselwa</string>
+    <string name="terms_s3_body">Idiphozithi iyabuyiselwa kuze kube izinsuku eziyi-14 ngaphambi kokuhlala ngaphandle uma isivumelwano sisho okunye.</string>
+    <string name="terms_s4_title">Isibopho</string>
+    <string name="terms_s4_body">I-RentEase ivumela ukuxhumana phakathi kwabafundi nabanikazi bezindlu; isivumelwano siba phakathi kwala maqembu amabili.</string>
+    <!-- Guest browsing: ZU draft — TODO(translation-review) -->
+    <string name="guest_browse_button">Bheka uhlu lwezindlu ngaphandle kwe-akhawunti</string>
+    <string name="guest_banner">Ubhekela njengesihambeli. Ngena ukuze ulondoloze uhlu futhi ucele ukubhukha.</string>
+    <string name="guest_signin_to_book">Ngena ukuze ucele ukubhukha</string>
+    <!-- Universities pages: ZU draft — TODO(translation-review) -->
+    <string name="pub_universities">Amanyuvesi</string>
+    <string name="uni_title">Amakhampasi adumile ku-RentEase</string>
+    <string name="uni_intro">Khetha ikhampasi ubone irenti evamile nezindlu ezixhumene nayo.</string>
+    <string name="uni_search_hint">Sesha ngegama, idolobha noma isifundazwe</string>
+    <string name="uni_none_found">Awekho amanyuvesi ahambisana nokusesha kwakho.</string>
+    <string name="uni_not_found">Asikayihlanganisi leyo khampasi okwamanje</string>
+    <string name="uni_place">%1$s, %2$s</string>
+    <string name="uni_students_count">Abafundi abangu-%1$d</string>
+    <string name="uni_average_rent">Irenti emaphakathi R%1$d/inyanga</string>
+    <string name="uni_accommodation_near">Izindawo zokuhlala eduze kwe-%1$s</string>
+    <string name="uni_browse_near">Bheka uhlu lwezindlu eduze kwe-%1$s</string>
+    <string name="uni_available_now">Ikhona manje</string>
+    <string name="uni_no_listings">Alukho uhlu olunxuseme nale khampasi okwamanje.</string>
+    <!-- Photos: ZU draft — TODO(translation-review) -->
+    <string name="photo_sample_label">Isithombe sesibonelo</string>
+    <string name="photo_of_property">%1$s, isithombe %2$d kwezingu-%3$d</string>
+    <string name="photo_counter">%1$d / %2$d</string>
+    <!-- Landing: ZU draft — TODO(translation-review) -->
+    <string name="featured_title">Izindawo ezikhethiwe</string>
+    <string name="featured_failed">Ayikwazanga ukulayisha izindawo ezikhethiwe.</string>
+    <string name="featured_empty">Azikho izindawo ezishicilelwe okwamanje. Buya maduze.</string>
+    <!-- Cards: ZU draft — TODO(translation-review) -->
+    <string name="property_rating_value">%1$s (%2$d)</string>
+    <string name="property_beds_baths_rooms">%1$d ibhedi · %2$d ibhavu · amakamelo avulekile angu-%3$d</string>
+    <string name="view_details_button">Buka imininingwane</string>
+    <!-- Admin verification: ZU draft — TODO(translation-review) -->
+    <string name="verification_filter_awaiting">Ilindele ukubuyekezwa</string>
+    <string name="verification_filter_documents_required">Amadokhumenti ayadingeka</string>
+    <string name="verification_filter_rejected">Yenqatshiwe</string>
+    <string name="verification_filter_verified">Iqinisekisiwe</string>
+    <string name="verification_filter_all">Konke</string>
+    <string name="no_landlords_in_filter">Abekho abanikazi bezindlu kule mbonakalo.</string>
+    <string name="admin_registration_number">Inombolo yokubhalisa %1$s</string>
+    <string name="admin_no_documents">Awekho amadokhumenti alayishiwe okwamanje.</string>
+    <string name="admin_view_document">Buka: %1$s</string>
+    <string name="admin_required_documents_missing">I-ID nobufakazi bobunikazi kuyadingeka kokubili ngaphambi kokuqinisekisa.</string>
+    <string name="admin_previous_notes">Amanothi andulele: %1$s</string>
+    <string name="admin_notes_label">Amanothi omnikazi wendlu (abonakala ekhasini lakhe lokungena)</string>
+    <string name="admin_request_documents_button">Cela amadokhumenti</string>
+    <string name="error_verification_notes_required">Engeza inothi elichaza okudingekayo noma isizathu.</string>
+    <string name="error_verification_notes_too_long">Amanothi made kakhulu (izinhlamvu ezingu-600 ubuningi).</string>
+    <string name="error_verification_missing_documents">Angeke iqinisekiswe: I-ID nobufakazi bobunikazi kumele kulayishwe kokubili.</string>
+    <string name="error_document_open_failed">Ayikwazanga ukuvula idokhumenti. Hlola uxhumano lwakho uphinde uzame.</string>
+    <!-- TODO(translation-review) home screen -->
+    <string name="home_hero_title">Tholaikhaya lakho lomfundi</string>
+    <string name="home_hero_subtitle">Amakamelo aqinisekisiwe eduze nekampasi yakho, aqoshwa ngemizuzu.</string>
+    <string name="home_search_button">Sesha</string>
+    <string name="home_featured_title">Indawo yokuhlala ekhethiwe eduze nekampasi</string>
+    <string name="home_featured_subtitle">Izindawo ezinezilinganiso eziphezulu ezivela kubanikazi abaqinisekisiwe.</string>
+    <string name="home_see_all">Bona zonke izindawo</string>
+    <string name="home_universities_title">Phequlula ngenyuvesi</string>
+    <string name="home_see_all_universities">Zonke izinyuvesi</string>
+    <!-- TODO(translation-review) landlord photos -->
+    <string name="photos_heading">Izithombe zendawo</string>
+    <string name="photos_hint">Engeza izithombe ezifika ku-%1$d. Isithombe sokuqala siyikhava abafundi abayibona ekusesheni.</string>
+    <string name="photos_empty_title">Engeza izithombe zendawo yakho</string>
+    <string name="photos_empty_body">Izindawo ezinezithombe ezicacile zithola izicelo eziningi. Thinta ukukhetha kugalari yakho.</string>
+    <string name="photos_add_button">Engeza izithombe (%1$d/%2$d)</string>
+    <string name="photos_uploading">Iyalayisha…</string>
+    <string name="photos_cover_badge">Ikhava</string>
+    <string name="photos_make_cover">Yenze ikhava</string>
+    <string name="photos_remove">Susa isithombe</string>
+    <string name="photos_item_description">Isithombe sendawo %1$d</string>
+    <string name="photos_limit_reached">Ungangeza izithombe ezifika ku-%1$d endaweni ngayinye.</string>
+    <string name="photos_saved_partial">Indawo igcinwe, kodwa izithombe azigcinekanga: %1$s. Thinta Gcina futhi ukuzama kabusha.</string>
+    <!-- TODO(translation-review) landlord empty state -->
+    <string name="no_properties_photos_hint">Engeza indawo yakho yokuqala nezithombe ukuze abafundi bayithole futhi bayiqoshe.</string>
+    <string name="add_first_property_button">Engeza indawo nezithombe</string>
+    <!-- TODO(translation-review) similar/availability -->
+    <string name="filter_available_only">Iyatholakala manje</string>
+    <string name="similar_heading">Izindawo ezifanayo</string>
+    <!-- TODO(translation-review) room types -->
+    <string name="room_type_single">Ikamelo elilodwa</string>
+    <string name="room_type_shared">Ikamelo elabelwanayo</string>
+    <string name="room_type_ensuite">Ine indlu yangasese ekamelweni</string>
+    <string name="room_type_studio">I-studio / ifulethi lesisebenzi esisodwa</string>
+    <string name="room_price_typical">Okujwayelekile kuleli kamelo: R%1$d–R%2$d ngenyanga</string>
+    <string name="room_price_unusual">Akujwayelekile kuleli kamelo (okujwayelekile R%1$d–R%2$d ngenyanga). Sicela uhlole inani.</string>
+    <!-- TODO(translation-review) property form -->
+    <string name="property_university_label">Inyuvesi eseduze kakhulu</string>
+    <string name="property_distance_label">Ibanga eliya ekampasi (km)</string>
+    <string name="property_distance_hint">Kuboniswa abafundi ngokuthi "x km ukusuka ekampasi".</string>
+    <!-- TODO(translation-review) password reset -->
+    <string name="forgot_password_link">Ukhohlwe iphasiwedi?</string>
+    <string name="forgot_title">Setha kabusha iphasiwedi yakho</string>
+    <string name="forgot_intro">Faka i-imeyili ye-akhawunti yakho sizokuthumelela isixhumanisi sokukhetha iphasiwedi entsha.</string>
+    <string name="forgot_send_button">Thumela isixhumanisi</string>
+    <string name="forgot_sent_message">Uma i-akhawunti ikhona kuleyo imeyili, isixhumanisi sisendleleni. Sivule kuleli foni.</string>
+    <string name="forgot_invalid_email">Faka ikheli le-imeyili elivumelekile.</string>
+    <string name="reset_request_failed">Asikwazanga ukuthumela isixhumanisi. Hlola uxhumo bese uzama futhi ngemuva kwemizuzu.</string>
+    <string name="reset_title">Khetha iphasiwedi entsha</string>
+    <string name="reset_intro">Sebenzisa okungenani izinhlamvu eziyi-%1$d.</string>
+    <string name="new_password_label">Iphasiwedi entsha</string>
+    <string name="confirm_password_label">Qinisekisa iphasiwedi entsha</string>
+    <string name="reset_button">Gcina iphasiwedi entsha</string>
+    <string name="reset_too_short">Iphasiwedi kumele ibe okungenani izinhlamvu eziyi-%1$d.</string>
+    <string name="reset_mismatch">Amaphasiwedi amabili awafani.</string>
+    <string name="reset_failed">Asikwazanga ukushintsha iphasiwedi. Isixhumanisi kungenzeka siphelelwe isikhathi. Cela esisha.</string>
+    <string name="reset_success">Iphasiwedi yakho ishintshiwe. Ungangena manje.</string>
+    <string name="reset_invalid_link">Lesi sixhumanisi asivumelekile. Cela esisha esikrinini sokungena.</string>
+    <string name="back_to_login">Buyela ekungeneni</string>
+    <!-- TODO(translation-review) listing extras -->
+    <string name="landlord_heading">Umnikazi</string>
+    <string name="landlord_unnamed">Umnikazi</string>
+    <string name="landlord_booking_note">Ngeke ukhokhiswe kuze umnikazi avume ukubhuka kwakho.</string>
+    <string name="nearby_heading">Okuseduze</string>
+    <string name="nearby_intro">Ivula uhlelo lwakho lwamamephu eduze nale ndawo.</string>
+    <string name="nearby_transport">Ezokuthutha</string>
+    <string name="nearby_shops">Izitolo</string>
+    <string name="nearby_food">Ukudla namakhefi</string>
+    <string name="nearby_health">Amakliniki nezibhedlela</string>
+    <string name="nearby_show_map">Khombisa kumephu</string>
+    <!-- TODO(translation-review) income report -->
+    <string name="stat_contracted_income">Imali engenayo ngenyanga enovelwano</string>
+    <string name="stat_collected">Eqoqiwe kuze kube manje</string>
+    <string name="income_by_property_heading">Imali ngendawo ngayinye</string>
+    <string name="income_tenants">abahlali abangu-%1$d</string>
+    <!-- TODO(translation-review) rooms available -->
+    <string name="property_rooms_available_label">Amakamelo atholakalayo</string>
+    <string name="property_rooms_available_hint">Iyavuselelwa ngokuzenzakalelayo kumakamelo akho uma usuwengeze.</string>
+    <!-- TODO(translation-review): draft isiZulu for the shortened sign-up; needs native review -->
+    <string name="password_rules_hint">Okungenani izinhlamvu eziyi-8, kufaka incwadi nenombolo.</string>
+    <string name="password_show">Bonisa iphasiwedi</string>
+    <string name="password_hide">Fihla iphasiwedi</string>
+    <string name="confirm_email_title">Qinisekisa i-imeyili yakho</string>
+    <string name="confirm_email_body">I-akhawunti yakho idaliwe. Sithumele ilinki yokuqinisekisa ku-%1$s. Yivule, bese ungena.</string>
+    <string name="confirm_email_go_to_signin">Iya ekungeneni</string>
+    <string name="error_email_taken">Se kukhona i-akhawunti enale-imeyili. Zama ukungena kunalokho.</string>
+    <string name="error_password_rules">Sebenzisa iphasiwedi enezinhlamvu okungenani eziyi-8, enencwadi nenombolo.</string>
+    <string name="error_rate_limited">Imizamo eminingi kakhulu. Sicela ulinde imizuzu embalwa uphinde uzame.</string>
+    <string name="error_email_invalid">Faka ikheli le-imeyili elivumelekile.</string>
+    <string name="error_phone_invalid">Faka inombolo yocingo evumelekile, isibonelo 0821234567.</string>
+    <string name="error_no_connection">Alukho uxhumano le-inthanethi. Hlola inethiwekhi uphinde uzame.</string>
+    <string name="error_invalid_credentials">I-imeyili noma iphasiwedi akulungile.</string>
+    <string name="error_email_not_confirmed">Sicela uqale uqinisekise i-imeyili yakho usebenzisa ilinki esikuthumele yona.</string>
+    <string name="student_register_subtitle">Dala i-akhawunti yakho ngomzuzu. Ungengeza okunye kamuva.</string>
+    <string name="student_register_later_note">Inkambo, ibhajethi nezintandokazi azizona eziphoqelekile. Uzocelwa zona ku-dashboard yakho.</string>
+    <string name="landlord_register_subtitle">Imininingwane yokuxhumana kuphela manje. Imininingwane yebhizinisi namadokhumenti kuza ngemva kokungena.</string>
+    <!-- TODO(translation-review): draft isiZulu -->
+    <string name="more_options">Okunye okukhethwa kukho</string>
+    <!-- TODO(translation-review): config banner -->
+    <string name="error_not_configured">I-Supabase ayilungiselelwe kule-app. Faka i-SUPABASE_URL ne-SUPABASE_ANON_KEY ku-local.properties bese wakha kabusha.</string>
+    <string name="config_banner_title">Akuxhunyiwe ku-Supabase</string>
+</resources>

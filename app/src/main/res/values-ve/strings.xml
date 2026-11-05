@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  TSHIVENDA TRANSLATION — REVIEW REQUIRED BEFORE SUBMISSION.
+  Covers all 205 string keys used across Student, Landlord, and Admin
+  screens, navigation, forms, validation, dialogs, buttons, statuses,
+  notifications, errors, empty states, and settings — not just
+  authentication. Confidence on Tshivenda is LOWER than isiZulu throughout —
+  it is a lower-resource language for me and errors are more likely,
+  especially for technical property-management terms that don't have
+  settled everyday Tshivenda equivalents (occupancy rate, audit log,
+  moderation queue, etc. are rendered as descriptive phrases). Treat this as
+  a first draft that demonstrates the values-ve resource pipeline works
+  end-to-end, not as production-quality translation. A native Tshivenda
+  speaker MUST review and correct this before submission.
+-->
+<resources>
+    <string name="app_name">RentEase</string>
+
+    <!-- Role select / register entry -->
+    <string name="role_student">Ndi mugudi</string>
+    <string name="role_landlord">Ndi muṋe wa nnḓu</string>
+    <string name="already_have_account">Ndi na akhaunthu nga hu tshi angala</string>
+
+    <!-- Login -->
+    <string name="login_title">Ro U ṱanganedza hafhu</string>
+    <string name="email_label">Aterese ya email</string>
+    <string name="password_label">Phasiwedi</string>
+    <string name="sign_in_button">Dzhena</string>
+    <string name="sign_in_with_google">Dzhena nga Google</string>
+    <string name="no_account_register">A huna akhaunthu? Ṅwalisa</string>
+    <string name="admin_sign_in_link">U dzhena ha mulanguli</string>
+
+    <!-- Student registration -->
+    <string name="student_register_title">Sika akhaunthu yau ya mugudi</string>
+    <string name="full_name_label">Dzina ḽoṱhe</string>
+    <string name="phone_label">Nomboro ya luṱingo</string>
+    <string name="student_number_label">Nomboro ya mugudi</string>
+    <string name="university_label">Yunivesithi</string>
+    <string name="create_account_button">Sika akhaunthu</string>
+
+    <!-- Landlord registration -->
+    <string name="landlord_register_title">Sika akhaunthu yau ya muṋe wa nnḓu</string>
+    <string name="verification_documents_heading">Maṅwalo a u sedza vhungoho</string>
+    <string name="upload_id_document">Ḓodza maṅwalo a ID</string>
+    <string name="id_document_selected">Maṅwalo a ID o nangwa ✓</string>
+    <string name="upload_proof_of_ownership">Ḓodza vhuṱanzi ha vhuṋe ha thundu</string>
+    <string name="proof_of_ownership_selected">Vhuṱanzi ha vhuṋe ho nangwa ✓</string>
+
+    <!-- Generic / shared -->
+    <string name="offline_banner">A huna inthanethe — hu khou sumbedzwa data ya u fhedza yo vhulungwaho</string>
+    <string name="error_generic">Hu na tshiṅwe tsho khakhaho. Ni songo litsha u lingedza hafhu.</string>
+    <string name="retry_button">Lingedza hafhu</string>
+    <string name="logout_button">Bva</string>
+    <string name="cancel_button">Khansela</string>
+    <string name="save_button">Vhulunga</string>
+    <string name="delete_button">Vhudzula</string>
+    <string name="edit_button">Lugisa</string>
+    <string name="back_button">Murahu</string>
+    <string name="loading">Zwi khou lodwa…</string>
+    <string name="syncing">Zwi khou tendelanywa…</string>
+    <string name="changes_waiting_to_sync">Zwipiḓuwa zwi %1$d zwi khou linda u tendelanywa</string>
+    <string name="no_results_generic">A huna tshine tsha nga sumbedzwa hafha zwazwino.</string>
+
+    <!-- Booking statuses -->
+    <string name="booking_status_pending">Zwi khou lindelwa</string>
+    <string name="booking_status_approved">Zwo tendelwa</string>
+    <string name="booking_status_rejected">Zwo landulwa</string>
+    <string name="booking_status_cancelled">Zwo khanselwa</string>
+    <string name="booking_status_active">Zwi khou shuma</string>
+    <string name="booking_status_completed">Zwo fheliswa</string>
+
+    <!-- Maintenance statuses -->
+    <string name="maintenance_status_open">Zwo vulwa</string>
+    <string name="maintenance_status_in_progress">Zwi khou itwa</string>
+    <string name="maintenance_status_resolved">Zwo tandululwa</string>
+    <string name="maintenance_status_closed">Zwo valwa</string>
+
+    <!-- Room statuses -->
+    <string name="room_status_available">Hu na nnḓu</string>
+    <string name="room_status_reserved">Yo vhewa</string>
+    <string name="room_status_occupied">Yo dzhiwa</string>
+    <string name="room_status_maintenance">I khou lugiswa</string>
+
+    <!-- Property statuses -->
+    <string name="property_status_draft">Draft</string>
+    <string name="property_status_pending">I khou lindela u sedzwa</string>
+    <string name="property_status_published">I khou vhonala</string>
+    <string name="property_status_rejected">Yo landulwa</string>
+    <string name="property_status_archived">Yo vhulungwa</string>
+
+    <!-- Verification statuses -->
+    <string name="verification_status_pending">U sedza vhungoho zwi khou lindelwa</string>
+    <string name="verification_status_submitted">Maṅwalo a khou sedzwa</string>
+    <string name="verification_status_verified">Zwo sedzwa vhungoho</string>
+    <string name="verification_status_rejected">U sedza vhungoho ho landulwa</string>
+    <string name="verification_status_documents_required">Hu tea maṅwalo maṅwe</string>
+
+    <!-- Landlord dashboard verification banner (longer prose versions) -->
+    <string name="verification_banner_verified">No sedzwa vhungoho sa muṱanzi a fulufhedzeaho.</string>
+    <string name="verification_banner_submitted">Maṅwalo aṋu a khou sedzwa nga thimu yashu.</string>
+    <string name="verification_banner_documents_required">Hu tea maṅwalo maṅwe — sedzani email yaṋu.</string>
+    <string name="verification_banner_rejected">U sedzwa ha vhungoho haṋu ho landulwa. Kwamani thuso u itela mafhungo.</string>
+    <string name="verification_banner_pending">U sedza vhungoho zwi khou lindelwa — rumelani maṅwalo aṋu u itela u thoma u vhulunga nnḓu.</string>
+
+    <!-- Student: Search / Listings -->
+    <string name="find_accommodation_title">Ṱoḓa vhudzulo</string>
+    <string name="saved_nav_label">Zwo vhulungwaho</string>
+    <string name="search_hint">Ṱoḓa nga dzina, vhupo, yunivesithi…</string>
+    <string name="no_listings_match">A huna zwine zwa fana na u ṱoḓa haṋu zwazwino.</string>
+    <string name="load_more_button">Lodza zwiṅwe</string>
+    <string name="km_from_campus">%1$s km u bva khoro ya yunivesithi</string>
+    <string name="price_per_month">R%1$d/ṅwedzi</string>
+    <string name="save_listing_action">Vhulunga nnḓu</string>
+
+    <!-- Student: Listing Detail -->
+    <string name="about_this_place">Nga ha fhethu hafha</string>
+    <string name="amenities_heading">Zwishumiswa</string>
+    <string name="reviews_heading">Vhusedzi (%1$d)</string>
+    <string name="request_booking_button">Humbela u vhuka</string>
+    <string name="booking_submitted_message">Tshikhumbelo tsha u vhuka tsho rumelwa! Nomboro: %1$s. A ni nga badelwa u swika muṋe wa nnḓu a tenda.</string>
+    <string name="deposit_label">Diphosithi R%1$d</string>
+    <string name="booking_dialog_title">Humbela u vhuka</string>
+    <string name="booking_dialog_disclaimer">A ni nga badelwa u swika muṋe wa nnḓu a tenda tshikhumbelo hetshi.</string>
+    <string name="move_in_date_label">Ḓuvha ḽa u dzhena</string>
+    <string name="lease_period_label">Tshifhinga tsha u hira (miṅwedzi)</string>
+    <string name="message_to_landlord_label">Molaedza kha muṋe wa nnḓu (a si vhukuma)</string>
+    <string name="upload_student_id">Ḓodza ID ya mugudi</string>
+    <string name="student_id_selected">ID ya mugudi yo nangwa ✓</string>
+    <string name="upload_proof_of_registration">Ḓodza vhuṱanzi ha u ṅwalisa</string>
+    <string name="proof_of_registration_selected">Vhuṱanzi ha u ṅwalisa ho nangwa ✓</string>
+    <string name="submit_request_button">Rumela tshikhumbelo</string>
+
+    <!-- Student: Saved Listings -->
+    <string name="saved_listings_title">Nnḓu dzo vhulungwaho</string>
+    <string name="no_saved_listings">A hu na tshine na khou vhulunga zwazwino.</string>
+    <string name="remove_from_saved">Bvisa kha zwo vhulungwaho</string>
+
+    <!-- Student: My Bookings -->
+    <string name="my_bookings_title">U vhuka hanga</string>
+    <string name="no_bookings_yet">A ni athu humbela u vhuka.</string>
+    <string name="booking_reference_label">Nomboro: %1$s</string>
+    <string name="lease_summary_label">U dzhena: %1$s · miṅwedzi %2$d · R%3$d/ṅwedzi</string>
+    <string name="bookings_nav_label">U vhuka</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ndaelo</string>
+    <string name="language_heading">Luambo</string>
+    <string name="language_english">Isingesi</string>
+    <string name="language_zulu">IsiZulu</string>
+    <string name="language_venda">Tshivenḓa</string>
+    <string name="notification_preferences_heading">Thoḓea dza zwiṱivhadzo</string>
+    <string name="notify_booking_updates">Mafhungo a u vhuka</string>
+    <string name="notify_new_messages">Malaedza maswa</string>
+    <string name="notify_maintenance_updates">Mafhungo a u lugisa</string>
+    <string name="profile_heading">Phurofaili</string>
+
+    <!-- Landlord: Dashboard -->
+    <string name="landlord_dashboard_title">Danushibodo ya muṋe wa nnḓu</string>
+    <string name="overview_heading">Nzudzanyo yoṱhe</string>
+    <string name="stat_properties">Nnḓu</string>
+    <string name="stat_occupancy">U dzhiwa</string>
+    <string name="stat_pending_requests">Zwikhumbelo zwo lindelaho</string>
+    <string name="manage_heading">Langa</string>
+    <string name="nav_properties_rooms">Nnḓu na makamara</string>
+    <string name="nav_booking_requests">Zwikhumbelo zwa u vhuka</string>
+    <string name="nav_tenants">Vhahiri</string>
+    <string name="nav_maintenance">U lugisa</string>
+    <string name="nav_messages">Malaedza</string>
+    <string name="nav_notifications">Zwiṱivhadzo</string>
+    <string name="nav_analytics">Musaukanyo wa data</string>
+
+    <!-- Landlord: Properties -->
+    <string name="my_properties_title">Nnḓu dzanga</string>
+    <string name="no_properties_yet">A ni athu ṅwalisa nnḓu. Kwameni + u itela u engedza iṅwe.</string>
+    <string name="add_property_title">Engedza nnḓu</string>
+    <string name="edit_property_title">Lugisa nnḓu</string>
+    <string name="published_label">I khou vhonala</string>
+    <string name="rooms_link">Makamara</string>
+    <string name="title_label">Thoho</string>
+    <string name="description_label">Ṱhaluso</string>
+    <string name="address_label">Aterese</string>
+    <string name="city_label">Ḓoroboni</string>
+    <string name="province_label">Provinsi</string>
+    <string name="price_month_label">Mutengo/ṅwedzi (R)</string>
+    <string name="deposit_field_label">Diphosithi (R)</string>
+    <string name="bedrooms_label">Makamara a u eḓela</string>
+    <string name="bathrooms_label">Makamara a u ṱamba</string>
+    <string name="furnished_label">Yo ḓadzwa nga fenisha</string>
+    <string name="save_property_button">Vhulunga nnḓu</string>
+
+    <!-- Landlord: Rooms -->
+    <string name="rooms_title">Makamara</string>
+    <string name="no_rooms_yet">A hu athu vha na makamara. Kwameni + u itela u engedza iṅwe.</string>
+    <string name="add_room_title">Engedza kamara</string>
+    <string name="room_name_label">Dzina ḽa kamara</string>
+    <string name="room_type_label">Mutshini wa ṋumbani</string>
+    <string name="capacity_label">Vhukoni</string>
+    <string name="status_label">Vhuimo: %1$s</string>
+    <string name="add_button">Engedza</string>
+
+    <!-- Landlord: Bookings -->
+    <string name="booking_requests_title">Zwikhumbelo zwa u vhuka</string>
+    <string name="filter_all">Zwoṱhe</string>
+    <string name="no_booking_requests">A huna zwikhumbelo zwa u vhuka hafha.</string>
+    <string name="assign_room_action">Ṋea kamara</string>
+    <string name="room_assigned_label">Kamara: %1$s</string>
+    <string name="reject_button">Landula</string>
+    <string name="approve_button">Tenda</string>
+
+    <!-- Landlord: Tenants -->
+    <string name="tenants_title">Vhahiri</string>
+    <string name="no_tenants_yet">A hu athu vha na vhahiri vha khouḽa — zwikhumbelo zwo tendelwaho zwi ḓo vhonala hafha.</string>
+
+    <!-- Landlord: Maintenance -->
+    <string name="maintenance_title">U lugisa</string>
+    <string name="no_maintenance_tickets">A huna zwikhumbelo zwa u lugisa.</string>
+
+    <!-- Messaging -->
+    <string name="messages_title">Malaedza</string>
+    <string name="no_conversations_yet">A huna nyambedzano zwazwino.</string>
+    <string name="conversation_title">Nyambedzano</string>
+    <string name="message_input_label">Molaedza</string>
+    <string name="send_action">Rumela</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Zwiṱivhadzo</string>
+    <string name="no_notifications_yet">A huna zwiṱivhadzo zwazwino.</string>
+
+    <!-- Analytics -->
+    <string name="analytics_title">Musaukanyo wa data</string>
+    <string name="analytics_disclaimer">Mbuelo i bva kha ndingo na mbadelo dzaṋu. Mbuelo ya ṅwedzi yo tendelanwaho ndi mbadelo ya ṅwedzi ya ndingo dzo tendelwaho na dzi re kha mushumo; yo kuvhanganywaho ndi tshelede yo nwalwaho sa yo badelwaho. RentEase a i athu u shuma mbadelo ngayo ngei.</string>
+    <string name="stat_total_rooms">Makamara oṱhe</string>
+    <string name="stat_occupied_rooms">Makamara o dzhiwaho</string>
+    <string name="stat_occupancy_rate">Tshigato tsha u dzhiwa</string>
+    <string name="stat_open_maintenance">Zwikhumbelo zwa u lugisa zwo saliho zwo vulwa</string>
+
+    <!-- Admin: Dashboard -->
+    <string name="admin_dashboard_title">Danushibodo ya mulanguli</string>
+    <string name="platform_overview_heading">Nzudzanyo yoṱhe ya pulatifomo</string>
+    <string name="stat_pending_verifications">U sedza vhungoho ho lindelaho</string>
+    <string name="stat_pending_listings">Nnḓu dzo lindelaho</string>
+    <string name="stat_students">Vhagudi</string>
+    <string name="stat_landlords">Vhaṋe vha nnḓu</string>
+    <string name="stat_suspended_users">Vhashumisi vho imiswaho</string>
+    <string name="nav_landlord_verification">U sedza vhungoho ha muṋe wa nnḓu</string>
+    <string name="nav_property_moderation">U sedza nnḓu</string>
+    <string name="nav_user_management">U langa vhashumisi</string>
+    <string name="nav_booking_oversight">U sedza zwikhumbelo zwa u vhuka</string>
+    <string name="nav_audit_log">Rekhodo ya u sedza</string>
+
+    <!-- Admin: Verification -->
+    <string name="landlord_verification_title">U sedza vhungoho ha muṋe wa nnḓu</string>
+    <string name="verify_button">Sedza vhungoho</string>
+
+    <!-- Admin: Moderation -->
+    <string name="property_moderation_title">U sedza nnḓu</string>
+    <string name="no_listings_pending">A huna nnḓu dzo lindelaho u sedzwa.</string>
+    <string name="listed_by_label">Nga %1$s · %2$s, %3$s</string>
+
+    <!-- Admin: Users -->
+    <string name="user_management_title">U langa vhashumisi</string>
+    <string name="no_users_found">A huna vhashumisi vho wanalaho.</string>
+    <string name="active_label">U khou shuma</string>
+    <string name="suspended_label">Wo imiswa</string>
+
+    <!-- Admin: Bookings -->
+    <string name="booking_oversight_title">U sedza zwikhumbelo zwa u vhuka</string>
+    <string name="no_bookings_platform">A huna zwikhumbelo zwa u vhuka kha pulatifomo zwazwino.</string>
+
+    <!-- Admin: Audit log -->
+    <string name="audit_log_title">Rekhodo ya u sedza</string>
+    <string name="no_audit_events">A huna zwiitea zwa u sedza zwazwino.</string>
+
+    <!-- Admin access -->
+    <string name="admin_access_title">U dzhena ha mulanguli</string>
+    <string name="admin_access_signin_prompt">Dzhenani nga akhaunthu yaṋu u thoma, nahone ni ḓodze khodo ya u dzhena ha mulanguli.</string>
+    <string name="admin_access_code_prompt">Ḓodzani khodo ya u dzhena ha mulanguli. Hezwi zwi ṋea vhudzulo ha mulanguli kha akhaunthu yaṋu i re khou dzhena zwazwino nahone zwi khou sedzwa vhungoho nga khagala kha sistimu.</string>
+    <string name="access_code_label">Khodo ya u dzhena</string>
+    <string name="verify_code_button">Sedza vhungoho</string>
+
+    <!-- Placeholder / not-yet-built -->
+    <string name="signed_in_as">No dzhena sa %1$s</string>
+
+    <!-- Data-layer error messages — see values/strings.xml for context. -->
+    <string name="error_not_signed_in">A ni athu dzhena</string>
+    <string name="error_no_stored_session">A huna tshifhinga tsho vhulungwaho</string>
+    <string name="error_could_not_resolve_role_server">A si athu kona u wana vhudzulo haṋu kha sistimu</string>
+    <string name="error_could_not_resolve_role">A si athu kona u wana vhudzulo haṋu</string>
+    <string name="error_could_not_save_language">A si athu kona u vhulunga thoḓea ya luambo</string>
+    <string name="error_could_not_save_notification_preferences">A si athu kona u vhulunga thoḓea dza zwiṱivhadzo</string>
+    <string name="error_could_not_load_profile_after_signin">A si athu kona u lodza phurofaili nga murahu ha u dzhena.</string>
+    <string name="error_signed_in_no_role">No dzhena, fhedzi a huna vhudzulo ho ṋewaho akhaunthu heyi. Kwamani thuso.</string>
+    <string name="error_request_failed">Tshikhumbelo tsho kundelwa</string>
+    <string name="error_could_not_load_universities">A si athu kona u lodza yunivesithi</string>
+    <string name="error_search_failed">U ṱoḓa ho kundelwa</string>
+    <string name="error_listing_not_found">Nnḓu a yo ngo wanala</string>
+    <string name="error_signin_required_save_listings">Ni tea u dzhena u itela u vhulunga nnḓu.</string>
+    <string name="error_could_not_update_favourites">A si athu kona u vhulunga zwo takalelwaho</string>
+    <string name="error_signin_required_booking">Ni tea u dzhena u itela u humbela u vhuka.</string>
+    <string name="error_booking_request_failed">Tshikhumbelo tsha u vhuka tsho kundelwa</string>
+    <string name="error_signin_required_view_bookings">Ni tea u dzhena u itela u vhona zwikhumbelo zwaṋu zwa u vhuka.</string>
+    <string name="error_could_not_load_my_bookings">A si athu kona u lodza zwikhumbelo zwaṋu</string>
+    <string name="error_could_not_load_notifications">A si athu kona u lodza zwiṱivhadzo</string>
+    <string name="error_could_not_update_notification">A si athu kona u vhulunga tshiṱivhadzo</string>
+    <string name="error_could_not_register_device">A si athu kona u ṅwalisa themu ya zwiṱivhadzo</string>
+    <string name="error_landlord_profile_not_found">Phurofaili ya muṋe wa nnḓu a yo ngo wanala</string>
+    <string name="error_could_not_load_properties">A si athu kona u lodza nnḓu</string>
+    <string name="error_property_not_found">Nnḓu a yo ngo wanala</string>
+    <string name="error_could_not_resolve_properties_maintenance">A si athu kona u wana nnḓu dzaṋu dza u lugisa</string>
+    <string name="error_could_not_compute_analytics">A si athu kona u vhala musaukanyo wa data</string>
+    <string name="error_could_not_approve_booking">A si athu kona u tenda u vhuka</string>
+    <string name="error_could_not_assign_room">A si athu kona u ṋea kamara</string>
+    <string name="error_could_not_attach_image">A si athu kona u dzhenisa tshifanyiso</string>
+    <string name="error_could_not_create_property">A si athu kona u sika nnḓu</string>
+    <string name="error_could_not_create_room">A si athu kona u sika kamara</string>
+    <string name="error_could_not_delete_property">A si athu kona u vhudzula nnḓu</string>
+    <string name="error_could_not_delete_room">A si athu kona u vhudzula kamara</string>
+    <string name="error_could_not_load_bookings">A si athu kona u lodza zwikhumbelo zwa u vhuka</string>
+    <string name="error_could_not_load_conversations">A si athu kona u lodza nyambedzano</string>
+    <string name="error_could_not_load_maintenance_tickets">A si athu kona u lodza zwikhumbelo zwa u lugisa</string>
+    <string name="error_could_not_load_messages">A si athu kona u lodza malaedza</string>
+    <string name="error_could_not_load_rooms">A si athu kona u lodza makamara</string>
+    <string name="error_could_not_mark_conversation_read">A si athu kona u sumbedza nyambedzano yo vhalwaho</string>
+    <string name="error_could_not_reject_booking">A si athu kona u landula u vhuka</string>
+    <string name="error_could_not_send_message">A si athu kona u rumela molaedza</string>
+    <string name="error_could_not_update_availability">A si athu kona u vhulunga u wanala</string>
+    <string name="error_could_not_update_property">A si athu kona u vhulunga nnḓu</string>
+    <string name="error_could_not_update_room">A si athu kona u vhulunga kamara</string>
+    <string name="error_could_not_update_ticket_status">A si athu kona u vhulunga vhuimo ha tshikhumbelo</string>
+    <string name="error_could_not_reach_server">A si athu kona u swikelela sistimu. Sedzani inthanethe yaṋu ni lingedze hafhu.</string>
+    <string name="error_access_denied">U dzhena ho landulwa</string>
+    <string name="error_could_not_load_audit_log">A si athu kona u lodza rekhodo ya u sedza</string>
+
+    <!-- TODO(translation-review): support/complaints block, LOW confidence — please have a native Tshivenda speaker review. -->
+    <string name="support_title">Thuso na zwibodi</string>
+    <string name="support_description">Ṱivhadza vhuleme kha vhuḓinḓa ha RentEase nahone u tevhele mvelaphanḓa ya u tandulula.</string>
+    <string name="new_complaint_heading">Tshibodi tshiswa</string>
+    <string name="complaint_subject_label">Tshiṱoho</string>
+    <string name="complaint_category_label">Tshigwada</string>
+    <string name="complaint_description_label">Ho itea mini?</string>
+    <string name="submit_complaint_button">Rumela tshibodi</string>
+    <string name="submitting_complaint_button">Khou rumela…</string>
+    <string name="complaint_submitted_confirmation">Tshibodi tsho rumelwa — mulanguli u ḓo fhindula</string>
+    <string name="no_complaints_logged">A huna zwibodi zwo ṅwaliswaho</string>
+    <string name="no_complaints_logged_subtitle">Ri fulufhela uri zwi ḓo dzula zwo ralo — fhedzi ri hone arali zwi tea.</string>
+    <string name="complaint_validation_subject_short">Ṋea tshiṱoho tshipfufhi</string>
+    <string name="complaint_validation_description_short">Ri ṱalutshedzeni nga vhuronwane u itela u thusa</string>
+    <string name="admin_response_label">RentEase:</string>
+    <string name="error_could_not_load_my_complaints">A zwo ngo kona u dzhenisa zwibodi zwau</string>
+    <string name="error_complaint_submit_failed">A zwo ngo kona u rumela tshibodi tshau</string>
+
+    <string name="admin_complaints_title">Zwibodi</string>
+    <string name="admin_complaints_description">Zwibodi zwoṱhe zwo bikwaho nga vhagudi na vhaṋe vha nnḓu.</string>
+    <string name="no_complaints_queue">Murangano a u na tshithu.</string>
+    <string name="admin_response_field_label">Phindulo kha muṋei wa mafhungo</string>
+    <string name="mark_in_progress_button">Sumbedza uri zwi khou itwa</string>
+    <string name="resolve_button">Tandulula</string>
+    <string name="close_button">Vala</string>
+    <string name="error_could_not_load_complaints">A zwo ngo kona u dzhenisa zwibodi</string>
+    <string name="error_could_not_update_complaint">A zwo ngo kona u khwinisa tshibodi itshi</string>
+
+    <!-- TODO(translation-review): payments block, LOW confidence — please have a native Tshivenda speaker review. -->
+    <string name="error_booking_deposit_failed">U vhuka hau ho rumelwa, fhedzi a zwo ngo kona u vhanga rekhodo ya mbadelo ya dipozithi — kha vha sedze kha Mbadelo kana vha ambedzane na muṋe wa nnḓu</string>
+    <string name="error_could_not_load_my_payments">A zwo ngo kona u dzhenisa mbadelo dzau</string>
+    <string name="error_mark_payment_paid_failed">A zwo ngo kona u sumbedza uri mbadelo iyi yo badelwa</string>
+    <string name="nav_payments">Mbadelo</string>
+    <string name="no_payments_yet">A huna mbadelo zwino.</string>
+    <string name="pay_now_button">Badela zwino</string>
+    <string name="paying_button">Khou sumbedza u badela…</string>
+    <string name="payment_due_label">I fanela u badelwa %1$s</string>
+    <string name="payment_kind_deposit">Dipozithi</string>
+    <string name="payment_kind_fee">Mbadelo ya tshumelo</string>
+    <string name="payment_kind_rent">Mbadelo ya nnḓu</string>
+    <string name="payment_paid_on_label">Yo badelwa %1$s</string>
+    <string name="payment_status_failed">A yo ngo kona</string>
+    <string name="payment_status_paid">Yo badelwa</string>
+    <string name="payment_status_pending">I kha ḓi lindela</string>
+    <string name="payment_status_refunded">Yo vhuyedzedzwa</string>
+    <string name="payments_description">Dipozithi, mbadelo ya nnḓu na dza tshumelo kha u vhuka hau.</string>
+    <string name="payments_stat_outstanding">Zwi sa athu badelwa</string>
+    <string name="payments_stat_paid">Zwo badelwaho</string>
+    <string name="payments_title">Mbadelo</string>
+    <string name="error_could_not_load_moderation_queue">A si athu kona u lodza mutevhe wa u sedza nnḓu</string>
+    <string name="error_could_not_load_users">A si athu kona u lodza vhashumisi</string>
+    <string name="error_could_not_load_verification_queue">A si athu kona u lodza mutevhe wa u sedza vhungoho</string>
+    <string name="error_could_not_update_property_status">A si athu kona u vhulunga vhuimo ha nnḓu</string>
+    <string name="error_could_not_update_user_status">A si athu kona u vhulunga vhuimo ha mushumisi</string>
+    <string name="error_could_not_update_verification_status">A si athu kona u vhulunga vhuimo ha u sedza vhungoho</string>
+
+    <!-- ===== Added in the Part 2 audit. NOTE: isiZulu/Tshivenda text below is a
+         best-effort draft and MUST be reviewed by a native speaker. ===== -->
+    <string name="error_enter_email_password">Ni humbelwa u ṅwala email na phasiwedi yaṋu.</string>
+    <string name="error_fill_required_fields">Ni humbelwa u ḓadza zwoṱhe zwi ṱoḓeaho.</string>
+    <string name="error_upload_verification_documents">A si athu kona u ḓodza maṅwalo a u sedza vhungoho. Sedzani inthanethe yaṋu ni lingedze hafhu.</string>
+    <string name="error_upload_documents">A si athu kona u ḓodza maṅwalo aṋu. Sedzani inthanethe yaṋu ni lingedze hafhu.</string>
+    <string name="error_image_upload_failed">U ḓodza tshifanyiso zwo kundelwa. Ni lingedze hafhu.</string>
+    <string name="error_enter_admin_code">Ḓodzani khodo ya u dzhena ha mulanguli.</string>
+    <string name="error_admin_session_refresh_failed">U dzhena ho ṋewa, fhedzi pulogireme a i ngo kona u vusuludza sesheni yaṋu ngaṋoṋe. Bvani ni dzhene hafhu.</string>
+    <string name="google_sign_in_failed">U dzhena nga Google ho litshiwa kana a zwi kho kha divaisi iyi.</string>
+    <string name="error_name_required">Ni humbelwa u ṅwala dzina ḽaṋu.</string>
+    <string name="error_could_not_save_profile">A si athu kona u vhulunga phurofaili yaṋu</string>
+    <string name="profile_saved_message">Phurofaili yo vhulungwa.</string>
+    <string name="fallback_property_name">Nnḓu</string>
+    <string name="fallback_student_name">Mugudi</string>
+    <string name="fallback_landlord_name">Muṋe wa nnḓu</string>
+    <string name="fallback_unknown_actor">Muthu a sa ḓivhei</string>
+    <string name="listing_title_fallback">Nnḓu</string>
+    <string name="business_label">Bisiniseni: %1$s</string>
+    <string name="booking_summary_line">Nomboro: %1$s · R%2$d/ṅwedzi · %3$s</string>
+    <string name="booking_request_summary">Nomboro: %1$s · U dzhena: %2$s · miṅwedzi %3$d</string>
+    <string name="maintenance_priority_category">Ndeme: %1$s · Tshigwada: %2$s</string>
+    <string name="priority_low">Fhasi</string>
+    <string name="priority_medium">Vhukati</string>
+    <string name="priority_high">Ntha</string>
+    <string name="priority_urgent">Zwa u ṱavhanya</string>
+    <string name="channel_system_name">Zwiṱivhadzo</string>
+    <string name="channel_bookings_desc">U vhuka ho ṱanganedzwa, ho landulwa, kana u shanduka ha vhuimo</string>
+    <string name="channel_messages_desc">Malaedza maswa a bvaho kha vhagudi na vhaṋe vha nnḓu</string>
+    <string name="channel_maintenance_desc">U shanduka ha vhuimo ha zwikhumbelo zwa u lugisa</string>
+    <string name="channel_system_desc">Zwiṱivhadzo zwa ndeme zwa vhulanguli na sistimu</string>
+    <string name="compare_action">Vhambedza</string>
+    <string name="compare_selected_count">Vhambedza (%1$d)</string>
+    <string name="compare_title">Vhambedza nnḓu</string>
+    <string name="compare_hint">Nangani nnḓu dza 2 u swika kha 3, ni thome ni ṱhaphudze Vhambedza.</string>
+    <string name="compare_max_reached">Ni nga vhambedza nnḓu dzi swikaho kha 3 nga tshifhinga tshithihi.</string>
+    <string name="compare_need_two">Nangani nnḓu dzi si fhasi ha 2 u itela u vhambedza.</string>
+    <string name="compare_clear">Fhelisa</string>
+    <string name="compare_select_desc">Nanga u itela u vhambedza</string>
+    <string name="compare_row_rent">Rendi ya ṅwedzi</string>
+    <string name="compare_row_deposit">Diphosithi</string>
+    <string name="compare_row_distance">Vhulapfu ha u bva khoro ya yunivesithi</string>
+    <string name="compare_row_rooms_available">Makamara ane a wanala</string>
+    <string name="compare_row_rating">Ratingi</string>
+    <string name="compare_yes">Ee</string>
+    <string name="compare_no">Hai</string>
+    <string name="compare_best_badge">Zwavhuḓi</string>
+    <string name="compare_lowest_rent">Rendi i re fhasi: %1$s</string>
+    <string name="compare_closest">I re tsini na yunivesithi: %1$s</string>
+    <string name="compare_top_rated">I re ṋṱha ha ratingi: %1$s</string>
+    <string name="progress_title">U tshimbila ha u sedza vhungoho</string>
+    <string name="progress_steps_complete">Zwitepe zwo fhelelaho: %1$d kha %2$d</string>
+    <string name="progress_next_step">Zwi tevhelaho: %1$s</string>
+    <string name="progress_all_done">Zwitepe zwoṱhe zwo fhela — mushumo wavhuḓi!</string>
+    <string name="progress_badge_label">Bheji: %1$s</string>
+    <string name="progress_step_account">Vhumbani akhaunthu yaṋu</string>
+    <string name="progress_step_documents">Rumelani ID na maṅwalo a vhuṋe</string>
+    <string name="progress_step_verified">Sedzwani vhungoho nga RentEase</string>
+    <string name="progress_step_first_property">Engedzani nnḓu yaṋu ya u thoma</string>
+    <string name="progress_step_published">Vhonadzani nnḓu yaṋu kha vhagudi</string>
+    <string name="progress_badge_newcomer">Muswa</string>
+    <string name="progress_badge_documents_in">Maṅwalo o Rumelwa</string>
+    <string name="progress_badge_verified_host">Muṱanzi o Sedzwaho</string>
+    <string name="progress_badge_listing_creator">Muvhumbi wa Nnḓu</string>
+    <string name="progress_badge_fully_live">O Khagala Nga Vhuḓalo</string>
+    <string name="role_label_student">Mugudi</string>
+    <string name="role_label_landlord">Muṋe wa nnḓu</string>
+    <string name="role_label_admin">Mulanguli</string>
+    <string name="room_type_capacity">%1$s (vhathu: %2$d)</string>
+
+    <!-- TODO(translation-review): added programmatically, not yet checked by a
+         native Tshivenda speaker — please review before shipping. Lowest
+         confidence of the two translation passes; prioritise reviewing this
+         file first. -->
+    <string name="student_maintenance_title">U lugisa</string>
+    <string name="student_maintenance_description">Ṱivhadza vhuleme ha nnḓu yau nahone u tevhele mvelaphanḓa ya muṋe wa nnḓu.</string>
+    <string name="maintenance_new_request_heading">Ṅwalisa vhuleme havhuswa</string>
+    <string name="maintenance_select_booking_label">Hezwi zwi tshimbidzana na u vhuka ha vhufhio?</string>
+    <string name="maintenance_no_eligible_bookings">Zwikhumbelo zwa u lugisa zwi nga ṅwaliswa fhedzi kha u vhuka ho tendelwaho, ho itiwaho kana ho fheliswaho.</string>
+    <string name="maintenance_issue_title_label">Dzina</string>
+    <string name="maintenance_issue_description_label">Ṱhaluso</string>
+    <string name="maintenance_category_label">Tshigwada</string>
+    <string name="maintenance_priority_label">Ndeme</string>
+    <string name="maintenance_attach_photo_button">Ṱanganyisa tshifanyiso (a zwi ṱoḓei)</string>
+    <string name="maintenance_photo_attached">Tshifanyiso tsho ṱanganyiswa</string>
+    <string name="maintenance_submit_button">Rumela tshikhumbelo</string>
+    <string name="maintenance_submitting_button">Khou rumela…</string>
+    <string name="maintenance_request_submitted">Tshikhumbelo tsha u lugisa tsho ṅwaliswa</string>
+    <string name="maintenance_validation_title_short">Ṋea vhuleme dzina ḽipfufhi</string>
+    <string name="maintenance_validation_description_short">Ṱalusa vhuleme nga vhuronwane vhunzhi</string>
+    <string name="maintenance_your_requests_heading">Zwikhumbelo zwau</string>
+    <string name="error_maintenance_submit_failed">A zwo ngo kona u rumela tshikhumbelo tsha u lugisa</string>
+    <string name="error_could_not_load_my_maintenance_requests">A zwo ngo kona u dzhenisa zwikhumbelo zwau zwa u lugisa</string>
+    <string name="maintenance_category_plumbing">Mbivha</string>
+    <string name="maintenance_category_electrical">Combelo</string>
+    <string name="maintenance_category_appliance">Zwishumiswa</string>
+    <string name="maintenance_category_internet">Inthanete</string>
+    <string name="maintenance_category_security">Tsireledzo</string>
+    <string name="maintenance_category_structural">Fhaṱo</string>
+    <string name="maintenance_category_other">Zwiṅwe</string>
+
+    <string name="student_dashboard_greeting">Ndaa %1$s</string>
+    <string name="student_dashboard_greeting_fallback">Ndaa</string>
+    <string name="student_dashboard_subtitle">U vhuka hau, dziṅango dzo vhulungwaho na malaedza zwo katelwa fhethu huthihi.</string>
+    <string name="student_dashboard_stat_bookings">U vhuka</string>
+    <string name="student_dashboard_stat_saved">Zwo vhulungwaho</string>
+    <string name="student_dashboard_stat_unread">Zwi sa athu vhalwa</string>
+    <string name="nav_browse_properties">Sedza dzinnḓu</string>
+
+    <string name="filters_button_label">Zwisefo</string>
+    <string name="filter_any_university">Naho ndi yunivesithi ifhio</string>
+    <string name="filter_any_province">Naho ndi vundu ḽifhio</string>
+    <string name="filter_max_rent_label">Mbadelo khulwane: R%1$d</string>
+    <string name="filter_furnished_only">Zwo fhelaho nga fenisha fhedzi</string>
+    <string name="filter_amenities_label">Zwishumiswa zwa nnḓu</string>
+    <string name="filter_clear_all">Bvisa zwisefo zwoṱhe</string>
+
+    <string name="sort_newest">Zwiswa</string>
+    <string name="sort_price_asc">Mutengo: fhasi u ya kha nṱha</string>
+    <string name="sort_price_desc">Mutengo: nṱha u ya fhasi</string>
+    <string name="sort_rating">Dzo dzhenelelwaho nga nṱha</string>
+    <string name="sort_distance">Tsini na khempasi</string>
+
+    <string name="appearance_heading">Nzudzanyo ya u vhonala</string>
+    <string name="theme_system">Tendelanya na sisiṱeme</string>
+    <string name="theme_light">Zwi vhonalaho</string>
+    <string name="theme_dark">Swiswi</string>
+
+    <string name="cancel_booking_button">Khansela tshikhumbelo</string>
+    <string name="booking_cancelled_confirmation">Tshikhumbelo tsha u vhuka tsho khanselwa</string>
+    <string name="error_cancel_booking_failed">A zwo ngo kona u khansela u vhuka uhu</string>
+
+    <!-- TODO(translation-review): reviews block, LOW confidence — please have a native Tshivenda speaker review. -->
+    <string name="write_review_button">Ṅwala mavhonele</string>
+    <string name="review_rating_star_description">Maga: %1$d/5</string>
+    <string name="review_title_label">Dzina (a zwi ṱoḓei)</string>
+    <string name="review_body_label">Mavhonele au (zwiga zwi si fhasi ha 10)</string>
+    <string name="review_submit_button">Rumela mavhonele</string>
+    <string name="review_submitted_confirmation">Ndi a livhuwa — mavhonele au o rumelwa</string>
+    <string name="error_review_submit_failed">A zwo ngo kona u rumela mavhonele au</string>
+    <string name="error_review_already_submitted">Wo no ṅwala mavhonele kha u vhuka uhu</string>
+    <!-- TODO(translation-review): onboarding/document block, lowest-confidence Tshivenda, needs native review. -->
+    <string name="ok_button">Zwavhuḓi</string>
+    <string name="pick_date_description">Ṋea ḓuvha</string>
+    <string name="course_label">Khosi / dzikhwaḽifikheshini</string>
+    <string name="year_of_study_label">Ṅwaha wa u guda</string>
+    <string name="year_of_study_value">Ṅwaha wa %1$d</string>
+    <string name="budget_max_label">Mugaganyo wa kha ṅwedzi (R)</string>
+    <string name="preferred_room_type_label">Lushaka lwa ṋumbani lune na lu funa</string>
+    <string name="earliest_move_in_label">Ḓuvha ḽa u thoma ḽa u dzhena</string>
+    <string name="needs_furnished_label">Ndi ṱoḓa ṋumbani ya zwishumiswa</string>
+    <string name="student_dashboard_stat_total_paid">Tshiwo tsho badelwaho</string>
+    <string name="onboarding_banner_title">Fhedzisani phrofaile yaṋu ya mugudi</string>
+    <string name="onboarding_banner_body">Vhaḓuvhi vha ṱanganedza zwiṅwe nga u hwelela musi zwidodombedzwa zwaṋu na ubvelelo ha vhubindudzi zwo ṋekedzwa.</string>
+    <string name="onboarding_banner_action">Fhedzisa phrofaile</string>
+    <string name="onboarding_student_title">Phrofaile ya mugudi</string>
+    <string name="onboarding_student_subtitle">Zwidodombedzwa izwi zwi thusa u wana vhudzulo na u ṱavhanya zwikumedzwa zwa u bhuka.</string>
+    <string name="onboarding_section_contact">U vhudzisana</string>
+    <string name="onboarding_section_academic">Mafhungo a pfunzo</string>
+    <string name="onboarding_section_preferences">Zwine na funa kha vhudzulo</string>
+    <string name="onboarding_proof_title">Ubvelelo ha vhubindudzi</string>
+    <string name="onboarding_proof_body">A zwi ṱoḓei, fhedzi vhaḓuvhi vha ṱanganedza nga u ṱavhanya musi zwi hone. Zwi vhulungwa nga tshiphiri — ni ni fhedzi na vhulanguli ha RentEase ni nga zwi vula.</string>
+    <string name="onboarding_upload_document">Fhaṱa PDF kana tshifanyiso</string>
+    <string name="onboarding_replace_document">Dzudzanya faela</string>
+    <string name="onboarding_view_document">Vhonani dokhumente yo fhaṱwaho</string>
+    <string name="document_hint">PDF, JPG, PNG kana WEBP — zwi sa fhiri 5 MB.</string>
+    <string name="document_error_empty">Faela yo nanguwaho a i na tshithu.</string>
+    <string name="document_error_type">Shumisani faela ya PDF, JPG, PNG kana WEBP.</string>
+    <string name="document_error_too_large">Faela i fanela u vha 5 MB kana i sa fhiri.</string>
+    <string name="onboarding_field_required">Mbudziso iyi i a ṱoḓea.</string>
+    <string name="onboarding_save_continue">Vhulunga ni bvelele</string>
+    <string name="onboarding_error_load">A zwo ngo kona u vhuyedza phrofaile yaṋu.</string>
+    <string name="onboarding_error_save">A zwo ngo kona u vhulunga phrofaile yaṋu.</string>
+    <string name="onboarding_error_upload">U fhaṱa ho kundelwa. Ṱalutshedzani hafhu.</string>
+    <string name="onboarding_error_open_document">A zwo ngo kona u vula dokhumente.</string>
+    <string name="onboarding_landlord_title">U khwaṱhisedzwa ha mudzulapo</string>
+    <string name="onboarding_verification_status_title">Tshiimiswa tsha u khwaṱhisedza</string>
+    <string name="onboarding_required_docs_progress">%1$d kha %2$d dzidokhumente dzi ṱoḓeaho dzo fhaṱwa</string>
+    <string name="onboarding_admin_notes_label">Nndwa dza muvhulanguli</string>
+    <string name="onboarding_display_name_label">Dzina ḽi vhonalaho</string>
+    <string name="onboarding_contact_phone_label">Nomboro ya u vhudzisana</string>
+    <string name="onboarding_section_identity">Vhuṋaṋa</string>
+    <string name="onboarding_identity_hint">Zwi fanela u pfana na dokhumente yaṋu ya ID kana phasipoto.</string>
+    <string name="onboarding_legal_name_label">Dzina ḽo fhelelaho sa ho ṅwalwa kha ID</string>
+    <string name="onboarding_id_number_label">Nomboro ya ID kana phasipoto</string>
+    <string name="onboarding_section_business">Bindu ḽa zwivhaswa</string>
+    <string name="onboarding_company_name_label">Dzina ḽa khamphani / ḽa mveledziso (a ḽi ṱoḓei)</string>
+    <string name="onboarding_registration_number_label">Nomboro ya vhubindudzi ha khamphani (a i ṱoḓei)</string>
+    <string name="onboarding_address_label">Adiresi ya bindu kana ya poso</string>
+    <string name="onboarding_city_label">Ḓorobo</string>
+    <string name="onboarding_province_label">Vundu</string>
+    <string name="onboarding_postal_code_label">Khoudi ya poso (a i ṱoḓei)</string>
+    <string name="onboarding_documents_title">Dzidokhumente dza u khwaṱhisedza</string>
+    <string name="onboarding_documents_hint">Fhaṱani dzidokhumente dzi ṱoḓeaho. Muvhulanguli u a dzi ṱolisisa a khwaṱhisedza akhaunthu yaṋu. Dzifaela dzi vhulungwa nga tshiphiri.</string>
+    <string name="doc_id_document">ID kana phasipoto</string>
+    <string name="doc_proof_of_ownership">Ubvelelo ha vhaṋini / mvumo</string>
+    <string name="doc_proof_of_address">Ubvelelo ha adiresi</string>
+    <string name="doc_business_registration">Dokhumente ya vhubindudzi ha khamphani</string>
+    <string name="doc_required_suffix">%1$s (zwi a ṱoḓea)</string>
+    <string name="doc_optional_suffix">%1$s (a zwi ṱoḓei)</string>
+    <string name="landlord_open_onboarding">Fhedzisa u khwaṱhisedza</string>
+    <string name="landlord_register_documents_later">Musi no no dzhena, dashboard yaṋu i ḓo ni livhisa kha mafhungo a bindu na ID na vhuṱanzi ha vhuvha zwine ra zwi ṱoḓa u ni khwaṱhisedza.</string>
+    <!-- TODO(translation-review): booking sheet block, lowest-confidence Tshivenda. -->
+    <string name="error_booking_duplicate">Ni na thovhelo ine ya vulea ya fhethu hu. Vhonani Dzibugu dzanga.</string>
+    <string name="booking_sent_title">Thovhelo yo rumelwa kha mudzulapo</string>
+    <string name="booking_view_my_bookings">Vhonani dzibugu dzanga</string>
+    <string name="booking_room_label">Ṋumbani</string>
+    <string name="booking_room_any">Ṋumbani ifhio na ifhio i re hone</string>
+    <string name="booking_room_option">%1$s · %2$s · R%3$d</string>
+    <string name="booking_lease_option">Miṅwedzi ya %1$d</string>
+    <string name="booking_monthly_rent">Renti ya kha ṅwedzi</string>
+    <string name="booking_deposit_due">Depositi i ḓo badelwa musi hu tshi tendelwa</string>
+    <string name="booking_documents_heading">Dzidokhumente dza u khwaṱhisedza</string>
+    <string name="booking_proof_on_file">Ubvelelo haṋu ha vhubindudzi hu bvaho kha phrofaile hu ḓo shumiswa.</string>
+    <!-- TODO(translation-review): maintenance photo. -->
+    <string name="maintenance_view_photo">Vhonani tshifanyiso</string>
+    <!-- Public info pages: VE draft translation — TODO(translation-review) native speaker, lowest confidence -->
+    <string name="pub_about_us">Nga ha ri</string>
+    <string name="pub_how_it_works">Zwi shumaho hani</string>
+    <string name="pub_services">Tshumelo</string>
+    <string name="pub_pricing">Mitengo</string>
+    <string name="pub_faq">Mbudziso dzi vhudzisiwaho</string>
+    <string name="pub_contact">Kwamani na ri</string>
+    <string name="pub_privacy">Mulayo wa Tshidzumbe</string>
+    <string name="pub_terms">Mibvumbo ya Tshumelo</string>
+    <string name="pub_more_about">Zwinwe nga ha RentEase</string>
+    <string name="pub_last_updated">Zwo vusuluswa nga la 1 Ṱhafamuhwe 2026.</string>
+    <string name="about_title">U wana fhethu ha u dzula ha ṋyaluwa zwi fanela u dzhia maḓuvha, hu si miṅwedzi.</string>
+    <string name="about_intro">RentEase yo fhatwa u funza nḓila yoṱhe ya fhethu ha u dzula ha ṋyaluwa kha inthanethi, ha ṋyaluwa na vhaṋe vha nndu.</string>
+    <string name="about_story_title">Ndaulo yashu</string>
+    <string name="about_story_1">Ṅwedzi muṅwe na muṅwe wa Luhuhi, dzikhidzi dza ṋyaluwa dzi swika kha mavhengele a sa ḓivhei dzi na kalata ya u amba, fhedzi dzi si na fhethu ha u lala. Zwiṅwe zwi vha zwo kalula kha mabodo, mahoro a WhatsApp na saithi dza zwikhangiso zwi si na u khwaṱhisedzwa.</string>
+    <string name="about_story_2">Ro fhata RentEase u itela uri nḓila iyo yoṱhe i vhe kha inthanethi: vhaṋe vha nndu vho khwaṱhisedzwaho, zwifanyiso zwa mulayo, mitengo i vhonalaho, zwikoloṋwa zwa dijithali zwi na maṅwalo, na rekhodo yo fhelelaho ya muthelo muṅwe na muṅwe na khumbelo ya u vhuedzwa.</string>
+    <string name="about_story_3">Vhaṋe vha nndu na vho vhuyelwa nga nḓila i fanaho. Nṱhani ha u ṱuṱuwedza maṅwalo, zwino vha langa ṱhumbi, u tendelwa, vhaṱoli na mbuelo kha dashboard ya yone.</string>
+    <string name="about_values_title">Zwi livhisaho phetho yoṱhe</string>
+    <string name="about_value_safety_title">U tsireledzea ha u thoma</string>
+    <string name="about_value_safety_body">Muṋe wa nndu muṅwe na muṅwe u a ṱolwa nahone nndu yoṱhe i a lavhelelwa nga u ya nga mulayo wa u tsireledzea ha ṋyaluwa phanḓa ha u bvisela khagala.</string>
+    <string name="about_value_transparency_title">U vhonala zwi tou fhelela</string>
+    <string name="about_value_transparency_body">Zwifanyiso zwa vhukuma, mitengo ya vhukuma, thodea dza vhukuma. A hu na mbadelo dzo dzumbaho, a hu na zwikhangiso zwa u kunga, a hu na zwi mangadzaho ḓuvha la u dzhena.</string>
+    <string name="about_value_fair_title">U luga kha mahafhu mavhili</string>
+    <string name="about_value_fair_body">Ṋyaluwa a dzi lipi mbadelo dza pulatifomo. Vhaṋe vha nndu vha wana zwishumiswa zwi leludzaho u tevhedza milayo na u falesa ṱhumbi.</string>
+    <string name="about_value_students_title">Zwo fhatwa na ṋyaluwa</string>
+    <string name="about_value_students_body">Vhaimeleli vha ṋyaluwa vha ṱola u bviswa ha vhuṋe muhulwane uri app i dzhiele u shuma kha vhane vha i shumisa.</string>
+    <string name="how_student_tab">Ha ṋyaluwa</string>
+    <string name="how_landlord_tab">Ha vhaṋe vha nndu</string>
+    <string name="how_title">Nḓila yo khetheaho u bva kha u tshimbidzwa ha u thoma u swika kha tshumisano yo saathiwaho.</string>
+    <string name="how_intro">RentEase i shuma u wana, maṅwalo, u tendelwa, mbadelo na u vhuedza uri tshithu tshi si dzhie kha nyambedzano ya WhatsApp.</string>
+    <string name="how_student_heading">Wana nahone u tsireledze ṱhumbi yaṋu</string>
+    <string name="how_student_s1_title">Sikhou profaili yaṋu ya ṋyaluwa</string>
+    <string name="how_student_s1_body">Khwaṱhisedzani nomboro yaṋu ya ṋyaluwa, yunivesithi, fakhalithi na ṅwaha wa pfunzo luthihi, ni dovha ni khou humbela hune na ṱoda nga tshifhinga tshipfupi.</string>
+    <string name="how_student_s2_title">Ṱoḓa na u vhambedza</string>
+    <string name="how_student_s2_body">Sefa nga mutengo, vhukule u bva kha kampasi, zwishumiswa na u wanala. Vhulungani zwine na funa ni vhambedze zwi tshi vhonala kha tshiṅwe.</string>
+    <string name="how_student_s3_title">Bhukani na maṅwalo o ṋewaho</string>
+    <string name="how_student_s3_body">Khethani ṱhumbi, ni vhone ḓuvha la u dzhena na tshifhinga tsha tshumisano, ni dovha ni ṋea ID yaṋu na vhuṱanzi ha u ṅwalisa.</string>
+    <string name="how_student_s4_title">Dzhenani ni lange</string>
+    <string name="how_student_s4_body">Ḓiselani dipoziti na mbadelo ya muṅwedzi, ṱanganedzani ristsi, nyambedzanani na muṋe wa nndu ni ṅwale khumbelo dza u vhuedza.</string>
+    <string name="how_landlord_heading">Tou ṅwala, tendela na u badelwa</string>
+    <string name="how_landlord_s1_title">Khwaṱhisedzwani</string>
+    <string name="how_landlord_s1_body">Rumelani zwidodombedzwa zwa mabindu aṋu na vhuṱanzi ha vhuṋe. Tshiṅwe tshigwada tshashu tsha u tevhedza milayo tshi ṱola vhaṋe vha nndu vha vhukuma.</string>
+    <string name="how_landlord_s2_title">Ṅwalani nndu yaṋu</string>
+    <string name="how_landlord_s2_body">Ṋeani zwifanyiso, zwishumiswa, ṱhumbi na mitengo ya nndu nthihi na nthihi.</string>
+    <string name="how_landlord_s3_title">Tendelani u bhuka</string>
+    <string name="how_landlord_s3_body">Ṱolani khumbelo dza ṋyaluwa dzi na maṅwalo, ni tendele kana ni hanedze, ni ṋee ṱhumbi i fanaho.</string>
+    <string name="how_landlord_s4_title">Tevhelani mbuelo yaṋu</string>
+    <string name="how_landlord_s4_body">Vhonani mbuelo, u falesa na rekhodo dza vhaṱoli kha dashboard yaṋu.</string>
+    <string name="how_cta_student">Sikhou akhaunthu ya ṋyaluwa ya mahala</string>
+    <string name="how_cta_landlord">Vhambedzani pulane dza vhaṋe vha nndu</string>
+    <string name="services_title">Pulatifomo nthihi ya vhutshilo hoṱhe ha fhethu ha u dzula.</string>
+    <string name="services_intro">U bva kha u ṱoḓa ha u thoma u swika kha mbadelo ya muṅwedzi wa u fhedzisela, RentEase i dzhia fhethu ha mashiti, fomo dzo nyatshelwaho na nyambedzano dzo kalulaho.</string>
+    <string name="services_s1_title">U ṱoḓa fhethu ha u dzula ho khwaṱhisedzwaho</string>
+    <string name="services_s1_body">Zwiṅwe na zwiṅwe zwi a ṱolwa phanḓa ha u vhonala, hu na bajhi ya u khwaṱhisedzwa kha nndu dzo tendelwaho.</string>
+    <string name="services_s2_title">Tshumisano na u bhuka zwa dijithali</string>
+    <string name="services_s2_body">Khumbelo, maṅwalo, tshifhinga tsha tshumisano na u tendelwa zwi langwa u bva kha u thoma u swika kha u fhedza zwi si na maṅwalo.</string>
+    <string name="services_s3_title">Rekhodo dza mbadelo na dipoziti</string>
+    <string name="services_s3_body">Dipoziti na mbadelo ya muṅwedzi zwi a rekhodiwa zwi na mivhigo ya mbadelo ine na nga i ṱola tshifhinga tshiṅwe na tshiṅwe.</string>
+    <string name="services_s4_title">U langa u vhuedza</string>
+    <string name="services_s4_body">Ṋyaluwa dzi ṅwala thaidzo dzi na zwifanyiso, vhaṋe vha nndu vha ṋea na u dzudzanya, muṅwe na muṅwe u tevhela mvelaphanḓa.</string>
+    <string name="services_s5_title">Mulaedza wa tshoṱhe</string>
+    <string name="services_s5_body">Nyambedzano vhukati ha ṋyaluwa na vhaṋe vha nndu i na mivhigo yo fhelelaho.</string>
+    <string name="services_s6_title">Mivhigo na u shumisa data</string>
+    <string name="services_s6_body">Mivhigo ya u falesa, mbuelo, u bhuka na u vhuedza ya vhaṋe vha nndu na vhalanga vha pulatifomo.</string>
+    <string name="services_included_title">Zwi katelwa muṅwe na muṅwe</string>
+    <string name="services_included_1">U khwaṱhisedzwa ha vhuṋe na maṅwalo</string>
+    <string name="services_included_2">Mimvelele ya u wanala ya ṱhumbi iṅwe na iṅwe</string>
+    <string name="services_included_3">Mivhigo ya mbadelo na zwiitisi</string>
+    <string name="services_included_4">Tikiti dza u vhuedza dzi na zwifanyiso</string>
+    <string name="services_included_5">U langa thodea na u dzudzanya khakhathi</string>
+    <string name="services_cta_title">A ni na vhuḓifulufheli uri ndi pulane ifhio i fanaho?</string>
+    <string name="services_cta_body">Ri vhudzeni uri ni langa ṱhumbi dzi vhonalaho vhukuma ri ni ṋee ndivho.</string>
+    <string name="pricing_title">Ya mahala kha ṋyaluwa. I luga kha vhaṋe vha nndu.</string>
+    <string name="pricing_intro">A hu na khomishini kha mbadelo, a hu na mbadelo dzo dzumbaho dza u ṅwala. Khethani pulane i tshimbilelanaho na vhuhulu ha porotifoliyo yaṋu.</string>
+    <string name="pricing_popular">I funwa nga vhunzhi</string>
+    <string name="pricing_cta_student">Sikhou akhaunthu ya ṋyaluwa</string>
+    <string name="pricing_cta_growth">Thomani nṱhani ha maḓuvha a 30</string>
+    <string name="pricing_cta_portfolio">Nyambedzanani na vhatengisi</string>
+    <string name="pricing_student_name">Ṋyaluwa</string>
+    <string name="pricing_student_price">Mahala</string>
+    <string name="pricing_student_cadence">tshifhinga tshoṱhe</string>
+    <string name="pricing_student_desc">Zwoṱhe zwine ṋyaluwa ya zwi ṱoḓa u wana, u bhuka na u langa fhethu ha u dzula.</string>
+    <string name="pricing_student_f1">U ṱoḓa na u sefa zwi si na mpimo</string>
+    <string name="pricing_student_f2">Vhulunga na u vhambedza nndu</string>
+    <string name="pricing_student_f3">U bhuka ha dijithali na maṅwalo</string>
+    <string name="pricing_student_f4">Mbadelo ya rente na ristsi</string>
+    <string name="pricing_student_f5">Khumbelo dza u vhuedza</string>
+    <string name="pricing_student_f6">Mulaedza wa tshoṱhe</string>
+    <string name="pricing_growth_name">Mutshimbidzi wa Vhaṋe vha Nndu</string>
+    <string name="pricing_growth_price">R499</string>
+    <string name="pricing_growth_cadence">nga muṅwedzi</string>
+    <string name="pricing_growth_desc">Ha vhaṋe vha nndu vhane vha langa ṱhumbi dza swika kha 25 kha nndu nnzhi.</string>
+    <string name="pricing_growth_f1">Ṱhumbi dza swika kha 25 dzo ṅwalwaho</string>
+    <string name="pricing_growth_f2">U tendelwa ha u bhuka na u ṋea ṱhumbi</string>
+    <string name="pricing_growth_f3">U langa vhaṱoli na tshumisano</string>
+    <string name="pricing_growth_f4">Mivhigo ya mbuelo ya muṅwedzi</string>
+    <string name="pricing_growth_f5">Mutsetse wa tikiti dza u vhuedza</string>
+    <string name="pricing_growth_f6">U vhekwa phanḓa kha u ṱoḓa</string>
+    <string name="pricing_portfolio_name">Porotifoliyo</string>
+    <string name="pricing_portfolio_price">R1 899</string>
+    <string name="pricing_portfolio_cadence">nga muṅwedzi</string>
+    <string name="pricing_portfolio_desc">Ha vhalanga vha fhethu ha u dzula na zwigwada zwa nndu zwi na porotifoliyo khulwane.</string>
+    <string name="pricing_portfolio_f1">Ṱhumbi na nndu dzi si na mpimo</string>
+    <string name="pricing_portfolio_f2">Akhaunthu dza tshigwada na ndavhelelo</string>
+    <string name="pricing_portfolio_f3">U shumisa data ya mbuelo na u falesa ya ṅwaha</string>
+    <string name="pricing_portfolio_f4">U dzhenisa na u bvisa nga vhunzhi</string>
+    <string name="pricing_portfolio_f5">Mulanga wa akhaunthu o ḓikumedzaho</string>
+    <string name="pricing_portfolio_f6">U wana API ya u ṱanganedzisa</string>
+    <string name="faq_title">Mbudziso, dzo fhindulwa</string>
+    <string name="faq_intro">Ni kha di sedza? Tshigwada tshashu tsha thuso tshi fhindula mulaedza muṅwe na muṅwe nga ḓuvha ḽithihi ḽa mushumo.</string>
+    <string name="faq_q1">Naa RentEase ndi ya mahala kha ṋyaluwa?</string>
+    <string name="faq_a1">Hai. Ṋyaluwa a dzi lipi mbadelo ya pulatifomo. U ṱoḓa, u vhambedza, u bhuka, u rumela mulaedza na u langa tshumisano ndi zwa mahala; ni badela fhedzi rente na dipoziti ya muṋe wa nndu.</string>
+    <string name="faq_q2">Vhaṋe vha nndu na nndu zwi khwaṱhisedzwa hani?</string>
+    <string name="faq_a2">Vhaṋe vha nndu vha rumela maṅwalo a vhuṋe na vhuṱanzi ha vhuṋe. Tshigwada tshashu tshi a ṱola phanḓa ha uri nndu i bviswe khagala i na bajhi ya u khwaṱhisedzwa.</string>
+    <string name="faq_q3">Ndi maṅwalo afhio ane nda a ṱoḓa u bhuka?</string>
+    <string name="faq_a3">Khophi ya ID kana phasiphotho yaṋu na vhuṱanzi ha u ṅwalisa vhu bvaho kha yunivesithi yaṋu.</string>
+    <string name="faq_q4">Naa ndi nga khansela u bhuka?</string>
+    <string name="faq_a4">Ni nga khansela u bhuka ho sedzaho phanḓa ha uri muṋe wa nndu a ḽi tendele. Nga murahu ha u tendelwa, u khansela hu tevhela mulayo wa muṋe wa nndu.</string>
+    <string name="faq_q5">Mbadelo dzi langwa hani?</string>
+    <string name="faq_a5">Dipoziti na mbadelo ya muṅwedzi zwi a rekhodiwa kha app. Mbadelo muṅwe na muṅwe u vhonala kha mivhigo ya mbadelo u na tshiitisi.</string>
+    <string name="faq_q6">Hu itea mini arali tshithu tshi tshi nyaga?</string>
+    <string name="faq_a6">Ṅwalani khumbelo ya u vhuedza na zwifanyiso kha dashboard yaṋu. Muṋe wa nndu u a divhadziwa nahone ni nga tevhela mimvelele u swika zwi tshi dzudzanywa.</string>
+    <string name="faq_q7">Naa vhaṋe vha nndu vha nga ṅwala nndu dzi fhiraho nthihi?</string>
+    <string name="faq_a7">Hai. Nndu nthihi na nthihi i na ṱhumbi dzayo, mitengo, u wanala na vhaṱoli.</string>
+    <string name="faq_not_found">Ni sa wana phindulo yaṋu?</string>
+    <string name="faq_contact_support">Kwamani na thuso</string>
+    <string name="contact_title">Nyambedzanani na tshigwada tsha RentEase</string>
+    <string name="contact_intro">Naa ni ṋyaluwa ine ya vhudzisa nga u bhuka kana muṋe wa nndu o dzulelaho u ṅwala, ri fhano.</string>
+    <string name="contact_head_office">Ofisi khulwane</string>
+    <string name="contact_address">42 Loop Street, Kapa</string>
+    <string name="contact_phone">+27 21 555 0142</string>
+    <string name="contact_email">support@rentease.co.za</string>
+    <string name="contact_hours_title">Awara dza thuso</string>
+    <string name="contact_hours_body">Musumbuluwo u ya Lavhuṱanu, 08:00 - 17:00 SAST. Khumbelo dza u vhuedza dza u fhaḓa dzi dzhielwa nṱha maḓuvha a rathi nga vhege.</string>
+    <string name="contact_form_name">Dzina ḽoṱhe</string>
+    <string name="contact_form_email">Adiresi ya imeili</string>
+    <string name="contact_form_subject">Thero</string>
+    <string name="contact_form_message">Mulaedza</string>
+    <string name="contact_form_send">Rumelani mulaedza</string>
+    <string name="contact_error_name">Dzhenisani dzina ḽaṋu ḽoṱhe</string>
+    <string name="contact_error_email">Dzhenisani adiresi ya imeili yo teaho</string>
+    <string name="contact_error_subject">Ṋeani thero ipfufhi</string>
+    <string name="contact_error_message">Ri vhudzeni zwinzhi (zwi sa fhasi ha zwiga 20)</string>
+    <string name="contact_no_email_app">A hu na app ya imeili. Ṅwalani kha support@rentease.co.za.</string>
+    <string name="contact_open_email_hint">U rumela hu vula app yaṋu ya imeili mulaedza u tshi vha wo lugela.</string>
+    <string name="privacy_s1_title">Mafhungo ané ra a kuvhanganya</string>
+    <string name="privacy_s1_body">Zwidodombedzwa zwa akhaunthu, maṅwalo a u khwaṱhisedza ṋyaluwa, mafhungo a nndu, rekhodo dza u bhuka na mulaedza i ṋetshedzanwaho kha pulatifomo.</string>
+    <string name="privacy_s2_title">Ri i shumisa hani</string>
+    <string name="privacy_s2_body">U khwaṱhisedza vhuṋe, u ṱanganedzisa ṋyaluwa na fhethu ha u dzula hu fanaho, u shumisa u bhuka na u thivhela u khakhisa kha pulatifomo.</string>
+    <string name="privacy_s3_title">U avhelana</string>
+    <string name="privacy_s3_body">Vhaṋe vha nndu vha vhona fhedzi zwidodombedzwa zwi ṱoḓeaho u ṱola khumbelo. A ri thengisi mafhungo a muthu kha vhaṅwe.</string>
+    <string name="privacy_s4_title">Pfanelo dzaṋu</string>
+    <string name="privacy_s4_body">Ni nga humbela u wana, u lugisa kana u bvisa mafhungo aṋu tshifhinga tshiṅwe na tshiṅwe nga u ṅwala kha support@rentease.co.za.</string>
+    <string name="terms_s1_title">U shumisa RentEase</string>
+    <string name="terms_s1_body">Ni fanela u vha na miṅwaha ya 18 kana u fhira nahone ni ṋee mafhungo o teaho. Akhaunthu dzi wanwaho dzi tshi khakhisa nndu kana vhuimo ha ṋyaluwa dzi a imiswa.</string>
+    <string name="terms_s2_title">U bhuka</string>
+    <string name="terms_s2_body">Khumbelo ya u bhuka i a tangana fhedzi musi muṋe wa nndu a tshi i tendela nahone dipoziti i tshi khwaṱhisedzwa kha pulatifomo.</string>
+    <string name="terms_s3_title">Mbadelo na u khansela</string>
+    <string name="terms_s3_body">Dipoziti i a vhuedzwa u swika maḓuvha a 14 phanḓa ha u dzhena nṱhani ha musi tshumisano i tshi amba zwiṅwe.</string>
+    <string name="terms_s4_title">Vhuimeleli</string>
+    <string name="terms_s4_body">RentEase i leludza u kwamana ha ṋyaluwa na vhaṋe vha nndu; tshumisano i dzula vhukati ha mahafhu one aya.</string>
+    <!-- Guest browsing: VE draft — TODO(translation-review) -->
+    <string name="guest_browse_button">Vhonani nndu dzo ṅwalwaho ni si na akhaunthu</string>
+    <string name="guest_banner">Ni khou vhona sa muṅwali. Dzhenani u vhulunga nndu na u humbela u bhuka.</string>
+    <string name="guest_signin_to_book">Dzhenani u humbela u bhuka</string>
+    <!-- Universities pages: VE draft — TODO(translation-review) -->
+    <string name="pub_universities">Yunivesithi</string>
+    <string name="uni_title">Dzikampasi dzi funwaho kha RentEase</string>
+    <string name="uni_intro">Khethani kampasi ni vhone rente i re hone na nndu dzo kwamanaho nayo.</string>
+    <string name="uni_search_hint">Ṱoḓani nga dzina, dorobo kana vundu</string>
+    <string name="uni_none_found">A hu na yunivesithi dzi tshimbilelanaho na ṱhoḓo yaṋu.</string>
+    <string name="uni_not_found">A ri athu u shuma kha kampasi iyo</string>
+    <string name="uni_place">%1$s, %2$s</string>
+    <string name="uni_students_count">Ṋyaluwa dza %1$d</string>
+    <string name="uni_average_rent">Rente ya vhukati R%1$d/muṅwedzi</string>
+    <string name="uni_accommodation_near">Fhethu ha u dzula tsini na %1$s</string>
+    <string name="uni_browse_near">Vhonani nndu tsini na %1$s</string>
+    <string name="uni_available_now">Zwi wanalaho zwino</string>
+    <string name="uni_no_listings">A hu na nndu dzo kwamanaho na kampasi iyi zwino.</string>
+    <!-- Photos: VE draft — TODO(translation-review) -->
+    <string name="photo_sample_label">Tshifanyiso tsha tsumbo</string>
+    <string name="photo_of_property">%1$s, tshifanyiso %2$d kha %3$d</string>
+    <string name="photo_counter">%1$d / %2$d</string>
+    <!-- Landing: VE draft — TODO(translation-review) -->
+    <string name="featured_title">Fhethu hu khethiwaho</string>
+    <string name="featured_failed">A ho ngo kona u kuvhanganya fhethu hu khethiwaho.</string>
+    <string name="featured_empty">A hu na fhethu ho bviswaho zwino. Dovhani u vhona hu si kale.</string>
+    <!-- Cards: VE draft — TODO(translation-review) -->
+    <string name="property_rating_value">%1$s (%2$d)</string>
+    <string name="property_beds_baths_rooms">%1$d bede · %2$d bavhu · ṱhumbi dzo vuleaho dza %3$d</string>
+    <string name="view_details_button">Vhonani zwidodombedzwa</string>
+    <!-- Admin verification: VE draft — TODO(translation-review) -->
+    <string name="verification_filter_awaiting">I khou lindela u ṱolwa</string>
+    <string name="verification_filter_documents_required">Maṅwalo a a ṱoḓea</string>
+    <string name="verification_filter_rejected">Yo hanedzwa</string>
+    <string name="verification_filter_verified">Yo khwaṱhisedzwa</string>
+    <string name="verification_filter_all">Zwoṱhe</string>
+    <string name="no_landlords_in_filter">A hu na vhaṋe vha nndu kha ndivho iyi.</string>
+    <string name="admin_registration_number">Nomboro ya u ṅwalisa %1$s</string>
+    <string name="admin_no_documents">A hu na maṅwalo o ṋetshedzwaho zwino.</string>
+    <string name="admin_view_document">Vhonani: %1$s</string>
+    <string name="admin_required_documents_missing">ID na vhuṱanzi ha vhuṋe zwi ṱoḓea zwothe phanḓa ha u khwaṱhisedza.</string>
+    <string name="admin_previous_notes">Nothosi dza murahu: %1$s</string>
+    <string name="admin_notes_label">Nothosi dza muṋe wa nndu (dzi vhonala kha peji yawe)</string>
+    <string name="admin_request_documents_button">Humbelani maṅwalo</string>
+    <string name="error_verification_notes_required">Ṅwalani nothosi i talutshedzaho zwi ṱoḓeaho kana tshiitisi.</string>
+    <string name="error_verification_notes_too_long">Nothosi dzi ṋanzhi (zwiga 600 u ya nṱha).</string>
+    <string name="error_verification_missing_documents">A hu koni u khwaṱhisedza: ID na vhuṱanzi ha vhuṋe zwi fanela u ṋetshedzwa zwothe.</string>
+    <string name="error_document_open_failed">A ho ngo kona u vula ṅwalo. Sedzani u kwamana ni dovhe ni linge.</string>
+    <!-- TODO(translation-review) home screen -->
+    <string name="home_hero_title">Wana hayani yaṋu ya mudzulatshidzulo</string>
+    <string name="home_hero_subtitle">Zwiṅwe zwo khwaṋhisedzwaho tsini na khamphasi yaṋu, zwi dzhiiwa nga miniti.</string>
+    <string name="home_search_button">Ṱoḓa</string>
+    <string name="home_featured_title">Vhuendedzi vho khetheaho tsini na khamphasi</string>
+    <string name="home_featured_subtitle">Fhethu hu re na ndivho ya nṋa ha vhaṋe vho khwaṋhisedzwaho.</string>
+    <string name="home_see_all">Vhona zwothe zwo thaphuwaho</string>
+    <string name="home_universities_title">Ṱoḓa nga yunivesithi</string>
+    <string name="home_see_all_universities">Yunivesithi dzothe</string>
+    <!-- TODO(translation-review) landlord photos -->
+    <string name="photos_heading">Zwifanyiso zwa fhethu</string>
+    <string name="photos_hint">Ṋwalani zwifanyiso zwi swikaho kha %1$d. Tshifanyiso tsha u thoma ndi khavhara ine vhatshudeni vha i vhona kha u ṱoḓa.</string>
+    <string name="photos_empty_title">Ṋwalani zwifanyiso zwa fhethu haṋu</string>
+    <string name="photos_empty_body">Fhethu hu re na zwifanyiso zwi vhonaleaho hu wana khumbelo nnzhi. Ṱinani u khetha kha galari yaṋu.</string>
+    <string name="photos_add_button">Ṋwalani zwifanyiso (%1$d/%2$d)</string>
+    <string name="photos_uploading">Iyo kovhekanya…</string>
+    <string name="photos_cover_badge">Khavhara</string>
+    <string name="photos_make_cover">Ita khavhara</string>
+    <string name="photos_remove">Bvisani tshifanyiso</string>
+    <string name="photos_item_description">Tshifanyiso tsha fhethu %1$d</string>
+    <string name="photos_limit_reached">Ni nga ṋwala zwifanyiso zwi swikaho kha %1$d fhethu huthihi.</string>
+    <string name="photos_saved_partial">Fhethu ho tshimbilelwa, fhedzi zwifanyiso a zwo ngo tshimbilelwa: %1$s. Ṱinani Tshimbilela hafhu u linga hafhu.</string>
+    <!-- TODO(translation-review) landlord empty state -->
+    <string name="no_properties_photos_hint">Ṋwalani fhethu haṋu ha u thoma na zwifanyiso uri vhatshudeni vha ḓi i wana vha i dzhie.</string>
+    <string name="add_first_property_button">Ṋwalani fhethu na zwifanyiso</string>
+    <!-- TODO(translation-review) similar/availability -->
+    <string name="filter_available_only">I wanala zwino</string>
+    <string name="similar_heading">Fhethu hu fanaho</string>
+    <!-- TODO(translation-review) room types -->
+    <string name="room_type_single">Ṋumbani ya muthu muthihi</string>
+    <string name="room_type_shared">Ṋumbani ya u ṱanganedzana</string>
+    <string name="room_type_ensuite">Ine bafuruma ṋumbani</string>
+    <string name="room_type_studio">Studio / fulete ya muthu muthihi</string>
+    <string name="room_price_typical">Zwi tshi vhonala kha ṋumbani iyi: R%1$d–R%2$d nga ṅwedzi</string>
+    <string name="room_price_unusual">A zwi tshi vhonali kha ṋumbani iyi (R%1$d–R%2$d nga ṅwedzi). Kha ni tevhedze mulingo.</string>
+    <!-- TODO(translation-review) property form -->
+    <string name="property_university_label">Yunivesithi i re tsini</string>
+    <string name="property_distance_label">Ṋyaluwo u ya khamphasini (km)</string>
+    <string name="property_distance_hint">Zwi sumbedzwa vhatshudeni sa "x km u bva khamphasini".</string>
+    <!-- TODO(translation-review) password reset -->
+    <string name="forgot_password_link">Ni do hangwa pasiwedi?</string>
+    <string name="forgot_title">Dovholani pasiwedi yaṋu hafhu</string>
+    <string name="forgot_intro">Ṋwalani imeiḽi ya akhaunthu yaṋu ri ḓo ni rumela linkhi ya u khetha pasiwedi ntswa.</string>
+    <string name="forgot_send_button">Rumelani linkhi</string>
+    <string name="forgot_sent_message">Arali akhaunthu i hone kha iyo imeiḽi, linkhi i khou da. Livhuleni kha foni iyi.</string>
+    <string name="forgot_invalid_email">Ṋwalani adiresi ya imeiḽi i fanaho.</string>
+    <string name="reset_request_failed">A ro ngo kona u rumela linkhi. Sedzani vhukwamani ni lingedze hafhu nga murahu ha miniti.</string>
+    <string name="reset_title">Khethani pasiwedi ntswa</string>
+    <string name="reset_intro">Shumisani zwiga zwi sa fhedzi %1$d.</string>
+    <string name="new_password_label">Pasiwedi ntswa</string>
+    <string name="confirm_password_label">Khwaṋhisedzani pasiwedi ntswa</string>
+    <string name="reset_button">Tshimbilelani pasiwedi ntswa</string>
+    <string name="reset_too_short">Pasiwedi i fanela u vha na zwiga zwi sa fhedzi %1$d.</string>
+    <string name="reset_mismatch">Pasiwedi mbili a dzi fani.</string>
+    <string name="reset_failed">A ro ngo kona u shandukisa pasiwedi. Linkhi i nga vha yo fhela. Humbelani i ntswa.</string>
+    <string name="reset_success">Pasiwedi yaṋu yo shandukiswa. Ni nga dzhena zwino.</string>
+    <string name="reset_invalid_link">Linkhi iyi a i na mushumo. Humbelani i ntswa kha sia ḽa u dzhena.</string>
+    <string name="back_to_login">Dovha kha u dzhena</string>
+    <!-- TODO(translation-review) listing extras -->
+    <string name="landlord_heading">Mune</string>
+    <string name="landlord_unnamed">Mune</string>
+    <string name="landlord_booking_note">A ni nga badelwi u swika mune a tshi tendela ndingo yaṋu.</string>
+    <string name="nearby_heading">Zwi re tsini</string>
+    <string name="nearby_intro">I vhula app ya mepe tsini na fhethu hu.</string>
+    <string name="nearby_transport">Tsevho</string>
+    <string name="nearby_shops">Zwitoloro</string>
+    <string name="nearby_food">Zwiḽiwa na khefi</string>
+    <string name="nearby_health">Tshikiliniki na zwibadela</string>
+    <string name="nearby_show_map">Sumbedzani kha mepe</string>
+    <!-- TODO(translation-review) income report -->
+    <string name="stat_contracted_income">Mbuelo ya ṅwedzi yo tendelanwaho</string>
+    <string name="stat_collected">Yo kuvhanganywaho u swika zwino</string>
+    <string name="income_by_property_heading">Mbuelo nga fhethu hune ha vha hone</string>
+    <string name="income_tenants">vhaduli vha %1$d</string>
+    <!-- TODO(translation-review) rooms available -->
+    <string name="property_rooms_available_label">Ṋumbani dzi wanalaho</string>
+    <string name="property_rooms_available_hint">I vusuludzwa i tshi bva kha ṋumbani dzaṋu.</string>
+    <!-- TODO(translation-review): draft Tshivenda for the shortened sign-up; needs native review -->
+    <string name="password_rules_hint">Zwiṱoḓea zwi si fhasi ha zwiga zwi 8, zwi na ḽeṱari na nomboro.</string>
+    <string name="password_show">Sumbedza phasiwedi</string>
+    <string name="password_hide">Dzumba phasiwedi</string>
+    <string name="confirm_email_title">Khwaṱhisedzani imeili yaṋu</string>
+    <string name="confirm_email_body">Akhaunthi yaṋu yo bveledzwa. Ro rumela lino la u khwaṱhisedza kha %1$s. Li vhuleni, ni dovha ni dzhena.</string>
+    <string name="confirm_email_go_to_signin">Iyani kha u dzhena</string>
+    <string name="error_email_taken">Hu na akhaunthi ine ya shumisa imeili iyi. Lingedzani u dzhena.</string>
+    <string name="error_password_rules">Shumisani phasiwedi ya zwiga zwi 8 u ya nṱha, i na ḽeṱari na nomboro.</string>
+    <string name="error_rate_limited">Ndingo dzo vhuya dza vha nnzhi. Ni humbelwa u lindela miniti dzi si gathi ni dovhe ni linge.</string>
+    <string name="error_email_invalid">Dzhenisani adiresi ya imeili i teaho.</string>
+    <string name="error_phone_invalid">Dzhenisani nomboro ya runḓani i teaho, tsumbo 0821234567.</string>
+    <string name="error_no_connection">A hu na vhuthihi ha inthanethe. Ṱolani netiweke ni dovhe ni linge.</string>
+    <string name="error_invalid_credentials">Imeili kana phasiwedi a zwi na vhuṱanzi.</string>
+    <string name="error_email_not_confirmed">Ni humbelwa u thoma ni khwaṱhisedza imeili ni shumisa lino ro ni rumelaho.</string>
+    <string name="student_register_subtitle">Bveledzani akhaunthi yaṋu nga miniti. Ni nga engedza zwiṅwe nga murahu.</string>
+    <string name="student_register_later_note">Kosi, bajethe na zwine na zwi funa a zwi na ndugiselo. Ni ḓo zwi humbelwa kha dashboard yaṋu.</string>
+    <string name="landlord_register_subtitle">Zwino ndi mafhungo a u vhidzwa fhedzi. Mafhungo a bindu na maṅwalo zwi tevhela musi no no dzhena.</string>
+    <!-- TODO(translation-review): draft Tshivenda -->
+    <string name="more_options">Dziṅwe dzikhetho</string>
+    <!-- TODO(translation-review): config banner -->
+    <string name="error_not_configured">Supabase a i vhambedzwi kha iyi app. Ṋeani SUPABASE_URL na SUPABASE_ANON_KEY kha local.properties ni dovhe ni ite build.</string>
+    <string name="config_banner_title">A ho ngo ṱanganedzwa kha Supabase</string>
+</resources>

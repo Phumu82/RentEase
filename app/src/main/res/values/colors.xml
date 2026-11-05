@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rentease_navy">#1B2A4A</color>
+    <color name="rentease_gold">#E8A93B</color>
+    <color name="ic_launcher_background">#1B2A4A</color>
+    <!-- Window colour shown before Compose draws (cold start, rotation): matches the app background. -->
+    <color name="rentease_window_background">#FDFCF7</color>
+</resources>

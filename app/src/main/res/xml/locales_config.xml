@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Languages RentEase ships translations for (values/, values-zu/, values-ve/).
+     Lets Android 13+ list them under system Settings > Apps > RentEase > Language. -->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="en" />
+    <locale android:name="zu" />
+    <locale android:name="ve" />
+</locale-config>
